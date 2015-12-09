@@ -1,0 +1,33 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Customer Loyalty &amp; Retention Management Software
+email: hello@pegke.com
+description: Customer Loyalty &amp; Retention Management Software, integrates with merchant POS systems to give consumers a single identity to earn business-specific rewards
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://pegke.com" # the base hostname & protocol for your site
+twitter_username: pegkeapp
+github_username:  pegkeapp
+
+permalink:  :title
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - bower_components/semantic/examples
+  - bower_components/semantic/node_modules
+  - bower_components/semantic/tasks
+  - bower_components/semantic/src
+  - bower_components/semantic/_site
+  - bower_components/jquery/src
+  - bower_components/fullpage.js/pure javascript (Alpha)
+
+# Custom Settings
+mailchimp_url:      //eepurl.com/baLH05
+mailchimp_list_id:  20b2bd793b

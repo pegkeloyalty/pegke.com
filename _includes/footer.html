@@ -1,0 +1,43 @@
+<div class="ui inverted vertical footer segment">
+  <div class="ui container">
+    <div class="ui stackable inverted divided equal height stackable grid">
+      <div class="three wide column">
+        <h4 class="ui inverted header">About</h4>
+        <div class="ui inverted link list">
+          <a href="/" class="item">Home</a> {% for post in site.posts limit:5 %} {% if post.type == 'page' %}
+          <a href="{{ post.url }}" class="item" title="{{ post.title }}">{{ post.title }}</a> {% endif %} {% endfor %}
+        </div>
+      </div>
+      <div class="three wide column">
+        <h4 class="ui inverted header">Services</h4>
+        <div class="ui inverted link list">
+          <a href="#" class="item">Banana Pre-Order</a>
+          <a href="#" class="item">DNA FAQ</a>
+          <a href="#" class="item">How To Access</a>
+          <a href="#" class="item">Favorite X-Men</a>
+        </div>
+      </div>
+      <div class="three wide column">
+        <h4 class="ui inverted header">Blogs</h4>
+        <div class="ui inverted link list">
+
+          {% for post in site.posts limit:5 %} {% if post.type == 'blog' %}
+          <a href="{{ post.url }}" class="item" title="{{ post.title }}">{{ post.title }}</a> {% endif %} {% endfor %}
+
+        </div>
+      </div>
+      <div class="five wide column">
+        <h4 class="ui inverted header">Social</h4>
+        <a href="#"><i class="twitter icon big grey"></i></a>
+        <a href="#"><i class="google plus icon big grey"></i></a>
+        <a href="#"><i class="facebook icon big grey"></i></a>
+        <a href="#"><i class="rss icon big grey"></i></a>
+        <div class="ui horizontal divider white">-</div>
+        <div class="ui inverted link list">
+          <a href="mailto:hello@pegke.com" class="item"><i class="send icon"></i>hello@pegke.com</a>
+          <a href="tel:+914714000056" class="item"><i class="phone icon"></i>+914714000056</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,102 @@
+
+<script src="{{ " /bower_components/jquery/dist/jquery.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /bower_components/semantic/dist/semantic.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /bower_components/fullpage.js/vendors/jquery.slimscroll.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /bower_components/fullpage.js/jquery.fullPage.min.js " | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+  $('.menuinit')
+    .popup({
+      inline: true,
+      on: 'click',
+      transition: 'scale',
+      hoverable: true,
+      position: 'bottom left',
+      delay: {
+        hide: 800
+      }
+    });
+
+  $('.cta').click(function() {
+    $('.ui.modal').modal('show');
+  });
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+      lockAnchors: true,
+      animateAnchor: true,
+      scrollOverflow: true,
+      navigationTooltips: ['home', 'benefits', 'testimonials', 'businesses', 'footer'],
+      navigation: true,
+      navigationPosition: 'right',
+      sectionsColor: ['#000', '#DD2D4A', '#F1FFE7', 'whitesmoke', '#000'],
+    });
+  });
+
+  $('.ui.dropdown').dropdown();
+  $('.ui.checkbox').checkbox();
+
+  $('.ui.accordion').accordion();
+
+  $('.ui.sticky')
+    .sticky({
+      context: '.fixed.menu"'
+    })
+  ;
+
+  $('.ui.label')
+  .popup();
+
+
+  // setInterval(function(){
+  //   $('.shape').shape('flip over');
+  // }, 3000);
+
+  $('.ui.form')
+    .form({
+      fields: {
+        name: {
+          identifier: 'name',
+          rules: [{
+            type: 'empty',
+            prompt: 'Please enter your name'
+          }]
+        },
+        phone: {
+          identifier: 'phone',
+          rules: [{
+            type: 'minLength[10]',
+            prompt: 'Your 10 digit Mobile Number'
+          }, {
+            type: 'number',
+            prompt: 'Numbers Only'
+          }, {
+            type: 'maxLength[10]',
+            prompt: 'Your 10 digit Mobile Number'
+          }]
+        },
+        email: {
+          identifier: 'email',
+          rules: [{
+            type: 'empty',
+            prompt: 'Please select a gender'
+          }, {
+            type: 'email',
+            prompt: 'Please select a gender'
+          }]
+        },
+        city: {
+          identifier: 'city',
+          rules: [{
+            type: 'empty',
+            prompt: 'Please enter your city'
+          }]
+        },
+        terms: {
+          identifier: 'terms',
+          rules: [{
+            type: 'checked',
+            prompt: 'You must agree to the terms and conditions'
+          }]
+        }
+      }
+    });
+</script>

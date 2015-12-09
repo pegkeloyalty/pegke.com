@@ -1,0 +1,36 @@
+<div id="header" class="box-shadow">
+  <div class="ui container nav">
+    <div class="ui text menu">
+      <a href="/"><img src="public/img/pegke-logo.svg" alt="Pegke Loyalty" width="150" /></a>
+      <div class="item menuinit">
+        <a href="#home" class="ui text white large"><i class="sidebar icon white"></i>MENU</a>
+      </div>
+
+      <div class="ui flowing basic admission popup topmenu">
+        <div class="ui two column relaxed grid">
+          <div class="column">
+            <h4 class="ui header">Business</h4>
+            <div class="ui link list">
+              <a class="item">Design &amp; Urban Ecologies</a>
+              <a class="item">Fashion Design</a>
+              <a class="item">Fine Art</a>
+              <a class="item">Strategic Design</a>
+            </div>
+          </div>
+
+          <div class="column">
+            <h4 class="ui header">Customer Loyalty</h4>
+            <div class="ui link list">
+              {% for post in site.posts limit:5 %}
+              {% if post.type == 'blog' %}
+              <a href="{{ post.url }}" class="item" title="{{ post.title }}">{{ post.title }}</a>
+              {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
