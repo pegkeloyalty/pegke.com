@@ -4,41 +4,32 @@ layout: default
 {% include header.html %}
 
 <div class="ui container blog">
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
-  <div class="ui two column grid row">
-    <article class="eleven wide column" itemscope itemtype="http://schema.org/BlogPosting">
-      <div class="post-content" itemprop="articleBody">
+  {% include blog-header.html %}
+  <div class="ui stackable grid">
+    <article class="eleven wide column" id="context" itemscope itemtype="http://schema.org/BlogPosting">
+      <div class="ui text" itemprop="articleBody">
         {{ content }}
       </div>
     </article>
-    <div class="four wide column stickme">
-      <div class="related">
-        <h3>Related Posts</h3>
-        <div class="ui related-posts link list">
-          {% for post in site.posts limit:8 %}
-          {% if post.type == 'blog' %}
-          <a href="{{ post.url }}" class="item" title="{{ post.date | date_to_string }}">{{ post.title }}</a>
-          {% endif %}
-          {% endfor %}
-        </div>
-      </div>
+    <div class="five wide column">
 
-      <h4 class="ui horizontal divider header">
-        Subscribe
-      </h4>
+      <div class="ui rail">
+        <div class="ui sticky">
 
-      <div class="subscribe">
-        <form class="" action="{{ site.mailchimp_url }}" method="post">
-          <div class="ui action input">
-            <input id="mce-EMAIL" type="text" name="EMAIL" placeholder="Email..." required>
-            <input type="text" class="ohidden" name="b_49c28e4c02bbc2d7dfd64815e_20b2bd793b" tabindex="-1" value="" id="40" >
-            <button class="ui button" type="submit" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
+          <div class="related ui segment">
+            <h3>Related Posts</h3>
+            <ul class="ui list">
+              {% for post in site.posts limit:8 %}
+              {% if post.type == 'blog' %}
+              <li><a href="{{ post.url }}" class="item" title="{{ post.date | date_to_string }}">{{ post.title }}</a></li>
+              {% endif %}
+              {% endfor %}
+            </ul>
           </div>
-        </form>
 
+          {% include subscribe.html %}
+
+        </div>
       </div>
 
     </div>

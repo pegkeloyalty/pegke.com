@@ -4,8 +4,13 @@
       <div class="three wide column">
         <h4 class="ui inverted header">About</h4>
         <div class="ui inverted link list">
-          <a href="/" class="item">Home</a> {% for post in site.posts limit:5 %} {% if post.type == 'page' %}
-          <a href="{{ post.url }}" class="item" title="{{ post.title }}">{{ post.title }}</a> {% endif %} {% endfor %}
+          <a href="/" class="item">Home</a>
+          <a href="/pricing" class="item">Pricing</a>
+          {% for post in site.posts limit:5 %}
+          {% if post.type == 'page' %}
+          <a href="{{ post.url }}" class="item" title="{{ post.title }}">{{ post.title }}</a>
+          {% endif %}
+          {% endfor %}
         </div>
       </div>
       <div class="three wide column">
@@ -21,8 +26,12 @@
         <h4 class="ui inverted header">Blogs</h4>
         <div class="ui inverted link list">
 
-          {% for post in site.posts limit:5 %} {% if post.type == 'blog' %}
-          <a href="{{ post.url }}" class="item" title="{{ post.title }}">{{ post.title }}</a> {% endif %} {% endfor %}
+          <a href="{% post_url 2015-11-20-blogs %}" class="item" title="Pegke Blogs">Pegke Blogs</a>
+
+          {% for post in site.posts limit:8 %}
+          {% if post.type == 'blog' %}
+          <a href="{{ post.url }}" class="item" title="{{ post.title }}">{{ post.title }}</a>
+          {% endif %} {% endfor %}
 
         </div>
       </div>

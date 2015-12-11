@@ -1,36 +1,19 @@
 <div id="header" class="box-shadow">
   <div class="ui container nav">
-    <div class="ui text menu">
-      <a href="/"><img src="public/img/pegke-logo.svg" alt="Pegke Loyalty" width="150" /></a>
-      <div class="item menuinit">
-        <a href="#home" class="ui text white large"><i class="sidebar icon white"></i>MENU</a>
-      </div>
-
-      <div class="ui flowing basic admission popup topmenu">
-        <div class="ui two column relaxed grid">
-          <div class="column">
-            <h4 class="ui header">Business</h4>
-            <div class="ui link list">
-              <a class="item">Design &amp; Urban Ecologies</a>
-              <a class="item">Fashion Design</a>
-              <a class="item">Fine Art</a>
-              <a class="item">Strategic Design</a>
-            </div>
-          </div>
-
-          <div class="column">
-            <h4 class="ui header">Customer Loyalty</h4>
-            <div class="ui link list">
-              {% for post in site.posts limit:5 %}
-              {% if post.type == 'blog' %}
-              <a href="{{ post.url }}" class="item" title="{{ post.title }}">{{ post.title }}</a>
-              {% endif %}
-              {% endfor %}
-            </div>
+    <div class="ui secondary menu">
+      <a href="/"><img src="public/img/pegke-logo.svg" alt="{{ site.title }}" width="150" /></a>
+      <div class="menu right">
+        <a href="/pricing" class="item ui button red">PRICING</a>
+        <a href="/features" class="item ui button red">FEATURES</a>
+        <a href="/how-it-works" class="item ui button red">HOW IT WORKS</a>
+        <div class="item">
+          <div class="ui tiny buttons">
+            <a class="ui button red cta" href="#signup">sign up</a>
+            <div class="or"></div>
+            <a class="ui button blue" href="tel:+914714000056">demo</a>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </div>

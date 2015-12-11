@@ -14,24 +14,24 @@
              Page
 *******************************/
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic&subset=latin');
 html,
 body {
   height: 100%;
 }
 html {
-  font-size: 14px;
+  font-size: 15px;
 }
 body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
   min-width: 320px;
-  background: #FFFFFF;
+  background: #f9f9f9;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.4285em;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2b3645;
   font-smoothing: antialiased;
 }
 
@@ -48,12 +48,12 @@ h5 {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 1.2857em;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
-  font-weight: bold;
+  font-weight: 900;
   padding: 0em;
 }
 h1 {
   min-height: 1rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 h2 {
   font-size: 1.714rem;
@@ -103,11 +103,11 @@ p:last-child {
 --------------------*/
 
 a {
-  color: #4183C4;
+  color: #3499e0;
   text-decoration: none;
 }
 a:hover {
-  color: #1e70bf;
+  color: #0888e3;
   text-decoration: none;
 }
 
@@ -120,32 +120,32 @@ a:hover {
 /* Site */
 ::-webkit-selection {
   background-color: #CCE2FF;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2b3645;
 }
 ::-moz-selection {
   background-color: #CCE2FF;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2b3645;
 }
 ::selection {
   background-color: #CCE2FF;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2b3645;
 }
 
 /* Form */
 textarea::-webkit-selection,
 input::-webkit-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.87);
+  color: #2b3645;
 }
 textarea::-moz-selection,
 input::-moz-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.87);
+  color: #2b3645;
 }
 textarea::selection,
 input::selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.87);
+  color: #2b3645;
 }
 
 

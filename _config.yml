@@ -10,11 +10,16 @@ title: Customer Loyalty &amp; Retention Management Software
 email: hello@pegke.com
 description: Customer Loyalty &amp; Retention Management Software, integrates with merchant POS systems to give consumers a single identity to earn business-specific rewards
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pegke.com" # the base hostname & protocol for your site
+url: "http://pegkeloyalty.github.io" # the base hostname & protocol for your site
 twitter_username: pegkeapp
 github_username:  pegkeapp
 
 permalink:  :title
+
+dashboard:
+  base_url: https://pegke.com/
+  api_base: https://pegke.com/v1/
+  app_down: https://pegke.com/apps
 
 # Build settings
 markdown: kramdown
@@ -27,6 +32,8 @@ exclude:
   - bower_components/semantic/_site
   - bower_components/jquery/src
   - bower_components/fullpage.js/pure javascript (Alpha)
+  - bower_components/semantic/dist/components
+
 
 # Custom Settings
 mailchimp_url:      //eepurl.com/baLH05

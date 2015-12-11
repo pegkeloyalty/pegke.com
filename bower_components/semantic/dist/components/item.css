@@ -149,7 +149,7 @@
 
 /* Default Header Size */
 .ui.items > .item > .content > .header:not(.ui) {
-  font-size: 1.28571429em;
+  font-size: 1.26666667em;
 }
 
 /*--------------
@@ -189,7 +189,7 @@
   max-width: auto;
   font-size: 1em;
   line-height: 1.4285em;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2b3645;
 }
 
 /*--------------
@@ -244,7 +244,7 @@
   color: rgba(0, 0, 0, 0.85);
 }
 .ui.items > .item > .content > a.header:hover {
-  color: #1e70bf;
+  color: #0888e3;
 }
 
 /* Meta */
@@ -252,7 +252,7 @@
   color: rgba(0, 0, 0, 0.4);
 }
 .ui.items > .item .meta > a:not(.ui):hover {
-  color: rgba(0, 0, 0, 0.87);
+  color: #2b3645;
 }
 
 /*--------------
@@ -458,7 +458,7 @@
 }
 .ui.items a.item:hover .content .header,
 .ui.link.items > .item:hover .content .header {
-  color: #1e70bf;
+  color: #0888e3;
 }
 
 /*--------------

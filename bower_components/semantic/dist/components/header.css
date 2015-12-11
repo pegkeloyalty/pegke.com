@@ -21,10 +21,10 @@
   margin: calc(2rem -  0.14285em ) 0em 1rem;
   padding: 0em 0em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-weight: 900;
   line-height: 1.2857em;
   text-transform: none;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2b3645;
 }
 .ui.header:first-child {
   margin-top: -0.14285em;
@@ -132,7 +132,7 @@
 ---------------*/
 
 h1.ui.header {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 h2.ui.header {
   font-size: 1.714rem;
@@ -149,10 +149,10 @@ h5.ui.header {
 
 /* Sub Header */
 h1.ui.header .sub.header {
-  font-size: 1.14285714rem;
+  font-size: 1.13333333rem;
 }
 h2.ui.header .sub.header {
-  font-size: 1.14285714rem;
+  font-size: 1.13333333rem;
 }
 h3.ui.header .sub.header {
   font-size: 1rem;
@@ -161,7 +161,7 @@ h4.ui.header .sub.header {
   font-size: 1rem;
 }
 h5.ui.header .sub.header {
-  font-size: 0.92857143rem;
+  font-size: 0.93333333rem;
 }
 
 /*--------------
@@ -170,7 +170,7 @@ h5.ui.header .sub.header {
 
 .ui.huge.header {
   min-height: 1em;
-  font-size: 2em;
+  font-size: 3em;
 }
 .ui.large.header {
   font-size: 1.714em;
@@ -187,10 +187,10 @@ h5.ui.header .sub.header {
 
 /* Sub Header */
 .ui.huge.header .sub.header {
-  font-size: 1.14285714rem;
+  font-size: 1.13333333rem;
 }
 .ui.large.header .sub.header {
-  font-size: 1.14285714rem;
+  font-size: 1.13333333rem;
 }
 .ui.header .sub.header {
   font-size: 1rem;
@@ -199,7 +199,7 @@ h5.ui.header .sub.header {
   font-size: 1rem;
 }
 .ui.tiny.header .sub.header {
-  font-size: 0.92857143rem;
+  font-size: 0.93333333rem;
 }
 
 /*--------------
@@ -208,20 +208,20 @@ h5.ui.header .sub.header {
 
 .ui.sub.header {
   padding: 0em;
-  margin-bottom: 0.14285714rem;
+  margin-bottom: 0.13333333rem;
   font-weight: bold;
-  font-size: 0.85714286em;
+  font-size: 0.86666667em;
   text-transform: uppercase;
   color: '';
 }
 .ui.small.sub.header {
-  font-size: 0.71428571em;
+  font-size: 0.73333333em;
 }
 .ui.sub.header {
-  font-size: 0.85714286em;
+  font-size: 0.86666667em;
 }
 .ui.large.sub.header {
-  font-size: 0.92857143em;
+  font-size: 0.93333333em;
 }
 .ui.huge.sub.header {
   font-size: 1em;
@@ -323,13 +323,13 @@ h5.ui.header .sub.header {
 /*--- Red ---*/
 
 .ui.red.header {
-  color: #DB2828 !important;
+  color: #dd494b !important;
 }
 a.ui.red.header:hover {
-  color: #d01919 !important;
+  color: #e12b2e !important;
 }
 .ui.red.dividing.header {
-  border-bottom: 2px solid #DB2828;
+  border-bottom: 2px solid #dd494b;
 }
 
 /* Inverted */
@@ -343,13 +343,13 @@ a.ui.inverted.red.header:hover {
 /*--- Orange ---*/
 
 .ui.orange.header {
-  color: #F2711C !important;
+  color: #efb57c !important;
 }
 a.ui.orange.header:hover {
-  color: #f26202 !important;
+  color: #f3a85f !important;
 }
 .ui.orange.dividing.header {
-  border-bottom: 2px solid #F2711C;
+  border-bottom: 2px solid #efb57c;
 }
 
 /* Inverted */
@@ -403,13 +403,13 @@ a.ui.inverted.yellow.header:hover {
 /*--- Green ---*/
 
 .ui.green.header {
-  color: #21BA45 !important;
+  color: #4cb992 !important;
 }
 a.ui.green.header:hover {
-  color: #16ab39 !important;
+  color: #3dae86 !important;
 }
 .ui.green.dividing.header {
-  border-bottom: 2px solid #21BA45;
+  border-bottom: 2px solid #4cb992;
 }
 
 /* Inverted */
@@ -443,13 +443,13 @@ a.ui.inverted.teal.header:hover {
 /*--- Blue ---*/
 
 .ui.blue.header {
-  color: #2185D0 !important;
+  color: #3499e0 !important;
 }
 a.ui.blue.header:hover {
-  color: #1678c2 !important;
+  color: #188fe3 !important;
 }
 .ui.blue.dividing.header {
-  border-bottom: 2px solid #2185D0;
+  border-bottom: 2px solid #3499e0;
 }
 
 /* Inverted */
@@ -612,11 +612,11 @@ a.ui.inverted.grey.header:hover {
 --------------------*/
 
 .ui.dividing.header {
-  padding-bottom: 0.21428571rem;
+  padding-bottom: 0.2rem;
   border-bottom: 1px solid rgba(34, 36, 38, 0.15);
 }
 .ui.dividing.header .sub.header {
-  padding-bottom: 0.21428571rem;
+  padding-bottom: 0.2rem;
 }
 .ui.dividing.header .icon {
   margin-bottom: 0em;
@@ -631,25 +631,25 @@ a.ui.inverted.grey.header:hover {
 
 .ui.block.header {
   background: #F3F4F5;
-  padding: 0.71428571rem 1rem;
+  padding: 0.73333333rem 1rem;
   box-shadow: none;
   border: 1px solid #D4D4D5;
-  border-radius: 0.28571429rem;
+  border-radius: 0.26666667rem;
 }
 .ui.tiny.block.header {
-  font-size: 0.85714286rem;
+  font-size: 0.86666667rem;
 }
 .ui.small.block.header {
-  font-size: 0.92857143rem;
+  font-size: 0.93333333rem;
 }
 .ui.block.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
   font-size: 1rem;
 }
 .ui.large.block.header {
-  font-size: 1.14285714rem;
+  font-size: 1.13333333rem;
 }
 .ui.huge.block.header {
-  font-size: 1.42857143rem;
+  font-size: 1.4rem;
 }
 
 /*-------------------
@@ -658,7 +658,7 @@ a.ui.inverted.grey.header:hover {
 
 .ui.attached.header {
   background: #FFFFFF;
-  padding: 0.71428571rem 1rem;
+  padding: 0.73333333rem 1rem;
   margin-left: -1px;
   margin-right: -1px;
   box-shadow: none;
@@ -675,29 +675,29 @@ a.ui.inverted.grey.header:hover {
 }
 .ui.top.attached.header {
   margin-bottom: 0em;
-  border-radius: 0.28571429rem 0.28571429rem 0em 0em;
+  border-radius: 0.26666667rem 0.26666667rem 0em 0em;
 }
 .ui.bottom.attached.header {
   margin-top: 0em;
   border-top: none;
-  border-radius: 0em 0em 0.28571429rem 0.28571429rem;
+  border-radius: 0em 0em 0.26666667rem 0.26666667rem;
 }
 
 /* Attached Sizes */
 .ui.tiny.attached.header {
-  font-size: 0.85714286em;
+  font-size: 0.86666667em;
 }
 .ui.small.attached.header {
-  font-size: 0.92857143em;
+  font-size: 0.93333333em;
 }
 .ui.attached.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
   font-size: 1em;
 }
 .ui.large.attached.header {
-  font-size: 1.14285714em;
+  font-size: 1.13333333em;
 }
 .ui.huge.attached.header {
-  font-size: 1.42857143em;
+  font-size: 1.4em;
 }
 
 /*-------------------

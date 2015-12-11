@@ -104,9 +104,6 @@
 .pagetwo h3 {
   font-size: 4.5em;
 }
-.blog.container {
-  margin: 3em auto !important;
-}
 .pitch {
   position: fixed;
   top: 50%;
@@ -128,122 +125,33 @@
 .fp-controlArrow.fp-prev {
   left: 55px;
 }
-.wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -190px 0 0 -468px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  color: #9f9f9f;
-  font-size: 15px;
-}
-.package {
-  box-sizing: border-box;
-  width: 301px;
-  height: 380px;
-  border: 3px solid #e8e8e8;
-  border-radius: 7px;
-  display: inline-block;
-  padding: 24px;
-  text-align: center;
-  float: left;
-  -webkit-transition: margin-top 0.5s linear;
-  transition: margin-top 0.5s linear;
-  position: relative;
-  margin-right: 11px;
-}
-.package:hover {
-  margin-top: -30px;
-  -webkit-transition: margin-top 0.3s linear;
-  transition: margin-top 0.3s linear;
-}
-.name {
-  color: #565656;
-  font-weight: 300;
-  font-size: 3rem;
-  margin-top: -5px;
-}
-.price {
-  margin-top: 7px;
-  font-weight: bold;
-}
-.price::after {
-  content: " / month per user";
-  font-weight: normal;
-}
-hr {
-  background-color: #dedede;
-  border: none;
-  height: 1px;
-}
-.trial {
-  font-size: .9rem;
-  font-weight: 600;
-  padding: 2px 21px 2px 21px;
-  color: #33c4b6;
-  border: 1px solid #e4e4e4;
-  display: inline-block;
-  border-radius: 15px;
-  background-color: white;
-  position: relative;
-  bottom: -20px;
-}
-ul {
-  list-style: none;
-  padding: 0;
-  text-align: left;
-  margin-top: 29px;
-}
-li {
-  margin-bottom: 15px;
-}
-.checkIcon {
-  font-family: "FontAwesome";
-  content: "\f00c";
-}
-li::before {
-  font-family: "FontAwesome";
-  content: "\f00c";
-  font-size: 1.3rem;
-  color: #33c4b6;
-  margin-right: 3px;
-}
-.brilliant {
-  border-color: #33c4b6;
+
+.ui.text {
+  line-height: 1.5;
+  font-size: 1.13333333rem
 }
 .menuinit .sidebar {
   cursor: pointer;
 }
-.brilliant::before {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 64px 64px 0 0;
-  border-color: #3bc6b8 transparent transparent transparent;
-  position: absolute;
-  left: 0;
-  top: 0;
-  content: "";
-}
-.brilliant::after {
-  font-family: "FontAwesome";
-  content: "\f00c";
-  color: white;
-  position: absolute;
-  left: 9px;
-  top: 6px;
-  text-shadow: 0 0 2px #37c5b6;
-  font-size: 1.4rem;
-}
 .front #header {
   position: fixed;
-  height: 50px;
   display: block;
   width: 100%;
   background: transparent;
   z-index: 9;
   top: 0px;
+}
+.front .box-shadow {
+  background: transparent;
+  box-shadow: none;
+}
+.front .ui.secondary.menu a {
+  color: #FFF;
+}
+.fp-viewing-2 .ui.secondary.menu a,
+.fp-viewing-3 .ui.secondary.menu a,
+.fp-viewing-4 .ui.secondary.menu a {
+  color: #333;
 }
 .olive {
   background-color: olive;
@@ -253,22 +161,17 @@ li::before {
   margin: 5px 0 !important;
   display: block;
 }
-.not-front .box-shadow {
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #DDD;
-  box-shadow: 0px 3px 5px rgba(208, 208, 208, 0.2);
+.box-shadow {
+  background-color: #FFF;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
 }
 .ui.text.menu {
-  margin: 0 none !important;
+  margin: 0 !important;
 }
-.not-front .menuinit .white {
-  color: #333 !important
-}
-.ui.container.headerimg {
-  background: url(http://media-cache-ak0.pinimg.com/736x/97/0f/02/970f02410bc5317b606f55772a573eb3.jpg);
+.ui.headerimg {
   width: 100% !important;
   max-width: 100% !important;
-  height: 130px;
+  min-height: 230px;
   margin: 0 auto;
   display:-ms-flexbox;
   -ms-flex-pack:center;
@@ -282,4 +185,244 @@ li::before {
   display:box;
   box-pack:center;
   box-align:center;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+}
+
+.ui.footer.segment {
+  margin-top: 30px
+}
+.violet {
+  background-color: #6a4ca6;
+}
+.statistic .amt {
+  font-size: 6rem !important;
+  font-weight: 400;
+}
+.ui.container.fluid.pricing {
+  margin-bottom: 50px !important
+}
+div.eight.wide.column.centered {
+  text-align: center;
+}
+.ui.contianer.fluid.calculator {
+  padding: 80px 0;
+}
+.pricingrow,
+.step {
+  padding: 50px 0;
+}
+.feature-list .item {
+  text-align: center;
+}
+.feature-list .item>i.icon {
+  padding-right: 0 !important;
+  margin-bottom: 5px;
+}
+.feature-list .item {
+  margin: 0 15px;
+}
+
+
+
+
+
+
+
+
+/* General grid styles */
+.cbp-ig-grid {
+	list-style: none;
+	padding: 0 0 50px 0;
+	margin: 0;
+}
+
+/* Clear floats */
+.cbp-ig-grid:before,
+.cbp-ig-grid:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-ig-grid:after {
+	clear: both;
+}
+
+/* grid item */
+.cbp-ig-grid li {
+	width: 33%;
+	float: left;
+	height: 420px;
+	text-align: center;
+	border-top: 1px solid #ddd;
+}
+
+/* we are using a combination of borders and box shadows to control the grid lines */
+.cbp-ig-grid li:nth-child(-n+3){
+	border-top: none;
+}
+
+.cbp-ig-grid li:nth-child(3n-1),
+.cbp-ig-grid li:nth-child(3n-2) {
+	box-shadow: 1px 0 0 #ddd;
+}
+
+/* anchor style */
+.cbp-ig-grid li > a {
+	display: block;
+	height: 100%;
+	color: #47a3da;
+	-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+	transition: background 0.2s;
+}
+
+/* the icon with pseudo class for icon font */
+.cbp-ig-icon {
+	padding: 30px 0 0 0;
+	display: block;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: -moz-transform 0.2s;
+	transition: transform 0.2s;
+}
+i.cbp-ig-icon{
+  display: inline-block !important;
+}
+/* title element */
+.cbp-ig-grid .cbp-ig-title {
+	margin: 60px 0 10px 0;
+	padding: 20px 0 0 0;
+	font-size: 2em;
+	position: relative;
+	-webkit-transition: -webkit-transform 0.2s;
+	-moz-transition: -moz-transform 0.2s;
+	transition: transform 0.2s;
+}
+
+.cbp-ig-grid .cbp-ig-title:before {
+	content: '';
+	position: absolute;
+	background: #47a3da;
+	width: 160px;
+	height: 6px;
+	top: 0px;
+	left: 50%;
+	margin: -10px 0 0 -80px;
+	-webkit-transition: margin-top 0.2s; /* top or translate does not seem to work in Firefox */
+	-moz-transition: margin-top 0.2s;
+	transition: margin-top 0.2s;
+}
+
+.cbp-ig-grid .cbp-ig-category {
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 1em;
+	letter-spacing: 1px;
+	color: #fff;
+	-webkit-transform: translateY(10px);
+	-moz-transform: -moz-translateY(10px);
+	-ms-transform: -ms-translateY(10px);
+	transform: translateY(10px);
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	-webkit-transition: transform 0.3s, opacity 0.2s;
+}
+
+.cbp-ig-grid li:hover .cbp-ig-category,
+.touch .cbp-ig-grid li .cbp-ig-category {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+/* Hover styles */
+
+.cbp-ig-grid li > a:hover {
+	background: #47a3da;
+}
+
+.cbp-ig-grid li > a:hover .cbp-ig-icon {
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	-ms-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.cbp-ig-grid li > a:hover .cbp-ig-icon:before,
+.cbp-ig-grid li > a:hover .cbp-ig-title {
+	color: #fff;
+}
+
+.cbp-ig-grid li > a:hover .cbp-ig-title {
+	-webkit-transform: translateY(-30px);
+	-moz-transform: translateY(-30px);
+	-ms-transform: translateY(-30px);
+	transform: translateY(-30px);
+}
+
+.cbp-ig-grid li > a:hover .cbp-ig-title:before {
+	background: #fff;
+	margin-top: 80px;
+}
+
+
+@media screen and (max-width: 62.75em) {
+	.cbp-ig-grid li {
+		width: 50%;
+	}
+
+	/* reset the grid lines */
+	.cbp-ig-grid li:nth-child(-n+3){
+		border-top: 1px solid #ddd;
+	}
+
+	.cbp-ig-grid li:nth-child(3n-1),
+	.cbp-ig-grid li:nth-child(3n-2) {
+		box-shadow: none;
+	}
+
+	.cbp-ig-grid li:nth-child(-n+2){
+		border-top: none;
+	}
+
+	.cbp-ig-grid li:nth-child(2n-1) {
+		box-shadow: 1px 0 0 #ddd;
+	}
+}
+
+@media screen and (max-width: 41.6em) {
+	.cbp-ig-grid li {
+		width: 100%;
+	}
+
+	.cbp-ig-grid li:nth-child(-n+2){
+		border-top: 1px solid #ddd;
+	}
+
+	.cbp-ig-grid li:nth-child(2n-1) {
+		box-shadow: none
+	}
+
+	.cbp-ig-grid li:first-child {
+		border-top: none;
+	}
+}
+
+@media screen and (max-width: 25em) {
+	.cbp-ig-grid {
+		font-size: 80%;
+	}
+
+	.cbp-ig-grid .cbp-ig-category {
+		margin-top: 20px;
+	}
 }
