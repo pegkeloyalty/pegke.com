@@ -9,8 +9,8 @@
 title: Customer Loyalty &amp; Retention Management Software
 email: hello@pegke.com
 description: Customer Loyalty &amp; Retention Management Software, integrates with merchant POS systems to give consumers a single identity to earn business-specific rewards
-baseurl: "/pegke.com" # the subpath of your site, e.g. /blog
-url: "http://pegkeloyalty.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://beta.pegke.com" # the base hostname & protocol for your site
 twitter_username: pegkeapp
 github_username:  pegkeapp
 
