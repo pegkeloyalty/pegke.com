@@ -6,10 +6,9 @@
         <div class="ui inverted link list">
           <a href="/" class="item">Home</a>
           <a href="/pricing" class="item">Pricing</a>
-          {% for post in site.posts limit:5 %}
-          {% if post.type == 'page' %}
+          {% assign sitePages = site.posts | where:'type', 'page' %}
+          {% for post in sitePages %}
           <a href="{{ post.url }}" class="item" title="{{ post.title }}">{{ post.title }}</a>
-          {% endif %}
           {% endfor %}
         </div>
       </div>
@@ -28,10 +27,11 @@
 
           <a href="{% post_url 2015-11-20-blogs %}" class="item" title="Pegke Blogs">Pegke Blogs</a>
 
-          {% for post in site.posts limit:8 %}
-          {% if post.type == 'blog' %}
+          {% assign siteBlogs = site.posts | where:'type', 'blog' | limit:4 %}
+
+          {% for post in siteBlogs %}
           <a href="{{ post.url }}" class="item" title="{{ post.title }}">{{ post.title }}</a>
-          {% endif %} {% endfor %}
+          {% endfor %}
 
         </div>
       </div>

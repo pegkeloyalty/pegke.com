@@ -16,13 +16,22 @@ layout: default
       <div class="ui rail">
         <div class="ui sticky">
 
+          {% if page.categories.size > 0 %}
+          <div class="ui segment post-tags">
+            <h3>Article Tags</h3>
+            {% for category in page.categories %}
+              <h5 title="{{ category | capitalize }}" class="ui green label ui header small">{{ category | capitalize }}</h5>
+            {% endfor %}
+          </div>
+
+          {% endif %}
+
           <div class="related ui segment">
             <h3>Related Posts</h3>
             <ul class="ui list">
-              {% for post in site.posts limit:8 %}
-              {% if post.type == 'blog' %}
+              {% assign siteBlogs = site.posts | where:'type', 'blog' | limit:2 %}
+              {% for post in siteBlogs %}
               <li><a href="{{ post.url }}" class="item" title="{{ post.date | date_to_string }}">{{ post.title }}</a></li>
-              {% endif %}
               {% endfor %}
             </ul>
           </div>

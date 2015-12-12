@@ -333,6 +333,7 @@ i.cbp-ig-icon{
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
 	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
 	-webkit-transition: transform 0.3s, opacity 0.2s;
+  width: 95%;
 }
 
 .cbp-ig-grid li:hover .cbp-ig-category,
@@ -425,4 +426,9 @@ i.cbp-ig-icon{
 	.cbp-ig-grid .cbp-ig-category {
 		margin-top: 20px;
 	}
+}
+
+
+#nav .active {
+  color: red;
 }
