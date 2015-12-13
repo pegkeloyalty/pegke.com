@@ -2,11 +2,12 @@
   Subscribe
 </h4>
 <div class="subscribe">
-  <form class="" action="{{ site.mailchimp_url }}" method="post">
+  <form class="" action="{{ site.mailchimp_url }}" method="post" id="mailchimp">
     <div class="ui fluid action input">
-      <input id="mce-EMAIL" type="text" name="EMAIL" placeholder="Email..." required>
+      <input id="mc-email" type="email" name="email" placeholder="Email..." required>
       <input type="text" class="ohidden" name="b_49c28e4c02bbc2d7dfd64815e_20b2bd793b" tabindex="-1" value="" id="40" >
       <button class="ui button" type="submit" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
     </div>
+    <label for="mc-email" class="error-message success-message"></label>
   </form>
 </div>

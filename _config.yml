@@ -11,10 +11,14 @@ email: hello@pegke.com
 description: Customer Loyalty &amp; Retention Management Software, integrates with merchant POS systems to give consumers a single identity to earn business-specific rewards
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://beta.pegke.com" # the base hostname & protocol for your site
+permalink:  :title
+
 twitter_username: pegkeapp
 github_username:  pegkeloyalty
+fb_username: pegkeapp
+gplus_username: +Pegke
 
-permalink:  :title
+cover: /public/og/pegke-og.jpg
 
 dashboard:
   base_url: https://pegke.com/
@@ -36,5 +40,5 @@ exclude:
 
 
 # Custom Settings
-mailchimp_url:      //eepurl.com/baLH05
+mailchimp_url: http://eepurl.com/baLH05
 mailchimp_list_id:  20b2bd793b
