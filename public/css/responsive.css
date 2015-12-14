@@ -1,0 +1,55 @@
+@media only screen and (max-width: 767px) {
+    .mobile.hidden,
+    .tablet.only,
+    .small.monitor.only,
+    .large.monitor.only {
+        display: none !important;
+    }
+    .ui.headerimg {
+      min-height: 130px;
+      margin-top: 10px !important;
+    }
+    .ui.huge.header {
+      font-size: 2.1rem
+    }
+    .ui.container.pegke {
+      width: 100% !important;
+    }
+    .pitch h1.header {
+      font-size: 2rem !important;
+    }
+    .pagetwo .ui.vertical.stripe h3 {
+      font-size: 2rem !important
+    }
+    .ui.vertical.stripe p {
+      font-size: 1em;
+    }
+    .fp-controlArrow {
+      display: none;
+      visibility: hidden;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mobile.only,
+    .tablet.hidden,
+    .small.monitor.only,
+    .large.monitor.only {
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .mobile.only,
+    .tablet.only,
+    .small.monitor.hidden,
+    .large.monitor.only {
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .mobile.only,
+    .tablet.only,
+    .small.monitor.only,
+    .large.monitor.hidden {
+        display: none !important;
+    }
+}

@@ -39,7 +39,7 @@ $('.menuinit')
 });
 
 $('.cta').click(function() {
-  $('.ui.modal').modal('show');
+  $('.ui.modal.signup').modal('show');
 });
 $(document).ready(function() {
 
@@ -170,10 +170,15 @@ $('#support')
 
 
 $('.step .image, .stack .image')
-  .visibility({
-    type       : 'image',
-    transition : 'pulse',
-    duration   : 1000
-  })
+.visibility({
+  type       : 'image',
+  transition : 'pulse',
+  duration   : 1000
+})
 ;
+
+$('#hamb').click(function() {
+  $('.ui.submenu.modal')
+    .modal('show');
+});
 </script>

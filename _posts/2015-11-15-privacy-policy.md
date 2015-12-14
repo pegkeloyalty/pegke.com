@@ -6,7 +6,7 @@ permalink: /about/privacy-policy
 ---
 
 {::options parse_block_html="true" /}
-<div class="ui container text pegke">
+<div class="ui text pegke">
 
 ## Importance of Your Privacy.
 
