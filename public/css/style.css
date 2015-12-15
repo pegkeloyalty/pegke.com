@@ -30,9 +30,6 @@ body {
   z-index: 20;
   display: block;
 }
-.ui.container.nav {
-  vertical-align: top;
-}
 .white.header, .white {
   color: #FFF !important
 }
@@ -204,7 +201,10 @@ body {
   background-size: cover;
 
 }
-
+.footer a.item{
+  display: block;
+  margin: 5px 0;
+}
 .ui.footer.segment {
   margin-top: 30px
 }
@@ -437,7 +437,11 @@ i.cbp-ig-icon{
     margin-top: 20px;
   }
 }
-
+a.ui.nav:hover,
+a.ui.nav:focus,
+a.ui.nav:active {
+  outline: 0 none;
+}
 
 #nav .active {
   color: red;
