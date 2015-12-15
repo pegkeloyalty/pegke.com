@@ -70,28 +70,6 @@ body {
 .secondary.pointing.menu .toc.item {
   display: none;
 }
-@media only screen and (max-width: 700px) {
-  .ui.fixed.menu {
-    display: none !important;
-  }
-  .secondary.pointing.menu .item, .secondary.pointing.menu .menu {
-    display: none;
-  }
-  .secondary.pointing.menu .toc.item {
-    display: block;
-  }
-  .masthead.segment {
-    min-height: 350px;
-  }
-  .masthead h1.ui.header {
-    font-size: 2em;
-    margin-top: 1.5em;
-  }
-  .masthead h2 {
-    margin-top: 0.5em;
-    font-size: 1.5em;
-  }
-}
 .controlArrow.prev {
   left: 150px;
 }
@@ -180,25 +158,7 @@ body {
   width: 100% !important;
   max-width: 100% !important;
   min-height: 230px;
-  display:-ms-flexbox;
-  -ms-flex-pack:center;
-  -ms-flex-align:center;
-  display:-moz-box;
-  -moz-box-pack:center;
-  -moz-box-align:center;
-  display:-webkit-box;
-  -webkit-box-pack:center;
-  -webkit-box-align:center;
-  display:box;
-  box-pack:center;
-  box-align:center;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
+  margin-top: 60px !important;
 
 }
 .footer a.item{
@@ -477,4 +437,25 @@ blockquote.message {
 }
 #hamb {
   margin: 15px 2px 0;
+}
+.currency{
+  display: inline-block;
+  margin-top: 10px;
+  vertical-align: top;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.value {
+  font-size: 7rem;
+  font-weight: 300;
+}
+.duration {
+  font-size: 1.4rem;
+}
+.duration:before{
+  content: '/';
+  margin-right: 2px;
+}
+.currency, .duration{
+  color: #1bbc9d;
 }

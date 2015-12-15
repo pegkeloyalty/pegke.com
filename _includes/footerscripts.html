@@ -61,16 +61,16 @@ $(document).ready(function() {
     var selcur = $(this).attr('data-curr');
     $(this).addClass('active');
     if( selcur == 'usd' ) {
+      $('.currency').text('$');
       $('.amt').text('0.30');
     } else if( selcur == 'inr' ) {
+      $('.currency').text('₹');
       $('.amt').text('0.42');
-    } else if( selcur == 'eur' ) {
-      $('.amt').text('0.23');
     }
   });
 
   var pathname = window.location.pathname;
-  $(".menu.right a").each(function(index) {
+  $(".menu.right a, .mobilemenu a").each(function(index) {
     if (pathname === $(this).attr('href') ) {
       $(this).addClass("active");
     }

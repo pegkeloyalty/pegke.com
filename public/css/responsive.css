@@ -7,7 +7,7 @@
     }
     .ui.headerimg {
       min-height: 130px;
-      margin-top: 65px !important;
+      margin-top: 75px !important;
     }
     .ui.huge.header {
       font-size: 2.1rem
@@ -47,6 +47,20 @@
     .large.monitor.only {
         display: none !important;
     }
+    .ui.headerimg {
+      display:-ms-flexbox;
+      -ms-flex-pack:center;
+      -ms-flex-align:center;
+      display:-moz-box;
+      -moz-box-pack:center;
+      -moz-box-align:center;
+      display:-webkit-box;
+      -webkit-box-pack:center;
+      -webkit-box-align:center;
+      display:box;
+      box-pack:center;
+      box-align:center;
+    }
 }
 @media only screen and (min-width: 1200px) {
     .mobile.only,
@@ -54,5 +68,19 @@
     .small.monitor.only,
     .large.monitor.hidden {
         display: none !important;
+    }
+    .ui.headerimg {
+      display:-ms-flexbox;
+      -ms-flex-pack:center;
+      -ms-flex-align:center;
+      display:-moz-box;
+      -moz-box-pack:center;
+      -moz-box-align:center;
+      display:-webkit-box;
+      -webkit-box-pack:center;
+      -webkit-box-align:center;
+      display:box;
+      box-pack:center;
+      box-align:center;
     }
 }
