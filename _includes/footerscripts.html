@@ -1,9 +1,24 @@
 
 <script src="{{ " /bower_components/jquery/dist/jquery.min.js " | prepend: site.baseurl }}"></script>
 <script src="{{ " /bower_components/semantic/dist/semantic.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /public/js/jquery.ajaxchimp.js " | prepend: site.baseurl }}"></script>
+
+{% if page.permalink == "/" %}
 <script src="{{ " /bower_components/fullpage.js/vendors/jquery.slimscroll.min.js " | prepend: site.baseurl }}"></script>
 <script src="{{ " /bower_components/fullpage.js/jquery.fullPage.min.js " | prepend: site.baseurl }}"></script>
-<script src="{{ " /public/js/jquery.ajaxchimp.js " | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#fullpage').fullpage({
+    animateAnchor: true,
+    scrollOverflow: true,
+    navigationTooltips: ['home', 'benefits', 'testimonials', 'businesses', 'footer'],
+    navigation: true,
+    navigationPosition: 'right',
+    sectionsColor: ['#000', '#DD2D4A', '#F1FFE7', 'whitesmoke', '#000'],
+  });
+});
+</script>
+{% endif %}
 
 
 {% if page.permalink == '/api' %}
@@ -44,16 +59,6 @@ $('.cta').click(function() {
 $(document).ready(function() {
 
   $('#mailchimp').ajaxChimp();
-
-
-  $('#fullpage').fullpage({
-    animateAnchor: true,
-    scrollOverflow: true,
-    navigationTooltips: ['home', 'benefits', 'testimonials', 'businesses', 'footer'],
-    navigation: true,
-    navigationPosition: 'right',
-    sectionsColor: ['#000', '#DD2D4A', '#F1FFE7', 'whitesmoke', '#000'],
-  });
 
   $('.costs a').click(function() {
     $('.costs a').removeClass('active');
@@ -167,6 +172,19 @@ $('#support')
   }
 });
 
+$('#sg-sup-form')
+.form({
+  fields: {
+    email: {
+      identifier: 'sg-email',
+      rules: [{
+        type: 'email',
+        prompt : 'Please enter a valid e-mail'
+      }]
+    }
+  }
+});
+
 
 $('.step .image, .stack .image')
 .visibility({
@@ -178,7 +196,7 @@ $('.step .image, .stack .image')
 
 $('#hamb').click(function() {
   $('.ui.submenu.modal')
-    .modal('show');
+  .modal('show');
 });
 
 $('#sg-signup').click(function() {
