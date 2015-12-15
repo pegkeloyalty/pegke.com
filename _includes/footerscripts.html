@@ -47,7 +47,6 @@ $(document).ready(function() {
 
 
   $('#fullpage').fullpage({
-    lockAnchors: true,
     animateAnchor: true,
     scrollOverflow: true,
     navigationTooltips: ['home', 'benefits', 'testimonials', 'businesses', 'footer'],
@@ -86,7 +85,7 @@ $('.ui.accordion').accordion();
 $('.ui.sticky')
 .sticky({
   context: '#context',
-  offset: 20
+  offset: 75
 })
 ;
 
@@ -180,5 +179,17 @@ $('.step .image, .stack .image')
 $('#hamb').click(function() {
   $('.ui.submenu.modal')
     .modal('show');
+});
+
+$('#sg-signup').click(function() {
+  $(this).addClass('loading');
+  $('#sg-email').attr('disabled', "true");
+
+  setTimeout(function() {
+    $('#sg-signup').removeClass('loading');
+    $('#sg-email').removeAttr('disabled');
+    $('#sg-msg').text('thanks...').removeClass('ohidden');
+  }, 3000);
+
 });
 </script>
