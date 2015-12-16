@@ -459,3 +459,11 @@ blockquote.message {
 .currency, .duration{
   color: #1bbc9d;
 }
+.ui.secondary.menu .dropdown.item:hover,
+.ui.secondary.menu .link.item:hover,
+.ui.secondary.menu a.item:hover {
+  background: rgba(255, 255, 255, 0.65) !important
+}
+.not-front .ui.secondary.menu a.item:hover {
+  background: rgba(236, 236, 236, 0.57) !important;
+}
