@@ -2,6 +2,7 @@
 layout: post
 title:  "Customer Loyalty Program Software for Restaurants"
 type: blog
+permalink: /blog/customer-loyalty-program-software-for-restaurants
 categories: [Loyalty Program, Restaurants, Loyalty Software]
 ---
 

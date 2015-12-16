@@ -12,7 +12,11 @@
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.load.min.js"></script>
+  <link rel="shortlink" href="http://bit.ly/pegkeweb">
+
+  <link rel="preload" href="{{ "/public/img/1.jpg" | prepend: site.baseurl }}">
+
+  <script rel="prefetch" src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.load.min.js"></script>
   <script>
     head.load(
      "{{ "/bower_components/semantic/dist/semantic.min.css" | prepend: site.baseurl }}",
@@ -35,5 +39,6 @@
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="sitemap" title="Sitemap" type="application/xml" href="{{ "/sitemap.xml" | prepend: site.baseurl | prepend: site.url }}">
   {% include meta-share.html %}
 </head>
