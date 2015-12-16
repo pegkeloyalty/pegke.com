@@ -149,7 +149,11 @@ body {
 }
 .box-shadow {
   background-color: #FFF;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
+  -webkit-box-sizing: border-box;
+box-sizing: border-box;
+z-index: 2;
+-webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
 }
 .ui.text.menu {
   margin: 0 !important;

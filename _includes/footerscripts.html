@@ -1,213 +1,195 @@
-
-<script src="{{ " /bower_components/jquery/dist/jquery.min.js " | prepend: site.baseurl }}"></script>
-<script src="{{ " /bower_components/semantic/dist/semantic.min.js " | prepend: site.baseurl }}"></script>
-<script src="{{ " /public/js/jquery.ajaxchimp.js " | prepend: site.baseurl }}"></script>
-
-{% if page.permalink == "index.html" %}
-<script src="{{ " /bower_components/fullpage.js/vendors/jquery.slimscroll.min.js " | prepend: site.baseurl }}"></script>
-<script src="{{ " /bower_components/fullpage.js/jquery.fullPage.min.js " | prepend: site.baseurl }}"></script>
 <script type="text/javascript">
-$(document).ready(function() {
-  $('#fullpage').fullpage({
-    animateAnchor: true,
-    scrollOverflow: true,
-    navigationTooltips: ['home', 'benefits', 'testimonials', 'businesses', 'footer'],
-    navigation: true,
-    navigationPosition: 'right',
-    sectionsColor: ['#000', '#DD2D4A', '#F1FFE7', 'whitesmoke', '#000'],
+head.ready(function () {
+  $(document).ready(function() {
+    $("#nav").scrollspy();
+    $('#nav a').click(function() {
+      $('#nav a').removeClass('active');
+      $(this).addClass('active');
+    });
   });
-});
-</script>
-{% endif %}
+  hljs.initHighlightingOnLoad();
 
-
-{% if page.permalink == '/api' %}
-<script src="{{ " /public/js/scrollspy.js " | prepend: site.baseurl }}"></script>
-<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.0.0/styles/default.min.css">
-<script src="//cdn.jsdelivr.net/highlight.js/9.0.0/highlight.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-  $("#nav").scrollspy();
-  $('#nav a').click(function() {
-    $('#nav a').removeClass('active');
-    $(this).addClass('active');
-  });
-});
-hljs.initHighlightingOnLoad();
-</script>
-{% endif %}
-
-<script type="text/javascript">
-
-
-
-$('.menuinit')
-.popup({
-  inline: true,
-  on: 'click',
-  transition: 'scale',
-  hoverable: true,
-  position: 'bottom left',
-  delay: {
-    hide: 800
+  if(jQuery().fullpage) {
+    //run plugin dependent code
+    $('#fullpage').fullpage({
+      animateAnchor: true,
+      scrollOverflow: true,
+      navigationTooltips: ['home', 'benefits', 'testimonials', 'businesses', 'footer'],
+      navigation: true,
+      navigationPosition: 'right',
+      sectionsColor: ['#000', '#DD2D4A', '#F1FFE7', 'whitesmoke', '#000'],
+    });
   }
-});
 
-$('.cta').click(function() {
-  $('.ui.modal.signup').modal('show');
-});
-$(document).ready(function() {
-
-  $('#mailchimp').ajaxChimp();
-
-  $('.costs a').click(function() {
-    $('.costs a').removeClass('active');
-    var selcur = $(this).attr('data-curr');
-    $(this).addClass('active');
-    if( selcur == 'usd' ) {
-      $('.currency').text('$');
-      $('.amt').text('0.30');
-    } else if( selcur == 'inr' ) {
-      $('.currency').text('₹');
-      $('.amt').text('0.42');
+  $('.menuinit')
+  .popup({
+    inline: true,
+    on: 'click',
+    transition: 'scale',
+    hoverable: true,
+    position: 'bottom left',
+    delay: {
+      hide: 800
     }
   });
 
-  var pathname = window.location.pathname;
-  $(".menu.right a, .mobilemenu a").each(function(index) {
-    if (pathname === $(this).attr('href') ) {
-      $(this).addClass("active");
+  $('.cta').click(function() {
+    $('.ui.modal.signup').modal('show');
+  });
+  $(document).ready(function() {
+
+    $('#mailchimp').ajaxChimp();
+
+    $('.costs a').click(function() {
+      $('.costs a').removeClass('active');
+      var selcur = $(this).attr('data-curr');
+      $(this).addClass('active');
+      if( selcur == 'usd' ) {
+        $('.currency').text('$');
+        $('.amt').text('0.30');
+      } else if( selcur == 'inr' ) {
+        $('.currency').text('₹');
+        $('.amt').text('0.42');
+      }
+    });
+
+    var pathname = window.location.pathname;
+    $(".menu.right a, .mobilemenu a").each(function(index) {
+      if (pathname === $(this).attr('href') ) {
+        $(this).addClass("active");
+      }
+    });
+
+  });
+
+  $('.ui.dropdown').dropdown();
+  $('.ui.checkbox').checkbox();
+
+  $('.ui.accordion').accordion();
+
+  $('.ui.sticky')
+  .sticky({
+    context: '#context',
+    offset: 75
+  })
+  ;
+
+  // $('.ui.label').popup();
+  $('.rupee.icon').popup();
+  $('.feature-list .item').popup();
+  $('.tstack').popup();
+
+  $('.ui.rating').rating();
+  // setInterval(function(){
+  //   $('.shape').shape('flip over');
+  // }, 3000);
+
+  $('.ui.form')
+  .form({
+    fields: {
+      name: {
+        identifier: 'name',
+        rules: [{
+          type: 'empty',
+          prompt: 'Please enter your name'
+        }]
+      },
+      phone: {
+        identifier: 'phone',
+        rules: [{
+          type: 'minLength[10]',
+          prompt: 'Your 10 digit Mobile Number'
+        }, {
+          type: 'number',
+          prompt: 'Numbers Only'
+        }, {
+          type: 'maxLength[10]',
+          prompt: 'Your 10 digit Mobile Number'
+        }]
+      },
+      email: {
+        identifier: 'email',
+        rules: [{
+          type: 'email',
+          prompt : 'Please enter a valid e-mail'
+        }]
+      },
+      city: {
+        identifier: 'city',
+        rules: [{
+          type: 'empty',
+          prompt: 'Please enter your city'
+        }]
+      },
+      terms: {
+        identifier: 'terms',
+        rules: [{
+          type: 'checked',
+          prompt: 'You must agree to the terms and conditions'
+        }]
+      }
     }
   });
 
-});
 
-$('.ui.dropdown').dropdown();
-$('.ui.checkbox').checkbox();
-
-$('.ui.accordion').accordion();
-
-$('.ui.sticky')
-.sticky({
-  context: '#context',
-  offset: 75
-})
-;
-
-// $('.ui.label').popup();
-$('.rupee.icon').popup();
-$('.feature-list .item').popup();
-$('.tstack').popup();
-
-$('.ui.rating').rating();
-// setInterval(function(){
-//   $('.shape').shape('flip over');
-// }, 3000);
-
-$('.ui.form')
-.form({
-  fields: {
-    name: {
-      identifier: 'name',
-      rules: [{
-        type: 'empty',
-        prompt: 'Please enter your name'
-      }]
-    },
-    phone: {
-      identifier: 'phone',
-      rules: [{
-        type: 'minLength[10]',
-        prompt: 'Your 10 digit Mobile Number'
-      }, {
-        type: 'number',
-        prompt: 'Numbers Only'
-      }, {
-        type: 'maxLength[10]',
-        prompt: 'Your 10 digit Mobile Number'
-      }]
-    },
-    email: {
-      identifier: 'email',
-      rules: [{
-        type: 'email',
-        prompt : 'Please enter a valid e-mail'
-      }]
-    },
-    city: {
-      identifier: 'city',
-      rules: [{
-        type: 'empty',
-        prompt: 'Please enter your city'
-      }]
-    },
-    terms: {
-      identifier: 'terms',
-      rules: [{
-        type: 'checked',
-        prompt: 'You must agree to the terms and conditions'
-      }]
+  $('#support')
+  .form({
+    fields: {
+      email: {
+        identifier: 'email',
+        rules: [{
+          type: 'email',
+          prompt : 'Please enter a valid e-mail'
+        }]
+      },
+      details: {
+        identifier: 'details',
+        rules: [{
+          type: 'empty',
+          prompt: 'Tell us your concern !!'
+        }]
+      },
     }
-  }
-});
+  });
 
-
-$('#support')
-.form({
-  fields: {
-    email: {
-      identifier: 'email',
-      rules: [{
-        type: 'email',
-        prompt : 'Please enter a valid e-mail'
-      }]
-    },
-    details: {
-      identifier: 'details',
-      rules: [{
-        type: 'empty',
-        prompt: 'Tell us your concern !!'
-      }]
-    },
-  }
-});
-
-$('#sg-sup-form')
-.form({
-  fields: {
-    email: {
-      identifier: 'sg-email',
-      rules: [{
-        type: 'email',
-        prompt : 'Please enter a valid e-mail'
-      }]
+  $('#sg-sup-form')
+  .form({
+    fields: {
+      email: {
+        identifier: 'sg-email',
+        rules: [{
+          type: 'email',
+          prompt : 'Please enter a valid e-mail'
+        }]
+      }
     }
-  }
-});
+  });
 
 
-$('.step .image, .stack .image')
-.visibility({
-  type       : 'image',
-  transition : 'pulse',
-  duration   : 1000
-})
-;
+  $('.step .image, .stack .image')
+  .visibility({
+    type       : 'image',
+    transition : 'pulse',
+    duration   : 1000
+  })
+  ;
 
-$('#hamb').click(function() {
-  $('.ui.submenu.modal')
-  .modal('show');
-});
+  $('#hamb').click(function() {
+    $('.ui.submenu.modal')
+    .modal('show');
+  });
 
-$('#sg-signup').click(function() {
-  $(this).addClass('loading');
-  $('#sg-email').attr('disabled', "true");
+  $('#sg-signup').click(function() {
+    $(this).addClass('loading');
+    $('#sg-email').attr('disabled', "true");
 
-  setTimeout(function() {
-    $('#sg-signup').removeClass('loading');
-    $('#sg-email').removeAttr('disabled');
-    $('#sg-msg').text('thanks...').removeClass('ohidden');
-  }, 3000);
+    setTimeout(function() {
+      $('#sg-signup').removeClass('loading');
+      $('#sg-email').removeAttr('disabled');
+      $('#sg-msg').text('thanks...').removeClass('ohidden');
+    }, 3000);
+
+  });
 
 });
 </script>
