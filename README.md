@@ -3,4 +3,4 @@
 
 Customer Loyalty & Retention Management Software, integrates with merchant POS systems to give consumers a single identity to earn business-specific rewards
 
-website [pegke.com](https://pegke.com)
+website [beta.pegke.com](https://beta.pegke.com)
