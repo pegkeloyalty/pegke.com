@@ -40,10 +40,10 @@ head.ready(function () {
 
     $('#mailchimp').ajaxChimp();
 
-    $('.costs a').click(function() {
-      $('.costs a').removeClass('active');
+    $('.costs button').click(function() {
+      $('.costs button').removeClass('positive');
       var selcur = $(this).attr('data-curr');
-      $(this).addClass('active');
+      $(this).addClass('positive');
       if( selcur == 'usd' ) {
         $('.currency').text('$');
         $('.amt').text('0.30');
@@ -80,6 +80,7 @@ head.ready(function () {
   $('.tstack').popup();
 
   $('.ui.rating').rating();
+
   // setInterval(function(){
   //   $('.shape').shape('flip over');
   // }, 3000);

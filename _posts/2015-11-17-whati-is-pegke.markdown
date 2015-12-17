@@ -2,7 +2,6 @@
 layout: post
 title:  "What is Pegke?"
 type: faq
-date:   2015-11-17 09:23:04 +0530
 permalink: faq/what-is-pegke
 ---
 

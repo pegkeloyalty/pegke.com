@@ -26,6 +26,13 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
 }
+h1, h2, h3, h4 {
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  -moz-osx-font-smoothing: grayscale;
+}
+h2, h3, h4 {
+  font-weight: 400 !important;
+}
 .masthead .fp-tableCell {
   position: relative;
   z-index: 20;
@@ -42,9 +49,6 @@ body {
 }
 .ui.vertical.stripe {
   padding: 8em 0em;
-}
-.pagetwo .ui.vertical.stripe h3 {
-  font-size: 4.3em !important
 }
 .ui.vertical.stripe .button + h3, .ui.vertical.stripe p + h3 {
   margin-top: 3em;
@@ -80,9 +84,6 @@ body {
 .fp-viewing-3 #fp-nav ul li a span, .fp-viewing-3 .fp-slidesNav ul li a span, .fp-viewing-2 #fp-nav ul li a span, .fp-viewing-2 .fp-slidesNav ul li a span, .fp-viewing-4 #fp-nav ul li a span, .fp-viewing-4 .fp-slidesNav ul li a span {
   background: #5a5a5a !important;
 }
-.pagetwo h3 {
-  font-size: 4.5em;
-}
 .pitch {
   position: fixed;
   top: 50%;
@@ -98,13 +99,26 @@ body {
   visibility: hidden;
   display: none;
 }
+.fp-controlArrow {
+  font-family: Icons;
+  font-style: normal;
+  border: 0 none;
+  line-height: 1;
+  vertical-align: middle;
+  font-size: 8em
+}
 .fp-controlArrow.fp-next {
   right: 55px;
+}
+.fp-controlArrow.fp-prev:before{
+  content: "\f104"
 }
 .fp-controlArrow.fp-prev {
   left: 55px;
 }
-
+.fp-controlArrow.fp-next:before{
+  content: "\f105"
+}
 .ui.text {
   line-height: 1.5;
   font-size: 1.13333333rem
@@ -113,19 +127,16 @@ body {
   cursor: pointer;
 }
 .front #header {
-  position: fixed;
-  display: block;
-  width: 100%;
   background: transparent;
-  z-index: 9;
-  top: 0px;
 }
 .not-front #header {
+  background: #FFF;
+}
+#header {
   position: fixed;
   display: block;
+  z-index: 850;
   width: 100%;
-  background: #FFF;
-  z-index: 9;
   top: 0px;
 }
 .front .box-shadow {
@@ -151,10 +162,9 @@ body {
 .box-shadow {
   background-color: #FFF;
   -webkit-box-sizing: border-box;
-box-sizing: border-box;
-z-index: 2;
--webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
 }
 .ui.text.menu {
   margin: 0 !important;
@@ -447,14 +457,14 @@ blockquote.message {
   margin-top: 10px;
   vertical-align: top;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 900;
 }
 .value {
   font-size: 7rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 .duration {
-  font-size: 1.4rem;
+  font-size: 0.8rem;
 }
 .duration:before{
   content: '/';
@@ -474,4 +484,10 @@ blockquote.message {
 .ui.header .sub.header {
   font-size: 1.2em;
   color: rgba(0, 0, 0, 0.38)
+}
+.ui.horizontal.divider {
+  line-height: 1.3;
+}
+.label.tags {
+  margin-bottom: 7px;
 }

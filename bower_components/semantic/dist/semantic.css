@@ -8,7 +8,7 @@
  * http://opensource.org/licenses/MIT
  *
  */
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic&subset=latin');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900,400italic&subset=latin');
 /*!
  * # Semantic UI 2.1.6 - Reset
  * http://github.com/semantic-org/semantic-ui/
@@ -558,19 +558,19 @@ h1 {
 }
 
 h2 {
-  font-size: 1.714rem;
+  font-size: 2.3rem;
 }
 
 h3 {
-  font-size: 1.28rem;
+  font-size: 1.6rem;
 }
 
 h4 {
-  font-size: 1.071rem;
+  font-size: 1.3rem;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 h1:first-child,
@@ -6304,19 +6304,19 @@ h1.ui.header {
 }
 
 h2.ui.header {
-  font-size: 1.714rem;
+  font-size: 2.3rem;
 }
 
 h3.ui.header {
-  font-size: 1.28rem;
+  font-size: 1.6rem;
 }
 
 h4.ui.header {
-  font-size: 1.071rem;
+  font-size: 1.3rem;
 }
 
 h5.ui.header {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 /* Sub Header */
@@ -6351,19 +6351,19 @@ h5.ui.header .sub.header {
 }
 
 .ui.large.header {
-  font-size: 1.714em;
+  font-size: 2.3em;
 }
 
 .ui.medium.header {
-  font-size: 1.28em;
+  font-size: 1.6em;
 }
 
 .ui.small.header {
-  font-size: 1.071em;
+  font-size: 1.3em;
 }
 
 .ui.tiny.header {
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 /* Sub Header */
@@ -6973,7 +6973,7 @@ a.ui.inverted.grey.header:hover {
 --------------------*/
 
 .ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  font-size: 1.28em;
+  font-size: 1.6em;
 }
 
 /*******************************

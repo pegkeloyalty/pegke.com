@@ -1,7 +1,6 @@
 ---
 layout: page
 title:  "Customer Loyalty Program"
-date:   2015-11-17 09:23:04 +0530
 type: page
 categories: [Customer Loyalty Program, test]
 permalink: customer-loyalty-program
