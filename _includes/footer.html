@@ -25,7 +25,7 @@
         <h4 class="ui inverted header">Blogs</h4>
         <div class="ui inverted link list">
 
-          <a href="{% post_url 2015-11-20-blogs %}" class="item" title="Pegke Blogs">Pegke Blogs</a>
+          <a href="{% post_url /blogs/2015-11-20-blogs %}" class="item" title="Pegke Blogs">Pegke Blogs</a>
 
           {% assign siteBlogs = site.posts | where:'type', 'blog' | limit:4 %}
 

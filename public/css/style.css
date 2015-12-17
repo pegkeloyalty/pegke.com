@@ -162,16 +162,15 @@ box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
 .ui.headerimg {
   width: 100% !important;
   max-width: 100% !important;
-  min-height: 230px;
-  margin-top: 60px !important;
-
+  min-height: 260px;
+  margin-top: 75px !important;
 }
 .footer a.item{
   display: block;
   margin: 5px 0;
 }
 .ui.footer.segment {
-  margin-top: 30px
+  margin-top: 50px
 }
 .violet {
   background-color: #6a4ca6;
@@ -471,4 +470,8 @@ blockquote.message {
 }
 .not-front .ui.secondary.menu a.item:hover {
   background: rgba(236, 236, 236, 0.57) !important;
+}
+.ui.header .sub.header {
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.38)
 }
