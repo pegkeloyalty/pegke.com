@@ -27,6 +27,7 @@ dashboard:
 
 # Build settings
 markdown: kramdown
+encoding: UTF-8
 
 exclude:
   - bower_components/semantic/examples
