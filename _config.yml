@@ -41,7 +41,6 @@ exclude:
   - bower_components/fullpage.js/pure javascript (Alpha)
   - bower_components/semantic/dist/components
 
-
 # Custom Settings
 mailchimp_url: http://eepurl.com/baLH05
 mailchimp_list_id:  20b2bd793b

@@ -6,6 +6,7 @@
         <a href="/pricing" class="item ui button red">PRICING</a>
         <a href="/features" class="item ui button red">FEATURES</a>
         <a href="/how-it-works" class="item ui button red">HOW IT WORKS</a>
+        <a href="{% post_url 2015-11-15-about-us %}" class="item ui button red">ABOUT</a>
         <div class="item">
           <div class="ui medium buttons">
             <a class="ui button red cta" href="#signup">sign up</a>
@@ -23,9 +24,13 @@
 <div class="ui basic modal submenu">
   <div class="content">
     <div class="ui vertical fluid menu mobilemenu">
-      <a href="/pricing" class="active item red"><i class="gamepad icon"></i> PRICING</a>
+      <a href="/" class="active item red"><i class="gamepad icon"></i> HOME</a>
+      <a href="/pricing" class="item red"><i class="gamepad icon"></i> PRICING</a>
       <a href="/features" class="item">FEATURES</a>
       <a href="/how-it-works" class="item">HOW IT WORKS</a>
+      <a href="{% post_url 2015-11-15-about-us %}" class="item">ABOUT</a>
+      <a href="{% post_url /blogs/2015-11-20-blogs %}" class="item" title="Pegke Blogs">BLOG</a>
+
     </div>
     <div class="ui divider hidden"></div>
     <div class="ui divider horizontal inverted">Join now</div>

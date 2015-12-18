@@ -4,7 +4,7 @@ body {
 }
 .masthead {
   position: relative;
-  background: #000;
+  background: #333;
   overflow: hidden;
 }
 .masthead:before {
@@ -69,8 +69,9 @@ h2, h3, h4 {
   padding-top: 5em;
   padding-bottom: 5em;
 }
-.footer.segment {
-  padding: 5em 0em;
+.footer.segment.inverted {
+  padding: 3em 0em 5em;
+  background: #222 !important;
 }
 .secondary.pointing.menu .toc.item {
   display: none;
@@ -93,7 +94,7 @@ h2, h3, h4 {
 }
 .pitch h1.header {
   font-size: 3rem !important;
-  /*text-shadow: 1px 2px 1px #444;*/
+  text-shadow: 1px 2px 4px #5d5d5d;
 }
 .ohidden {
   visibility: hidden;
@@ -212,13 +213,6 @@ div.eight.wide.column.centered {
 .feature-list .item {
   margin: 0 15px;
 }
-
-
-
-
-
-
-
 
 /* General grid styles */
 .cbp-ig-grid {
@@ -513,4 +507,8 @@ width: 40px;
 .go-top:hover {
 	background-color: rgba(0, 0, 0, 0.7);
   color: #FF0000 !important
+}
+.pagetwo h2.header {
+  margin-bottom: 25px;
+  margin-bottom: 25px !important;
 }

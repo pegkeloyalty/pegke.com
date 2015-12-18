@@ -15,24 +15,24 @@
       <div class="three wide column">
         <h4 class="ui inverted header">Services</h4>
         <div class="ui inverted link list">
-          <a href="#" class="item">Banana Pre-Order</a>
-          <a href="#" class="item">DNA FAQ</a>
-          <a href="#" class="item">How To Access</a>
-          <a href="#" class="item">Favorite X-Men</a>
+          {% assign siteBiz = site.posts | where:'type', 'biztype' %}
+          {% for post in siteBiz %}
+          <a href="{{ post.url }}" class="item" title="{{ post.title }}">{{ post.title | truncate:25 }}</a>
+          {% endfor %}
+          <h4 class="ui inverted header">Options</h4>
+          <a href="#" class="item">Mobile Recharge</a>
+          <a href="#" class="item">Own Products</a>
+          <a href="#" class="item">Gift Vouchers</a>
         </div>
       </div>
       <div class="three wide column">
         <h4 class="ui inverted header">Blogs</h4>
         <div class="ui inverted link list">
-
           <a href="{% post_url /blogs/2015-11-20-blogs %}" class="item" title="Pegke Blogs">Pegke Blogs</a>
-
           {% assign siteBlogs = site.posts | where:'type', 'blog' | limit:4 %}
-
           {% for post in siteBlogs %}
           <a href="{{ post.url }}" class="item" title="{{ post.title }}">{{ post.title | truncate:25 }}</a>
           {% endfor %}
-
         </div>
       </div>
       <div class="five wide column">
@@ -41,6 +41,7 @@
         <a href="https://plus.google.com/{{ site.gplus_username }}"><i class="google plus icon large grey"></i></a>
         <a href="https://fb.com/{{ site.fb_username }}"><i class="facebook icon large grey"></i></a>
         <a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"><i class="rss icon large grey"></i></a>
+
         <div class="ui inverted link list">
           <a href="mailto:hello@pegke.com" class="item"><i class="send icon"></i> hello@pegke.com</a>
           <a href="tel:+914714000056" class="item"><i class="phone icon"></i> +91 (471) 400-0056</a>
