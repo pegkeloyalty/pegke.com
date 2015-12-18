@@ -482,7 +482,7 @@ blockquote.message {
   background: rgba(236, 236, 236, 0.57) !important;
 }
 .ui.header .sub.header {
-  font-size: 1.2em;
+  font-size: 0.9em !important;
   color: rgba(0, 0, 0, 0.38)
 }
 .ui.horizontal.divider {
