@@ -1,9 +1,9 @@
 ---
 layout: page
-title:  FMCG Sector
+title:  Consumer Goods Sector
 type: biztype
-subtitle: Loyalty Program for FMCG Sector
-permalink: /business/fmcg-sector
+subtitle: Loyalty Program for Consumer Goods
+permalink: /business/consumer-goods-sector
 ---
 
 {::options parse_block_html="true" /}
