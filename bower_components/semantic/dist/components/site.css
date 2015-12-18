@@ -31,7 +31,7 @@ body {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 1.4285em;
-  color: #2b3645;
+  color: #323232;
   font-smoothing: antialiased;
 }
 
@@ -103,11 +103,11 @@ p:last-child {
 --------------------*/
 
 a {
-  color: #3499e0;
+  color: #1d527e;
   text-decoration: none;
 }
 a:hover {
-  color: #0888e3;
+  color: #0b4778;
   text-decoration: none;
 }
 
@@ -120,32 +120,32 @@ a:hover {
 /* Site */
 ::-webkit-selection {
   background-color: #CCE2FF;
-  color: #2b3645;
+  color: #323232;
 }
 ::-moz-selection {
   background-color: #CCE2FF;
-  color: #2b3645;
+  color: #323232;
 }
 ::selection {
   background-color: #CCE2FF;
-  color: #2b3645;
+  color: #323232;
 }
 
 /* Form */
 textarea::-webkit-selection,
 input::-webkit-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: #2b3645;
+  color: #323232;
 }
 textarea::-moz-selection,
 input::-moz-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: #2b3645;
+  color: #323232;
 }
 textarea::selection,
 input::selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: #2b3645;
+  color: #323232;
 }
 
 

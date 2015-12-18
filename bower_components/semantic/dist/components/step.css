@@ -81,7 +81,7 @@
   margin: 0em 0em;
   padding: 1.13333333em 2em;
   background: #FFFFFF;
-  color: #2b3645;
+  color: #323232;
   box-shadow: none;
   border-radius: 0em;
   border: none;
@@ -152,7 +152,7 @@
 .ui.steps .step .description {
   font-weight: normal;
   font-size: 0.93333333em;
-  color: #2b3645;
+  color: #323232;
 }
 .ui.steps .step > .description {
   width: 100%;
@@ -377,7 +377,7 @@
   background: #F3F4F5;
 }
 .ui.steps .step.active .title {
-  color: #3499e0;
+  color: #1d527e;
 }
 .ui.ordered.steps .step.active:before,
 .ui.steps .active.step .icon {
@@ -405,7 +405,7 @@
 .ui.steps a.active.step:hover {
   cursor: pointer;
   background: #DCDDDE;
-  color: #2b3645;
+  color: #323232;
 }
 
 /* Completed */

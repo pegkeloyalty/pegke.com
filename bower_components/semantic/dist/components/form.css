@@ -56,7 +56,7 @@
 .ui.form .field > label {
   display: block;
   margin: 0em 0em 0.26666667rem 0em;
-  color: #2b3645;
+  color: #323232;
   font-size: 0.93333333em;
   font-weight: bold;
   text-transform: none;
@@ -108,7 +108,7 @@
   font-size: 1em;
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
-  color: #2b3645;
+  color: #323232;
   border-radius: 0.26666667rem;
   box-shadow: 0em 0em 0em 0em transparent inset;
   -webkit-transition: color 0.1s ease, border-color 0.1s ease;
@@ -124,7 +124,7 @@
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
   outline: none;
-  color: #2b3645;
+  color: #323232;
   border-radius: 0.26666667rem;
   box-shadow: 0em 0em 0em 0em transparent inset;
   -webkit-transition: color 0.1s ease, border-color 0.1s ease;
@@ -164,7 +164,7 @@
   border-radius: 0.26666667rem;
   box-shadow: 0em 0em 0em 0em transparent inset;
   padding: 0.62em 0.93333333em;
-  color: #2b3645;
+  color: #323232;
   -webkit-transition: color 0.1s ease, border-color 0.1s ease;
           transition: color 0.1s ease, border-color 0.1s ease;
 }
@@ -308,22 +308,22 @@
 
 /* browsers require these rules separate */
 .ui.form ::-webkit-input-placeholder {
-  color: #b7c2d2;
+  color: #bebebe;
 }
 .ui.form ::-ms-input-placeholder {
-  color: #b7c2d2;
+  color: #bebebe;
 }
 .ui.form ::-moz-placeholder {
-  color: #b7c2d2;
+  color: #bebebe;
 }
 .ui.form :focus::-webkit-input-placeholder {
-  color: #788dab;
+  color: #8b8b8b;
 }
 .ui.form :focus::-ms-input-placeholder {
-  color: #788dab;
+  color: #8b8b8b;
 }
 .ui.form :focus::-moz-placeholder {
-  color: #788dab;
+  color: #8b8b8b;
 }
 
 /* Error Placeholder */
@@ -664,7 +664,7 @@
 .ui.form .required.field > .checkbox:after {
   margin: -0.2em 0em 0em 0.2em;
   content: '*';
-  color: #dd494b;
+  color: #ef4f3f;
 }
 .ui.form .required.fields:not(.grouped) > .field > label:after,
 .ui.form .required.fields.grouped > label:after,
@@ -712,7 +712,7 @@
 .ui.inverted.form input[type="url"] {
   background: #FFFFFF;
   border-color: rgba(255, 255, 255, 0.1);
-  color: #2b3645;
+  color: #323232;
   box-shadow: none;
 }
 
@@ -731,7 +731,7 @@
 }
 .ui.form .grouped.fields > label {
   margin: 0em 0em 0.26666667rem 0em;
-  color: #2b3645;
+  color: #323232;
   font-size: 0.93333333em;
   font-weight: bold;
   text-transform: none;
@@ -984,7 +984,7 @@
   vertical-align: baseline;
   font-size: 0.93333333em;
   font-weight: bold;
-  color: #2b3645;
+  color: #323232;
   text-transform: none;
 }
 

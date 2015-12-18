@@ -206,7 +206,7 @@ i.bordered.inverted.icon {
 /* Inverted Shapes */
 i.inverted.bordered.icon,
 i.inverted.circular.icon {
-  background-color: #1B1C1D !important;
+  background-color: #323232 !important;
   color: #FFFFFF !important;
 }
 i.inverted.icon {
@@ -220,14 +220,14 @@ i.inverted.icon {
 
 /* Red */
 i.red.icon {
-  color: #dd494b !important;
+  color: #ef4f3f !important;
 }
 i.inverted.red.icon {
   color: #FF695E !important;
 }
 i.inverted.bordered.red.icon,
 i.inverted.circular.red.icon {
-  background-color: #dd494b !important;
+  background-color: #ef4f3f !important;
   color: #FFFFFF !important;
 }
 
@@ -298,14 +298,14 @@ i.inverted.circular.teal.icon {
 
 /* Blue */
 i.blue.icon {
-  color: #3499e0 !important;
+  color: #1d527e !important;
 }
 i.inverted.blue.icon {
   color: #54C8FF !important;
 }
 i.inverted.bordered.blue.icon,
 i.inverted.circular.blue.icon {
-  background-color: #3499e0 !important;
+  background-color: #1d527e !important;
   color: #FFFFFF !important;
 }
 
@@ -376,14 +376,14 @@ i.inverted.circular.grey.icon {
 
 /* Black */
 i.black.icon {
-  color: #1B1C1D !important;
+  color: #323232 !important;
 }
 i.inverted.black.icon {
   color: #545454 !important;
 }
 i.inverted.bordeblack.black.icon,
 i.inverted.circular.black.icon {
-  background-color: #1B1C1D !important;
+  background-color: #323232 !important;
   color: #FFFFFF !important;
 }
 
@@ -479,7 +479,7 @@ i.icons .corner.icon {
   text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
 }
 i.icons .inverted.corner.icon {
-  text-shadow: -1px -1px 0 #1B1C1D, 1px -1px 0 #1B1C1D, -1px 1px 0 #1B1C1D, 1px 1px 0 #1B1C1D;
+  text-shadow: -1px -1px 0 #323232, 1px -1px 0 #323232, -1px 1px 0 #323232, 1px 1px 0 #323232;
 }
 /*
  * Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome

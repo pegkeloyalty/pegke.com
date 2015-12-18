@@ -503,10 +503,10 @@
 
 /* Red */
 .ui.red.segment:not(.inverted) {
-  border-top: 2px solid #dd494b;
+  border-top: 2px solid #ef4f3f;
 }
 .ui.inverted.red.segment {
-  background-color: #dd494b !important;
+  background-color: #ef4f3f !important;
   color: #FFFFFF !important;
 }
 
@@ -557,10 +557,10 @@
 
 /* Blue */
 .ui.blue.segment:not(.inverted) {
-  border-top: 2px solid #3499e0;
+  border-top: 2px solid #1d527e;
 }
 .ui.inverted.blue.segment {
-  background-color: #3499e0 !important;
+  background-color: #1d527e !important;
   color: #FFFFFF !important;
 }
 
@@ -611,10 +611,10 @@
 
 /* Black */
 .ui.black.segment:not(.inverted) {
-  border-top: 2px solid #1B1C1D;
+  border-top: 2px solid #323232;
 }
 .ui.inverted.black.segment {
-  background-color: #1B1C1D !important;
+  background-color: #323232 !important;
   color: #FFFFFF !important;
 }
 
@@ -656,13 +656,13 @@
 }
 .ui.inverted.segment,
 .ui.primary.inverted.segment {
-  background: #1B1C1D;
+  background: #323232;
   color: rgba(255, 255, 255, 0.9);
 }
 
 /* Nested */
 .ui.inverted.segment .segment {
-  color: #2b3645;
+  color: #323232;
 }
 .ui.inverted.segment .inverted.segment {
   color: rgba(255, 255, 255, 0.9);
@@ -684,8 +684,8 @@
   color: rgba(0, 0, 0, 0.6);
 }
 .ui.secondary.inverted.segment {
-  background: #4c4f52 -webkit-linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-  background: #4c4f52 linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+  background: #656565 -webkit-linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+  background: #656565 linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -695,8 +695,8 @@
   color: rgba(0, 0, 0, 0.6);
 }
 .ui.tertiary.inverted.segment {
-  background: #717579 -webkit-linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%);
-  background: #717579 linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%);
+  background: #8b8b8b -webkit-linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%);
+  background: #8b8b8b linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%);
   color: rgba(255, 255, 255, 0.8);
 }
 

@@ -189,7 +189,7 @@
   max-width: auto;
   font-size: 1em;
   line-height: 1.4285em;
-  color: #2b3645;
+  color: #323232;
 }
 
 /*--------------
@@ -244,7 +244,7 @@
   color: rgba(0, 0, 0, 0.85);
 }
 .ui.items > .item > .content > a.header:hover {
-  color: #0888e3;
+  color: #0b4778;
 }
 
 /* Meta */
@@ -252,7 +252,7 @@
   color: rgba(0, 0, 0, 0.4);
 }
 .ui.items > .item .meta > a:not(.ui):hover {
-  color: #2b3645;
+  color: #323232;
 }
 
 /*--------------
@@ -458,7 +458,7 @@
 }
 .ui.items a.item:hover .content .header,
 .ui.link.items > .item:hover .content .header {
-  color: #0888e3;
+  color: #0b4778;
 }
 
 /*--------------

@@ -24,7 +24,7 @@
   box-shadow: none;
   border-radius: 0.26666667rem;
   text-align: left;
-  color: #2b3645;
+  color: #323232;
   border-collapse: separate;
   border-spacing: 0px;
 }
@@ -56,7 +56,7 @@
   cursor: auto;
   background: #F9FAFB;
   text-align: inherit;
-  color: #2b3645;
+  color: #323232;
   padding: 0.93333333em 0.73333333em;
   vertical-align: inherit;
   font-style: none;
@@ -87,7 +87,7 @@
   border-top: 1px solid rgba(34, 36, 38, 0.15);
   background: #F9FAFB;
   text-align: inherit;
-  color: #2b3645;
+  color: #323232;
   padding: 0.73333333em 0.73333333em;
   vertical-align: middle;
   font-style: normal;
@@ -342,12 +342,12 @@
 
 .ui.table tr.active,
 .ui.table td.active {
-  box-shadow: 0px 0px 0px #2b3645 inset;
+  box-shadow: 0px 0px 0px #323232 inset;
 }
 .ui.table tr.active,
 .ui.table td.active {
   background: #E0E0E0 !important;
-  color: #2b3645 !important;
+  color: #323232 !important;
 }
 
 /*--------------
@@ -508,7 +508,7 @@
 .ui.table tr td.selectable.active:hover,
 .ui.selectable.table tr:hover td.active {
   background: #E0E0E0 !important;
-  color: #2b3645 !important;
+  color: #323232 !important;
 }
 .ui.selectable.table tr.positive:hover,
 .ui.table tr td.selectable.positive:hover,
@@ -605,10 +605,10 @@
 
 /* Red */
 .ui.red.table {
-  border-top: 0.2em solid #dd494b;
+  border-top: 0.2em solid #ef4f3f;
 }
 .ui.inverted.red.table {
-  background-color: #dd494b !important;
+  background-color: #ef4f3f !important;
   color: #FFFFFF !important;
 }
 
@@ -659,10 +659,10 @@
 
 /* Blue */
 .ui.blue.table {
-  border-top: 0.2em solid #3499e0;
+  border-top: 0.2em solid #1d527e;
 }
 .ui.inverted.blue.table {
-  background-color: #3499e0 !important;
+  background-color: #1d527e !important;
   color: #FFFFFF !important;
 }
 
@@ -713,10 +713,10 @@
 
 /* Black */
 .ui.black.table {
-  border-top: 0.2em solid #1B1C1D;
+  border-top: 0.2em solid #323232;
 }
 .ui.inverted.black.table {
-  background-color: #1B1C1D !important;
+  background-color: #323232 !important;
   color: #FFFFFF !important;
 }
 
@@ -849,7 +849,7 @@
   cursor: pointer;
   white-space: nowrap;
   border-left: 1px solid rgba(34, 36, 38, 0.15);
-  color: #2b3645;
+  color: #323232;
 }
 .ui.sortable.table thead th:first-child {
   border-left: none;

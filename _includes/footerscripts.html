@@ -2,9 +2,12 @@
 head.ready(function () {
   $(document).ready(function() {
     $("#nav").scrollspy();
-    $('#nav a').click(function() {
-      $('#nav a').removeClass('active');
+    $('.hashnav a').click(function() {
+      $('.hashnav a').removeClass('active');
       $(this).addClass('active');
+      $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top - 80
+      }, 200);
     });
   });
   hljs.initHighlightingOnLoad();
@@ -17,7 +20,7 @@ head.ready(function () {
       navigationTooltips: ['home', 'benefits', 'testimonials', 'businesses', 'footer'],
       navigation: true,
       navigationPosition: 'right',
-      sectionsColor: ['#000', '#DD2D4A', '#F1FFE7', 'whitesmoke', '#000'],
+      sectionsColor: ['#000', '#DD2D4A', '#F1FFE7', 'whitesmoke', '#323232'],
     });
   }
 

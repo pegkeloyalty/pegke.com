@@ -24,7 +24,7 @@
   font-weight: 900;
   line-height: 1.2857em;
   text-transform: none;
-  color: #2b3645;
+  color: #323232;
 }
 .ui.header:first-child {
   margin-top: -0.14285em;
@@ -323,13 +323,13 @@ h5.ui.header .sub.header {
 /*--- Red ---*/
 
 .ui.red.header {
-  color: #dd494b !important;
+  color: #ef4f3f !important;
 }
 a.ui.red.header:hover {
-  color: #e12b2e !important;
+  color: #f7311e !important;
 }
 .ui.red.dividing.header {
-  border-bottom: 2px solid #dd494b;
+  border-bottom: 2px solid #ef4f3f;
 }
 
 /* Inverted */
@@ -443,13 +443,13 @@ a.ui.inverted.teal.header:hover {
 /*--- Blue ---*/
 
 .ui.blue.header {
-  color: #3499e0 !important;
+  color: #1d527e !important;
 }
 a.ui.blue.header:hover {
-  color: #188fe3 !important;
+  color: #14456d !important;
 }
 .ui.blue.dividing.header {
-  border-bottom: 2px solid #3499e0;
+  border-bottom: 2px solid #1d527e;
 }
 
 /* Inverted */
