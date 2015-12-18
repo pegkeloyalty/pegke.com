@@ -495,3 +495,19 @@ blockquote.message {
   font-size: 1rem !important;
   line-height: 22px;
 }
+.go-top {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 7px;
+  border-radius: 50%;
+height: 40px;
+width: 40px;
+}
+.go-top:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+  color: #FF0000 !important
+}

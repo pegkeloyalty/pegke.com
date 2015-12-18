@@ -1,3 +1,4 @@
+<a href="#top" class="go-top" title="Scroll to Top"><i class="icon eject large"></i></a>
 <script type="text/javascript">
 head.ready(function () {
   $(document).ready(function() {
@@ -62,6 +63,18 @@ head.ready(function () {
         $(this).addClass("active");
       }
     });
+
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 200) {
+        $('.go-top').fadeIn(200);
+      } else {
+        $('.go-top').fadeOut(200);
+      }
+    });
+    $('.go-top').click(function(event) {
+      event.preventDefault();
+      $('html, body').animate({scrollTop: 0}, 300);
+    })
 
   });
 
