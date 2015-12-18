@@ -31,7 +31,7 @@ h1, h2, h3, h4 {
   -moz-osx-font-smoothing: grayscale;
 }
 h2, h3, h4 {
-  font-weight: 400 !important;
+  font-weight: 600 !important;
 }
 .masthead .fp-tableCell {
   position: relative;
@@ -119,7 +119,7 @@ h2, h3, h4 {
 .fp-controlArrow.fp-next:before{
   content: "\f105"
 }
-.ui.text {
+.ui.text, p {
   line-height: 1.5;
   font-size: 1.13333333rem
 }

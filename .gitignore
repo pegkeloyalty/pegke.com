@@ -6,7 +6,6 @@ _site
 bower_components/semantic/examples
 bower_components/semantic/node_modules
 bower_components/semantic/tasks
-bower_components/semantic/src
 bower_components/semantic/_site
 bower_components/jquery/src
 bower_components/fullpage.js/pure javascript (Alpha)
