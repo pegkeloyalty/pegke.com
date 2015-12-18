@@ -22,15 +22,30 @@
      "{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}",
      "{{ "/bower_components/semantic/dist/semantic.min.js" | prepend: site.baseurl }}",
      "{{ "/public/js/jquery.ajaxchimp.js" | prepend: site.baseurl }}",
-     "{{ "/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js" | prepend: site.baseurl }}",
-     "{{ "/bower_components/fullpage.js/jquery.fullPage.min.js" | prepend: site.baseurl }}",
      "{{ "/public/js/scrollspy.js" | prepend: site.baseurl }}",
      "https://cdn.jsdelivr.net/highlight.js/9.0.0/styles/default.min.css",
      "https://cdn.jsdelivr.net/highlight.js/9.0.0/highlight.min.js",
-     "{{ "/bower_components/fullpage.js/jquery.fullPage.css" | prepend: site.baseurl }}",
      "{{ "/public/css/style.css" | prepend: site.baseurl }}",
      "{{ "/public/css/responsive.css" | prepend: site.baseurl }}"
    );
+   var isFront = (window.location.pathname === '/') ? true : false;
+   head.test(isFront, [
+     "{{ "/bower_components/fullpage.js/jquery.fullPage.min.js" | prepend: site.baseurl }}",
+     "{{ "/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js" | prepend: site.baseurl }}",
+     "{{ "/bower_components/fullpage.js/jquery.fullPage.css" | prepend: site.baseurl }}",
+   ],
+   "",
+   function() {
+       $('#fullpage').fullpage({
+         animateAnchor: true,
+         scrollOverflow: true,
+         navigationTooltips: ['home', 'benefits', 'testimonials', 'businesses', 'footer'],
+         navigation: true,
+         navigationPosition: 'right',
+         sectionsColor: ['#000', '#DD2D4A', '#F1FFE7', 'whitesmoke', '#323232'],
+       });
+   });
+
   </script>
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>

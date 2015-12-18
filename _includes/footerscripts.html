@@ -1,6 +1,7 @@
 <a href="#top" class="go-top" title="Scroll to Top"><i class="icon eject large"></i></a>
 <script type="text/javascript">
 head.ready(function () {
+
   $(document).ready(function() {
     $("#nav").scrollspy();
     $('.hashnav a').click(function() {
@@ -13,17 +14,7 @@ head.ready(function () {
   });
   hljs.initHighlightingOnLoad();
 
-  if(jQuery().fullpage) {
-    //run plugin dependent code
-    $('#fullpage').fullpage({
-      animateAnchor: true,
-      scrollOverflow: true,
-      navigationTooltips: ['home', 'benefits', 'testimonials', 'businesses', 'footer'],
-      navigation: true,
-      navigationPosition: 'right',
-      sectionsColor: ['#000', '#DD2D4A', '#F1FFE7', 'whitesmoke', '#323232'],
-    });
-  }
+
 
   $('.menuinit')
   .popup({

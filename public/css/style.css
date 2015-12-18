@@ -102,19 +102,19 @@ h2, h3, h4 {
 .fp-controlArrow {
   font-family: Icons;
   font-style: normal;
-  border: 0 none;
+  border: 0 none !important;
   line-height: 1;
   vertical-align: middle;
   font-size: 8em
 }
 .fp-controlArrow.fp-next {
-  right: 55px;
+  right: 65px !important;
 }
 .fp-controlArrow.fp-prev:before{
   content: "\f104"
 }
 .fp-controlArrow.fp-prev {
-  left: 55px;
+  left: 55px !important;
 }
 .fp-controlArrow.fp-next:before{
   content: "\f105"
@@ -484,6 +484,9 @@ blockquote.message {
 .ui.header .sub.header {
   font-size: 0.9em !important;
   color: rgba(0, 0, 0, 0.38)
+}
+.ui.header .sub.header.tiny {
+  font-size: 0.9rem !important;
 }
 .ui.horizontal.divider {
   line-height: 1.3;
