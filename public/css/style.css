@@ -491,3 +491,7 @@ blockquote.message {
 .label.tags {
   margin-bottom: 7px;
 }
+.biztyps .sub.header.feat {
+  font-size: 1rem !important;
+  line-height: 22px;
+}
