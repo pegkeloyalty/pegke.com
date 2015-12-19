@@ -3,8 +3,6 @@ _site
 .jekyll-metadata
 
 node_modules
-public/css
-public/img
 
 .DS_Store
 bower_components/semantic/examples
