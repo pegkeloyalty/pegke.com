@@ -5,9 +5,6 @@
 body > .grid {
   height: 100%;
 }
-.image {
-  margin-top: -100px;
-}
 .glitch {
   position: relative;
   animation: glitch 2s steps(100) infinite;

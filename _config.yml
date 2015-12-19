@@ -42,6 +42,11 @@ exclude:
   - bower_components/jquery/src
   - bower_components/fullpage.js/pure javascript (Alpha)
   - bower_components/semantic/dist/components
+  - public/imgfull
+  - public/cssfull
+  - package.json
+  - node_modules
+  - gulpfile.js
 
 # Custom Settings
 mailchimp_url: //pegke.us9.list-manage.com/subscribe/post?u=49c28e4c02bbc2d7dfd64815e&amp;id=20b2bd793b

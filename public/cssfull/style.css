@@ -126,7 +126,7 @@ h2, h3, h4 {
 .menuinit .sidebar {
   cursor: pointer;
 }
-.front #header {
+.mobile .front #header {
   background: transparent;
 }
 .not-front #header {
@@ -160,7 +160,7 @@ h2, h3, h4 {
   display: block;
 }
 .box-shadow,
-.mobile .box-shadow {
+.not-front .mobile .box-shadow {
   background-color: #FFF;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
