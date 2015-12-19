@@ -15,6 +15,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://beta.pegke.com" # the base hostname & protocol for your site
 lighturl: http://lightrains.com
 permalink:  :title
+lang: en_US
 
 twitter_username: pegkeapp
 github_username:  pegkeloyalty

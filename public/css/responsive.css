@@ -57,6 +57,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    padding: 50px 0;
   }
 
   .front #header {
@@ -73,12 +74,17 @@
     background: #ECF2F2;
   }
   .pagefive {
-    background: #FEFBEC;
+    background: #222 !important;
+  }
+  .ui.footer.segment,
+  .footer.segment.inverted {
+    margin: 0;
+    padding: 0
   }
   .ui.vertical.stripe {
     padding: 20px 0;
   }
-  .white {
+  .mobile .pagetwo .white, .mobile .pagetwo.white {
     color: #323232 !important;
   }
 

@@ -2,6 +2,8 @@
 {% if page.description %} {% assign description = page.description %} {% else %} {% assign description = site.description %} {% endif %}
 {% if page.keywords %} {% assign keywords = page.keywords %} {% else %} {% assign keywords = site.keywords %} {% endif %}
 {% if page.cover %} {% assign cover = page.cover %} {% else %} {% assign cover = site.cover %} {% endif %}
+{% if page.type == 'blog' %} {% assign ogtype = 'article' %} {% else %} {% assign ogtype = 'website' %} {% endif %}
+
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="{{ site.twitter_username }}">
@@ -10,7 +12,7 @@
 <meta name="twitter:image" content="{{ site.url }}{{ site.cover }}" />
 <!-- Open Graph -->
 <meta property="og:locale" content="{{ site.lang }}">
-<meta property="og:type" content="article">
+<meta property="og:type" content="{{ ogtype }}">
 <meta property="og:title" content="{{ title }}">
 <meta property="og:description" content="{{ description }}">
 <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">

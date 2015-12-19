@@ -1,7 +1,6 @@
 <script type="text/javascript">
 head.ready(function () {
 
-
   $('.cta').click(function() {
     $('.ui.modal.signup').modal('show');
   });
@@ -22,8 +21,8 @@ head.ready(function () {
     var pathname = window.location.pathname;
     var desired = pathname.replace(/[^\w\s]/gi, '')
     $(".menu.right a, .mobilemenu a, .footer").each(function(index) {
-      var thishref = $(this).attr('href').replace(/[^\w\s]/gi, '')
-
+      var ahref = ($(this).attr('href')) ? $(this).attr('href') : 'notfound';
+      var thishref = ahref.replace(/[^\w\s]/gi, '');
       if (desired === thishref ) {
         $(this).addClass("active");
       }
