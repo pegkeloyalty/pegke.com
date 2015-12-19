@@ -10,8 +10,10 @@ layout: default
       <div class="ui text" itemprop="articleBody">
         {{ content }}
       </div>
+      {% include disqus.html %}
     </article>
-    <div class="five wide column">
+
+    <div class="five wide column mobile hidden">
 
       <div class="ui rail">
         <div class="ui sticky">

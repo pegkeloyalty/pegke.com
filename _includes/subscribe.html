@@ -1,8 +1,10 @@
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
 <h4 class="ui horizontal divider header">
   Subscribe
 </h4>
 <div class="subscribe">
-  <form class="" action="{{ site.mailchimp_url }}" method="post" id="mailchimp">
+  <form action="{{ site.mailchimp_url }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
     <div class="ui fluid action input">
       <input id="mc-email" type="email" name="email" placeholder="Email..." required>
       <input type="text" class="ohidden" name="b_49c28e4c02bbc2d7dfd64815e_20b2bd793b" tabindex="-1" value="" id="40" >
@@ -10,4 +12,8 @@
     </div>
     <label for="mc-email" class="error-message success-message"></label>
   </form>
+  <div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>
 </div>

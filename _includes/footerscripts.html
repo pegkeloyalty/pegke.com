@@ -1,48 +1,18 @@
-<a href="#top" class="go-top" title="Scroll to Top"><i class="icon eject large"></i></a>
 <script type="text/javascript">
 head.ready(function () {
 
-  
-  $(document).ready(function() {
-    $("#nav").scrollspy();
-    $('.hashnav a').click(function() {
-      $('.hashnav a').removeClass('active');
-      $(this).addClass('active');
-      $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top - 80
-      }, 200);
-    });
-  });
-  hljs.initHighlightingOnLoad();
-
-
-
-  $('.menuinit')
-  .popup({
-    inline: true,
-    on: 'click',
-    transition: 'scale',
-    hoverable: true,
-    position: 'bottom left',
-    delay: {
-      hide: 800
-    }
-  });
 
   $('.cta').click(function() {
     $('.ui.modal.signup').modal('show');
   });
   $(document).ready(function() {
-
-    $('#mailchimp').ajaxChimp();
-
     $('.costs button').click(function() {
       $('.costs button').removeClass('positive');
       var selcur = $(this).attr('data-curr');
       $(this).addClass('positive');
       if( selcur == 'usd' ) {
         $('.currency').text('$');
-        $('.amt').text('0.30');
+        $('.amt').text('0.006');
       } else if( selcur == 'inr' ) {
         $('.currency').text('₹');
         $('.amt').text('0.42');
@@ -50,8 +20,11 @@ head.ready(function () {
     });
 
     var pathname = window.location.pathname;
-    $(".menu.right a, .mobilemenu a").each(function(index) {
-      if (pathname === $(this).attr('href') ) {
+    var desired = pathname.replace(/[^\w\s]/gi, '')
+    $(".menu.right a, .mobilemenu a, .footer").each(function(index) {
+      var thishref = $(this).attr('href').replace(/[^\w\s]/gi, '')
+
+      if (desired === thishref ) {
         $(this).addClass("active");
       }
     });

@@ -89,7 +89,6 @@ h2, h3, h4 {
   position: fixed;
   top: 50%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
 .pitch h1.header {
@@ -140,16 +139,16 @@ h2, h3, h4 {
   width: 100%;
   top: 0px;
 }
-.front .box-shadow {
+.fp-viewing-0 .box-shadow {
   background: transparent;
   box-shadow: none;
 }
-.front .ui.secondary.menu a {
+.fp-viewing-0 .ui.secondary.menu a {
   color: #FFF;
 }
-.fp-viewing-2 .ui.secondary.menu a,
-.fp-viewing-3 .ui.secondary.menu a,
-.fp-viewing-4 .ui.secondary.menu a {
+.fp-viewing-2 .ui.secondary.menu a:not(.button),
+.fp-viewing-3 .ui.secondary.menu a:not(.button),
+.fp-viewing-4 .ui.secondary.menu a:not(.button) {
   color: #333;
 }
 .olive {
@@ -160,7 +159,8 @@ h2, h3, h4 {
   margin: 5px 0 !important;
   display: block;
 }
-.box-shadow {
+.box-shadow,
+.mobile .box-shadow {
   background-color: #FFF;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -197,7 +197,7 @@ div.eight.wide.column.centered {
   text-align: center;
 }
 .ui.contianer.fluid.calculator {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 .pricingrow,
 .step {
@@ -432,7 +432,7 @@ a.ui.nav:active {
 .fp-viewing-2.front #header,
 .fp-viewing-3.front #header,
 .fp-viewing-4.front #header {
-  background-color: #CCC;
+  background-color: #FFF;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -467,9 +467,8 @@ blockquote.message {
 .currency, .duration{
   color: #1bbc9d;
 }
-.ui.secondary.menu .dropdown.item:hover,
-.ui.secondary.menu .link.item:hover,
-.ui.secondary.menu a.item:hover {
+
+.fp-viewing-0 .ui.secondary.menu a.item:hover {
   background: rgba(255, 255, 255, 0.65) !important
 }
 .not-front .ui.secondary.menu a.item:hover {
@@ -493,19 +492,19 @@ blockquote.message {
   line-height: 22px;
 }
 .go-top {
-	position: fixed;
-	bottom: 2rem;
-	right: 2rem;
-	text-decoration: none;
-	color: white;
-	background-color: rgba(0, 0, 0, 0.3);
-	padding: 7px;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 7px;
   border-radius: 50%;
-height: 40px;
-width: 40px;
+  height: 40px;
+  width: 40px;
 }
 .go-top:hover {
-	background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   color: #FF0000 !important
 }
 .pagetwo h2.header {
