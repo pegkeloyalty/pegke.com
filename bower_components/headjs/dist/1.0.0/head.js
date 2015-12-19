@@ -124,17 +124,17 @@
         browser = "ie";
         version = doc.documentMode || version;
         break;
-        
+
     case "firefox":
         browser = "ff";
         break;
-        
+
     case "ipod":
     case "ipad":
     case "iphone":
         browser = "ios";
         break;
-        
+
     case "webkit":
         browser = "safari";
         break;
@@ -365,7 +365,7 @@
     }
 
     var tests = {
-        // should we seperate linear/radial ? 
+        // should we seperate linear/radial ?
         // seems like some browsers need a test for prefix http://caniuse.com/#feat=css-gradients
         gradient: function () {
             var s1 = "background-image:",
@@ -439,13 +439,13 @@
             switch (browser) {
                 case "ie":
                     return version >= 9;
-                    
+
                 case "chrome":
                     return version >= 13;
-                    
+
                 case "ff":
                     return version >= 6;
-                    
+
                 case "ios":
                     return version >= 5;
 
@@ -454,10 +454,10 @@
 
                 case "webkit":
                     return version >= 5.1;
-                    
+
                 case "opera":
                     return version >= 10;
-                    
+
                 default:
                     return false;
             }
@@ -910,7 +910,7 @@
                 // release event listeners
                 ele.onload = ele.onreadystatechange = ele.onerror = null;
 
-                // do callback   
+                // do callback
                 callback();
             }
         }
@@ -950,7 +950,7 @@
 
             // Set counter to zero
             asset.cssRetries = 0;
-            asset.cssTimeout = win.setTimeout(isCssLoaded, 500);         
+            asset.cssTimeout = win.setTimeout(isCssLoaded, 500);
         }
         else {
             ele      = doc.createElement("script");
@@ -980,7 +980,7 @@
         // use insertBefore to keep IE from throwing Operation Aborted (thx Bryan Forbes!)
         var head = doc.head || doc.getElementsByTagName("head")[0];
 
-        // but insert at end of head, because otherwise if it is a stylesheet, it will not override values      
+        // but insert at end of head, because otherwise if it is a stylesheet, it will not override values
         head.insertBefore(ele, head.lastChild);
     }
 

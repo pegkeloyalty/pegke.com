@@ -521,3 +521,6 @@ blockquote.message {
   font-size: 14px !important;
   font-weight: 700;
 }
+html.ios, html.ios body {
+  height: auto !important;
+}

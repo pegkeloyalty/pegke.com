@@ -17,6 +17,14 @@
   <link rel="shortlink" href="http://bit.ly/pegkeweb">
   <link rel="preload" href="{{ "/public/img/1.jpg" | prepend: site.baseurl }}">
 
+  <script>
+  var head_conf = {
+    screens    : [],
+    screensCss: { "gt": false, "gte": false, "lt": false, "lte": false, "eq": false },
+    browsers : [],
+    browserCss: { "gt": false, "gte": false, "lt": false, "lte": false, "eq": false }
+  };
+  </script>
   <script src="{{ "/bower_components/headjs/dist/1.0.0/head.min.js" | prepend: site.baseurl }}"></script>
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -27,4 +35,4 @@
   <!--  Favicons -->
   {% include favicons.html %}
 
-  </head>
+</head>
