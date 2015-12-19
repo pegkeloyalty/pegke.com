@@ -1,3 +1,68 @@
+
+  {% if page.permalink == 'index.html' %}
+  <script>
+  head.load(
+    "{{ "/bower_components/semantic/dist/semantic.min.css" | prepend: site.baseurl }}",
+    "{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}",
+    "{{ "/bower_components/semantic/dist/semantic.min.js" | prepend: site.baseurl }}",
+    "{{ "/public/css/style.css" | prepend: site.baseurl }}",
+    "{{ "/public/css/responsive.css" | prepend: site.baseurl }}",
+    "{{ "/bower_components/fullpage.js/jquery.fullPage.min.js" | prepend: site.baseurl }}",
+    "{{ "/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js" | prepend: site.baseurl }}",
+    "{{ "/bower_components/fullpage.js/jquery.fullPage.css" | prepend: site.baseurl }}"
+  );
+  head.ready(function () {
+    if(! head.mobile) {
+    $('#fullpage').fullpage({
+      animateAnchor: true,
+      scrollOverflow: true,
+      navigationTooltips: ['home', 'benefits', 'testimonials', 'businesses', 'footer'],
+      navigation: true,
+      navigationPosition: 'right',
+      sectionsColor: ['#000', '#DD2D4A', '#F1FFE7', 'whitesmoke', '#222222'],
+    });
+  }
+  });
+  </script>
+  {% elsif page.permalink == '/api/' %}
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <script>
+  head.load(
+    "{{ "/bower_components/semantic/dist/semantic.min.css" | prepend: site.baseurl }}",
+    "{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}",
+    "{{ "/bower_components/semantic/dist/semantic.min.js" | prepend: site.baseurl }}",
+    "{{ "/public/js/scrollspy.js" | prepend: site.baseurl }}",
+    "https://cdn.jsdelivr.net/highlight.js/9.0.0/styles/default.min.css",
+    "https://cdn.jsdelivr.net/highlight.js/9.0.0/highlight.min.js",
+    "{{ "/public/css/style.css" | prepend: site.baseurl }}",
+    "{{ "/public/css/responsive.css" | prepend: site.baseurl }}"
+  );
+  head.ready(function () {
+    $(document).ready(function() {
+      $(".hashnav").scrollspy();
+      $('.hashnav a').click(function() {
+        $('.hashnav a').removeClass('active');
+        $(this).addClass('active');
+        $('html, body').animate({
+          scrollTop: $($(this).attr('href')).offset().top - 80
+        }, 200);
+      });
+    });
+    hljs.initHighlightingOnLoad();
+  });
+  </script>
+  {% else %}
+  <script>
+  head.load(
+    "{{ "/bower_components/semantic/dist/semantic.min.css" | prepend: site.baseurl }}",
+    "{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}",
+    "{{ "/bower_components/semantic/dist/semantic.min.js" | prepend: site.baseurl }}",
+    "{{ "/public/css/style.css" | prepend: site.baseurl }}",
+    "{{ "/public/css/responsive.css" | prepend: site.baseurl }}"
+  );
+  </script>
+  {% endif %}
+  
 <script type="text/javascript">
 head.ready(function () {
 
@@ -21,7 +86,7 @@ head.ready(function () {
     var pathname = window.location.pathname;
     var desired = pathname.replace(/[^\w\s]/gi, '')
     $(".menu.right a, .mobilemenu a, .footer").each(function(index) {
-      var ahref = ($(this).attr('href')) ? $(this).attr('href') : 'notfound';
+      var ahref = ($(this).attr('href')) ? $(this).attr('href') : 'not';
       var thishref = ahref.replace(/[^\w\s]/gi, '');
       if (desired === thishref ) {
         $(this).addClass("active");
