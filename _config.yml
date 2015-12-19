@@ -12,7 +12,7 @@ description: Customer Loyalty &amp; Retention Management Software, integrates wi
 keywords: customer loylaty, loyalty software, retail loyalty program, loyalty program, reward points, customer loylaty program, retention management
 productname: Pegke Loyalty
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://beta.pegke.com" # the base hostname & protocol for your site
+url: "https://pegke.com" # the base hostname & protocol for your site
 lighturl: http://lightrains.com
 permalink:  :title
 lang: en_US
