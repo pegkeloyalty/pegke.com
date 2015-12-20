@@ -10,7 +10,7 @@ title: Customer Loyalty &amp; Retention Management Software
 email: hello@pegke.com
 description: Customer Loyalty &amp; Retention Management Software, integrates with merchant POS systems to give consumers a single identity to earn business-specific rewards
 keywords: customer loylaty, loyalty software, retail loyalty program, loyalty program, reward points, customer loylaty program, retention management
-productname: Pegke Loyalty
+productname: Pegke Loyalty &#8482;
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://beta.pegke.com" # the base hostname & protocol for your site
 lighturl: http://lightrains.com
@@ -29,6 +29,10 @@ dashboard:
   api_base: https://pegke.com/v1/
   app_down: https://pegke.com/apps
 
+apps:
+  android: https://pegke.com/
+  apple: https://pegke.com/
+  windows: https://pegke.com/
 # Build settings
 markdown: kramdown
 encoding: UTF-8

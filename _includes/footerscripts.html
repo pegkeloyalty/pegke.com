@@ -1,17 +1,27 @@
 
-  {% if page.permalink == 'index.html' %}
-  <script>
-  head.load(
-    "{{ "/bower_components/semantic/dist/semantic.min.css" | prepend: site.baseurl }}",
-    "{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}",
-    "{{ "/bower_components/semantic/dist/semantic.min.js" | prepend: site.baseurl }}",
-    "{{ "/public/css/style.min.css" | prepend: site.baseurl }}",
-    "{{ "/bower_components/fullpage.js/jquery.fullPage.min.js" | prepend: site.baseurl }}",
-    "{{ "/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js" | prepend: site.baseurl }}",
-    "{{ "/bower_components/fullpage.js/jquery.fullPage.css" | prepend: site.baseurl }}"
-  );
-  head.ready(function () {
-    if(! head.mobile) {
+{% if page.permalink == 'index.html' %}
+<script>
+head.load(
+  "{{ "/bower_components/semantic/dist/semantic.min.css" | prepend: site.baseurl }}",
+  "{{ "/public/css/css.combined.min.css" | prepend: site.baseurl }}",
+  "{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}",
+  "{{ "/bower_components/semantic/dist/semantic.min.js" | prepend: site.baseurl }}",
+  "{{ "/bower_components/fullpage.js/jquery.fullPage.min.js" | prepend: site.baseurl }}",
+  "{{ "/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js" | prepend: site.baseurl }}"
+);
+head.ready(function () {
+
+  $('#header').removeClass('box-shadow');
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 400) {
+      $('#header').addClass('box-shadow');
+    } else {
+      $('#header').removeClass('box-shadow');
+    }
+  });
+
+  if(! head.mobile) {
     $('#fullpage').fullpage({
       animateAnchor: true,
       scrollOverflow: true,
@@ -21,44 +31,44 @@
       sectionsColor: ['#000', '#F8E985', '#DEEEEB', 'ECF2F2', '#222222'],
     });
   }
-  });
-  </script>
-  {% elsif page.permalink == '/api/' %}
-  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-  <script>
-  head.load(
-    "{{ "/bower_components/semantic/dist/semantic.min.css" | prepend: site.baseurl }}",
-    "{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}",
-    "{{ "/bower_components/semantic/dist/semantic.min.js" | prepend: site.baseurl }}",
-    "{{ "/public/js/scrollspy.js" | prepend: site.baseurl }}",
-    "https://cdn.jsdelivr.net/highlight.js/9.0.0/styles/default.min.css",
-    "https://cdn.jsdelivr.net/highlight.js/9.0.0/highlight.min.js",
-    "{{ "/public/css/style.min.css" | prepend: site.baseurl }}",
-  );
-  head.ready(function () {
-    $(document).ready(function() {
-      $(".hashnav").scrollspy();
-      $('.hashnav a').click(function() {
-        $('.hashnav a').removeClass('active');
-        $(this).addClass('active');
-        $('html, body').animate({
-          scrollTop: $($(this).attr('href')).offset().top - 80
-        }, 200);
-      });
+});
+</script>
+{% elsif page.permalink == '/api/' %}
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<script>
+head.load(
+  "{{ "/bower_components/semantic/dist/semantic.min.css" | prepend: site.baseurl }}",
+  "{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}",
+  "{{ "/bower_components/semantic/dist/semantic.min.js" | prepend: site.baseurl }}",
+  "{{ "/public/js/scrollspy.js" | prepend: site.baseurl }}",
+  "https://cdn.jsdelivr.net/highlight.js/9.0.0/styles/default.min.css",
+  "https://cdn.jsdelivr.net/highlight.js/9.0.0/highlight.min.js",
+  "{{ "/public/css/style.min.css" | prepend: site.baseurl }}"
+);
+head.ready(function () {
+  $(document).ready(function() {
+    $(".hashnav").scrollspy();
+    $('.hashnav a').click(function() {
+      $('.hashnav a').removeClass('active');
+      $(this).addClass('active');
+      $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top - 80
+      }, 200);
     });
-    hljs.initHighlightingOnLoad();
   });
-  </script>
-  {% else %}
-  <script>
-  head.load(
-    "{{ "/bower_components/semantic/dist/semantic.min.css" | prepend: site.baseurl }}",
-    "{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}",
-    "{{ "/bower_components/semantic/dist/semantic.min.js" | prepend: site.baseurl }}",
-    "{{ "/public/css/style.min.css" | prepend: site.baseurl }}"
-  );
-  </script>
-  {% endif %}
+  hljs.initHighlightingOnLoad();
+});
+</script>
+{% else %}
+<script>
+head.load(
+  "{{ "/bower_components/semantic/dist/semantic.min.css" | prepend: site.baseurl }}",
+  "{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}",
+  "{{ "/bower_components/semantic/dist/semantic.min.js" | prepend: site.baseurl }}",
+  "{{ "/public/css/style.min.css" | prepend: site.baseurl }}"
+);
+</script>
+{% endif %}
 
 <script type="text/javascript">
 head.ready(function () {
@@ -91,10 +101,10 @@ head.ready(function () {
     });
 
     $(window).scroll(function() {
-      if ($(this).scrollTop() > 200) {
-        $('.go-top').fadeIn(200);
+      if ($(this).scrollTop() > 400) {
+        $('.go-top').fadeIn(400);
       } else {
-        $('.go-top').fadeOut(200);
+        $('.go-top').fadeOut(400);
       }
     });
     $('.go-top').click(function(event) {
@@ -148,6 +158,13 @@ head.ready(function () {
         }, {
           type: 'maxLength[10]',
           prompt: 'Your 10 digit Mobile Number'
+        }]
+      },
+      country: {
+        identifier: 'country',
+        rules: [{
+          type: 'empty',
+          prompt: 'Please chose your country'
         }]
       },
       email: {
@@ -222,6 +239,13 @@ head.ready(function () {
     .modal('show');
   });
 
+  // $('#checkpoints').on('submit', function(e) {
+  //   e.preventDefault();
+  //   var el = $(this);
+  //   $('#sbmit').addClass('loading');
+  //   // el.addClass.attr('disabled', "true");
+  // });
+
   $('#sg-signup').click(function() {
     $(this).addClass('loading');
     $('#sg-email').attr('disabled', "true");
@@ -232,6 +256,39 @@ head.ready(function () {
       $('#sg-msg').text('thanks...').removeClass('ohidden');
     }, 3000);
 
+  });
+
+  $('#checkpoints')
+  .form({
+    fields: {
+      phone: {
+        identifier: 'phone',
+        rules: [{
+          type: 'empty',
+        }, {
+          type: 'exactLength[10]',
+        }, {
+          type: 'number',
+        }]
+      },
+      country: {
+        identifier: 'country',
+        rules: [{
+          type: 'empty',
+          prompt: 'Please chose your country'
+        }]
+      },
+      // dob: {
+      //   identifier: 'dob',
+      //   rules: [{
+      //     type: 'empty',
+      //   },
+        // {
+        // type: 'regExp[/^d{2}([./-])d{2}1d{4}$/]'
+        // }
+      // ]
+      // },
+    }
   });
 
 });

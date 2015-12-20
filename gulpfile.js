@@ -6,21 +6,41 @@ var autoprefix = require('gulp-autoprefixer');
 var minifyCSS = require('gulp-minify-css');
 var concat = require('gulp-concat');
 var favicons = require("gulp-favicons");
-
+var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 
 // CSS concat, auto-prefix and minify
 gulp.task('styles', function() {
-  gulp.src(['./public/cssfull/404.css', './public/cssfull/style.css', './public/cssfull/responsive.css'])
+  gulp.src(['./public/cssfull/style.css', './public/cssfull/responsive.css'])
   .pipe(concat('style.min.css'))
   .pipe(autoprefix('last 2 versions'))
   .pipe(minifyCSS())
   .pipe(gulp.dest('./public/css/'));
+
+  gulp.src(['./bower_components/fullpage.js/jquery.fullPage.css'])
+  .pipe(concat('jquery.fullPage.min.css'))
+  .pipe(autoprefix('last 2 versions'))
+  .pipe(minifyCSS())
+  .pipe(gulp.dest('./public/css/'));
+
+  gulp.src(['./public/css/jquery.fullPage.min.css', './public/css/style.min.css'])
+  .pipe(concat('css.combined.min.css'))
+  .pipe(autoprefix('last 2 versions'))
+  .pipe(minifyCSS())
+  .pipe(gulp.dest('./public/css/'));
+
 });
 
+// Compress HeadJS to custom.
+gulp.task('scripts', function() {
+  gulp.src(['./public/js/head.core.alter.js', './bower_components/headjs/dist/1.0.0/head.load.js'])
+    .pipe(concat('head.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./public/js/'));
+});
 
-
+// Compress all Images
 gulp.task('images',  function() {
   gulp.src('./public/imgfull/*')
   .pipe(imagemin({
@@ -43,6 +63,8 @@ gulp.task('images',  function() {
   .pipe(gulp.dest('./public/img/stack'));
 });
 
+
+// Create Favicons
 gulp.task('favicon', function() {
   gulp.src("./public/favicons/pegke-logo.png").pipe(favicons({
     appName: "Pegke Loyalty",
@@ -60,6 +82,6 @@ gulp.task('favicon', function() {
   })).pipe(gulp.dest("./public/favicons/"));
 });
 // default gulp task
-gulp.task('default', ['styles', 'images'], function() {
+gulp.task('default', ['styles'], function() {
 
 });

@@ -8,9 +8,13 @@
   .ui.headerimg {
     min-height: 130px;
     margin-top: 85px !important;
+    height: 130px;
   }
   .ui.huge.header {
     font-size: 2.1rem
+  }
+  div.sub.header {
+    font-size: 1.2rem !important;
   }
   h2 {
     font-size: 1.8rem
@@ -39,10 +43,6 @@
   .cbp-ig-grid li > a:hover .cbp-ig-category {
     color: #fff !important;
   }
-  html, body {
-    min-height: 100% !important;
-  }
-
   div.ui.segment.pitch {
     top: 45%;
     position: absolute;
@@ -59,11 +59,6 @@
     box-sizing: border-box;
     padding: 50px 0;
   }
-
-  .front #header {
-    background: #FFF;
-    z-index: 999;
-  }
   .pagetwo {
     background: #F8E985;
   }
@@ -78,7 +73,7 @@
   }
   .ui.footer.segment,
   .footer.segment.inverted {
-    margin: 0;
+    margin: 20px 0 0;
     padding: 0
   }
   .ui.vertical.stripe {
@@ -87,7 +82,9 @@
   .mobile .pagetwo .white, .mobile .pagetwo.white {
     color: #323232 !important;
   }
-
+  .front .ui.header>.icon+.content {
+    padding: 0 !important
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .mobile.only,

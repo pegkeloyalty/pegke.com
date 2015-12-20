@@ -124,4 +124,3 @@ For example you can modify `theme.config` to use a `github` button theme by chan
 ```
 
 View the [Customization Guide](http://learnsemantic.com/developing/customizing.html) to learn more
-

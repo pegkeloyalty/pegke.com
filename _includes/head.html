@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% if page.permalink != 'index.html' %}{{ site.productname | prepend: ': ' }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% if page.permalink != 'index.html' %}{{ site.productname | prepend: ' &#8226; ' }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }} {% else %} {{ page.title | append: ', ' | append: site.keywords }} {% endif %}">
 
@@ -13,19 +13,10 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="msapplication-tap-highlight" content="no">
 
-
   <link rel="shortlink" href="http://bit.ly/pegkeweb">
   <link rel="preload" href="{{ "/public/img/1.jpg" | prepend: site.baseurl }}">
 
-  <script>
-  var head_conf = {
-    screens    : [],
-    screensCss: { "gt": false, "gte": false, "lt": false, "lte": false, "eq": false },
-    browsers : [],
-    browserCss: { "gt": false, "gte": false, "lt": false, "lte": false, "eq": false }
-  };
-  </script>
-  <script src="{{ "/bower_components/headjs/dist/1.0.0/head.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/public/js/head.min.js" | prepend: site.baseurl }}"></script>
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.productname }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
@@ -34,5 +25,4 @@
 
   <!--  Favicons -->
   {% include favicons.html %}
-
 </head>

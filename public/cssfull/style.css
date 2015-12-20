@@ -126,9 +126,6 @@ h2, h3, h4 {
 .menuinit .sidebar {
   cursor: pointer;
 }
-.mobile .front #header {
-  background: transparent;
-}
 .not-front #header {
   background: #FFF;
 }
@@ -160,7 +157,7 @@ h2, h3, h4 {
   display: block;
 }
 .box-shadow,
-.not-front .mobile .box-shadow {
+.mobile .box-shadow {
   background-color: #FFF;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -174,7 +171,14 @@ h2, h3, h4 {
   width: 100% !important;
   max-width: 100% !important;
   min-height: 260px;
+  height: 260px;
   margin-top: 75px !important;
+}
+.headerimg .ui.center.aligned {
+  position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
 }
 .footer a.item{
   display: block;
@@ -506,6 +510,7 @@ blockquote.message {
   border-radius: 50%;
   height: 40px;
   width: 40px;
+  z-index: 999;
 }
 .go-top:hover {
   background-color: rgba(0, 0, 0, 0.7);
@@ -520,7 +525,4 @@ blockquote.message {
   margin: 4px !important;
   font-size: 14px !important;
   font-weight: 700;
-}
-html.ios, html.ios body {
-  height: auto !important;
 }

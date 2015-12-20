@@ -72,10 +72,13 @@
 
         // internal: apply all classes
         if (!key) {
+          if(klass.indexOf("mobile") == -1) {
             html.className += " " + klass.join(" ");
-            klass = [];
-
-            return api;
+          } else {
+            html.className += " mobile";
+          }
+          klass = [];
+          return api;
         }
 
         if (Object.prototype.toString.call(enabled) === "[object Function]") {
