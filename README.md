@@ -3,6 +3,8 @@
 ![twitter](https://img.shields.io/twitter/url/https/github.com/pegkeloyalty/pegke.com.svg?style=social) [![visit](https://img.shields.io/badge/visit-pegke.com-orange.svg)](https://pegke.com&link=https://pegke.com)
 
 # Pegke Loyalty
+
+[![Join the chat at https://gitter.im/pegkeloyalty/pegke.com](https://badges.gitter.im/pegkeloyalty/pegke.com.svg)](https://gitter.im/pegkeloyalty/pegke.com?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 > Customer Loyalty & Retention Management Software
 
 Customer Loyalty & Retention Management Software, integrates with merchant POS systems to give consumers a single identity to earn business-specific rewards
