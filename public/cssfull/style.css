@@ -455,7 +455,6 @@ blockquote.message {
   margin-top: 10px;
   vertical-align: top;
   font-size: 2rem;
-  font-weight: 900;
 }
 .value {
   font-size: 7rem;
@@ -525,4 +524,13 @@ blockquote.message {
   margin: 4px !important;
   font-size: 14px !important;
   font-weight: 700;
+}
+pre {
+  border-bottom: 2px solid #999;
+}
+pre.success {
+  background-color: rgba(24, 237, 28, 0.17)
+}
+pre.fail {
+  background-color: rgba(237, 85, 98, 0.17);
 }

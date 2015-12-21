@@ -30,6 +30,14 @@ gulp.task('styles', function() {
   .pipe(minifyCSS())
   .pipe(gulp.dest('./public/css/'));
 
+
+  gulp.src(['./public/cssfull/prism.css'])
+  .pipe(concat('prism.min.css'))
+  .pipe(autoprefix('last 2 versions'))
+  .pipe(minifyCSS())
+  .pipe(gulp.dest('./public/css/'));
+
+
 });
 
 // Compress HeadJS to custom.

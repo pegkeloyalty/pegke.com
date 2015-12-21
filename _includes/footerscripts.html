@@ -41,8 +41,8 @@ head.load(
   "{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}",
   "{{ "/bower_components/semantic/dist/semantic.min.js" | prepend: site.baseurl }}",
   "{{ "/public/js/scrollspy.js" | prepend: site.baseurl }}",
-  "https://cdn.jsdelivr.net/highlight.js/9.0.0/styles/default.min.css",
-  "https://cdn.jsdelivr.net/highlight.js/9.0.0/highlight.min.js",
+  "/public/css/prism.min.css",
+  "/public/js/prism.min.js",
   "{{ "/public/css/style.min.css" | prepend: site.baseurl }}"
 );
 head.ready(function () {
@@ -56,7 +56,6 @@ head.ready(function () {
       }, 200);
     });
   });
-  hljs.initHighlightingOnLoad();
 });
 </script>
 {% else %}
@@ -83,12 +82,22 @@ head.ready(function () {
       $(this).addClass('positive');
       if( selcur == 'usd' ) {
         $('.currency').text('$');
-        $('.amt').text('0.006');
+        animateUpdate(0.42, 0.006, 3);
       } else if( selcur == 'inr' ) {
         $('.currency').text('₹');
-        $('.amt').text('0.42');
+        animateUpdate(0.006, 0.42, 2);
       }
     });
+
+    function animateUpdate(fromVal, toVal, roundVal) {
+      jQuery({ Counter: 0 }).animate({ Counter: toVal }, {
+        duration: 1000,
+        easing: 'swing',
+        step: function () {
+          $('.amt').text(parseFloat(this.Counter).toFixed(roundVal));
+        }
+      });
+    }
 
     var pathname = window.location.pathname;
     var desired = pathname.replace(/[^\w\s]/gi, '')
@@ -283,9 +292,9 @@ head.ready(function () {
       //   rules: [{
       //     type: 'empty',
       //   },
-        // {
-        // type: 'regExp[/^d{2}([./-])d{2}1d{4}$/]'
-        // }
+      // {
+      // type: 'regExp[/^d{2}([./-])d{2}1d{4}$/]'
+      // }
       // ]
       // },
     }
