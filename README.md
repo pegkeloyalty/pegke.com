@@ -1,3 +1,5 @@
+![cool](https://img.shields.io/badge/pegke%20is-cool-green.svg?style=flat)
+![twitter](https://img.shields.io/twitter/url/https/github.com/pegkeloyalty/pegke.com.svg?style=social) ![visit](https://img.shields.io/badge/visit-pegke.com-orange.svg?link=https://pegke.com&link=https://pegke.com)
 # Pegke Loyalty
 > Customer Loyalty & Retention Management Software
 
