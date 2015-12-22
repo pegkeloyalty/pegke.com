@@ -48,7 +48,7 @@ h2, h3, h4 {
   background: #EEE !important;
 }
 .ui.vertical.stripe {
-  padding: 8em 0em;
+  padding: 2em 0em;
 }
 .ui.vertical.stripe .button + h3, .ui.vertical.stripe p + h3 {
   margin-top: 3em;
@@ -66,8 +66,7 @@ h2, h3, h4 {
   padding: 0em;
 }
 .quote.stripe.segment .grid .column {
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding: 2em 0;
 }
 .footer.segment.inverted {
   padding: 3em 0em 5em;
@@ -533,4 +532,7 @@ pre.success {
 }
 pre.fail {
   background-color: rgba(237, 85, 98, 0.17);
+}
+.front h3.ui.header {
+  font-size: 2.3rem !important;
 }
