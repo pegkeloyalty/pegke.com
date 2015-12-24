@@ -89,7 +89,8 @@ gulp.task('favicon', function() {
     replace: true
   })).pipe(gulp.dest("./public/favicons/"));
 });
+
 // default gulp task
-gulp.task('default', ['styles'], function() {
+gulp.task('default', ['styles', 'images'], function() {
 
 });
