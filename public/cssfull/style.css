@@ -175,9 +175,9 @@ h2, h3, h4 {
 }
 .headerimg .ui.center.aligned {
   position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
 }
 .footer a.item{
   display: block;
@@ -266,15 +266,14 @@ div.eight.wide.column.centered {
 
 /* the icon with pseudo class for icon font */
 .cbp-ig-icon {
-  padding: 30px 0 0 0;
-  display: block;
+  display: inline-block;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -moz-transform 0.2s;
   transition: transform 0.2s;
+  width: 180px;
+  padding-top: 15px;
 }
-i.cbp-ig-icon{
-  display: inline-block !important;
-}
+
 /* title element */
 .cbp-ig-grid .cbp-ig-title {
   margin: 60px 0 10px 0;
@@ -538,4 +537,13 @@ pre.fail {
 }
 .biztyps img {
   margin-bottom: 10px;
+  min-height: 165px
+}
+div.ui.basic.quote.segment {
+  background-image: url(../img/quote.png) !important;
+  background-repeat: no-repeat !important;
+  background-position-x: 8% !important;
+}
+.ui.button.cta {
+  font-weight: 400 !important;
 }

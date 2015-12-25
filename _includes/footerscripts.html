@@ -1,18 +1,13 @@
+{% include signup-form.html %}
 
 {% if page.permalink == 'index.html' %}
 <script>
 head.load(
-  "{{ "/bower_components/semantic/dist/semantic.min.css" | prepend: site.baseurl }}",
-  "{{ "/public/css/css.combined.min.css" | prepend: site.baseurl }}",
-  "{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}",
-  "{{ "/bower_components/semantic/dist/semantic.min.js" | prepend: site.baseurl }}",
-  "{{ "/bower_components/fullpage.js/jquery.fullPage.min.js" | prepend: site.baseurl }}",
-  "{{ "/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js" | prepend: site.baseurl }}"
+  "{{ "/public/css/pegke-front.min.css" | prepend: site.baseurl }}",
+  "{{ "/public/js/semanticjs.front.min.js" | prepend: site.baseurl }}"
 );
 head.ready(function () {
-
   $('#header').removeClass('box-shadow');
-
   $(window).scroll(function() {
     if ($(this).scrollTop() > 400) {
       $('#header').addClass('box-shadow');
@@ -20,7 +15,6 @@ head.ready(function () {
       $('#header').removeClass('box-shadow');
     }
   });
-
   if(! head.mobile) {
     $('#fullpage').fullpage({
       animateAnchor: true,
@@ -34,16 +28,10 @@ head.ready(function () {
 });
 </script>
 {% elsif page.permalink == '/api/' %}
-<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 <script>
 head.load(
-  "{{ "/bower_components/semantic/dist/semantic.min.css" | prepend: site.baseurl }}",
-  "{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}",
-  "{{ "/bower_components/semantic/dist/semantic.min.js" | prepend: site.baseurl }}",
-  "{{ "/public/js/scrollspy.js" | prepend: site.baseurl }}",
-  "/public/css/prism.min.css",
-  "/public/js/prism.min.js",
-  "{{ "/public/css/style.min.css" | prepend: site.baseurl }}"
+  "{{ "/public/css/pegke-api.min.css" | prepend: site.baseurl }}",
+  "{{ "/public/js/semanticjs.api.min.js" | prepend: site.baseurl }}"
 );
 head.ready(function () {
   $(document).ready(function() {
@@ -61,17 +49,14 @@ head.ready(function () {
 {% else %}
 <script>
 head.load(
-  "{{ "/bower_components/semantic/dist/semantic.min.css" | prepend: site.baseurl }}",
-  "{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}",
-  "{{ "/bower_components/semantic/dist/semantic.min.js" | prepend: site.baseurl }}",
-  "{{ "/public/css/style.min.css" | prepend: site.baseurl }}"
+  "{{ "/public/css/pegke-page.min.css" | prepend: site.baseurl }}",
+  "{{ "/public/js/semanticjs.min.js" | prepend: site.baseurl }}"
 );
 </script>
 {% endif %}
 
 <script type="text/javascript">
 head.ready(function () {
-
   $('.cta').click(function() {
     $('.ui.modal.signup').modal('show');
   });
@@ -88,7 +73,6 @@ head.ready(function () {
         animateUpdate(0.006, 0.42, 2);
       }
     });
-
     function animateUpdate(fromVal, toVal, roundVal) {
       jQuery({ Counter: 0 }).animate({ Counter: toVal }, {
         duration: 1000,
@@ -98,7 +82,6 @@ head.ready(function () {
         }
       });
     }
-
     var pathname = window.location.pathname;
     var desired = pathname.replace(/[^\w\s]/gi, '')
     $(".menu.right a, .mobilemenu a, .footer").each(function(index) {
@@ -108,7 +91,6 @@ head.ready(function () {
         $(this).addClass("active");
       }
     });
-
     $(window).scroll(function() {
       if ($(this).scrollTop() > 400) {
         $('.go-top').fadeIn(400);
@@ -120,32 +102,23 @@ head.ready(function () {
       event.preventDefault();
       $('html, body').animate({scrollTop: 0}, 300);
     })
-
   });
-
   $('.ui.dropdown').dropdown();
   $('.ui.checkbox').checkbox();
-
   $('.ui.accordion').accordion();
-
   $('.ui.sticky')
   .sticky({
     context: '#context',
     offset: 75
-  })
-  ;
-
+  });
   // $('.ui.label').popup();
   $('.rupee.icon').popup();
   $('.feature-list .item').popup();
   $('.tstack').popup();
-
   $('.ui.rating').rating();
-
   // setInterval(function(){
   //   $('.shape').shape('flip over');
   // }, 3000);
-
   $('.ui.form')
   .form({
     fields: {
@@ -199,8 +172,6 @@ head.ready(function () {
       }
     }
   });
-
-
   $('#support')
   .form({
     fields: {
@@ -220,7 +191,6 @@ head.ready(function () {
       },
     }
   });
-
   $('#sg-sup-form')
   .form({
     fields: {
@@ -233,8 +203,6 @@ head.ready(function () {
       }
     }
   });
-
-
   $('.step .image, .stack .image, .lazy')
   .visibility({
     type       : 'image',
@@ -242,19 +210,16 @@ head.ready(function () {
     duration   : 1000
   })
   ;
-
   $('#hamb').click(function() {
     $('.ui.submenu.modal')
     .modal('show');
   });
-
   // $('#checkpoints').on('submit', function(e) {
   //   e.preventDefault();
   //   var el = $(this);
   //   $('#sbmit').addClass('loading');
   //   // el.addClass.attr('disabled', "true");
   // });
-
   $('#sg-signup').click(function() {
     $(this).addClass('loading');
     $('#sg-email').attr('disabled', "true");

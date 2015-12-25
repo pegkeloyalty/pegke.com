@@ -28,7 +28,7 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   background: #f9f9f9;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 1.4285em;
   color: #323232;
@@ -45,7 +45,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
   line-height: 1.2857em;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
   font-weight: 900;
