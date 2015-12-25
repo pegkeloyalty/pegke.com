@@ -9,46 +9,11 @@ var favicons = require("gulp-favicons");
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
+var stripCssComments = require('gulp-strip-css-comments');
 
 // default gulp task
 gulp.task('default', ['styles'], function() {
 
-});
-
-// CSS concat, auto-prefix and minify
-gulp.task('styles', function() {
-  gulp.src(['./public/cssfull/style.css', './public/cssfull/responsive.css'])
-  .pipe(concat('style.min.css'))
-  .pipe(autoprefix('last 2 versions'))
-  .pipe(minifyCSS())
-  .pipe(gulp.dest('./public/css/'));
-
-  gulp.src(['./bower_components/fullpage.js/jquery.fullPage.css'])
-  .pipe(concat('jquery.fullPage.min.css'))
-  .pipe(autoprefix('last 2 versions'))
-  .pipe(minifyCSS())
-  .pipe(gulp.dest('./public/css/'));
-
-  gulp.src(['./public/css/jquery.fullPage.min.css', './public/css/style.min.css'])
-  .pipe(concat('css.combined.min.css'))
-  .pipe(autoprefix('last 2 versions'))
-  .pipe(minifyCSS())
-  .pipe(gulp.dest('./public/css/'));
-
-  gulp.src(['./public/cssfull/prism.css'])
-  .pipe(concat('prism.min.css'))
-  .pipe(autoprefix('last 2 versions'))
-  .pipe(minifyCSS())
-  .pipe(gulp.dest('./public/css/'));
-
-});
-
-// Compress HeadJS to custom.
-gulp.task('scripts', function() {
-  gulp.src(['./public/js/head.core.alter.js', './bower_components/headjs/dist/1.0.0/head.load.js'])
-  .pipe(concat('head.min.js'))
-  .pipe(uglify())
-  .pipe(gulp.dest('./public/js/'));
 });
 
 // Compress all Images
@@ -130,6 +95,7 @@ gulp.task('semantic', function() {
     './bower_components/semantic/dist/components/step.css',
     './bower_components/semantic/dist/components/shape.css',
     './bower_components/semantic/dist/components/state.css',
+    './bower_components/semantic/dist/components/tab.css',
     './bower_components/semantic/dist/components/transition.css',
     './bower_components/semantic/dist/components/visibility.css',
   ];
@@ -170,6 +136,7 @@ gulp.task('semantic', function() {
     './bower_components/semantic/dist/components/step.js',
     './bower_components/semantic/dist/components/shape.js',
     './bower_components/semantic/dist/components/state.js',
+    './bower_components/semantic/dist/components/tab.js',
     './bower_components/semantic/dist/components/transition.js',
     './bower_components/semantic/dist/components/visibility.js',
   ];
@@ -186,6 +153,7 @@ gulp.task('semantic', function() {
 
   // Build Frontpage Css
   gulp.src(pegkefront)
+  .pipe(stripCssComments({preserve: false}))
   .pipe(concat('pegke-front.min.css'))
   .pipe(autoprefix('last 2 versions'))
   .pipe(minifyCSS({processImport: false}))
@@ -194,6 +162,7 @@ gulp.task('semantic', function() {
   var apipage = semanticcss.concat(customsite).concat(prismcss);
   // Build Frontpage Css
   gulp.src(apipage)
+  .pipe(stripCssComments({preserve: false}))
   .pipe(concat('pegke-api.min.css'))
   .pipe(autoprefix('last 2 versions'))
   .pipe(minifyCSS({processImport: false}))
@@ -202,6 +171,7 @@ gulp.task('semantic', function() {
   var otherpage = semanticcss.concat(customsite);
   // Build Frontpage Css
   gulp.src(otherpage)
+  .pipe(stripCssComments({preserve: false}))
   .pipe(concat('pegke-page.min.css'))
   .pipe(autoprefix('last 2 versions'))
   .pipe(minifyCSS({processImport: false}))
@@ -235,5 +205,12 @@ gulp.task('semantic', function() {
   .pipe(concat('semanticjs.min.js'))
   .pipe(uglify())
   .pipe(gulp.dest('./public/js/'));
+
+  gulp.src(['./public/cssfull/404.css'])
+  .pipe(stripCssComments({preserve: false}))
+  .pipe(concat('404.min.css'))
+  .pipe(autoprefix('last 2 versions'))
+  .pipe(minifyCSS({processImport: false}))
+  .pipe(gulp.dest('./public/css/'));
 
 });

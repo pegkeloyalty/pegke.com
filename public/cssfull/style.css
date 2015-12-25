@@ -189,7 +189,7 @@ h2, h3, h4 {
 .violet {
   background-color: #6a4ca6;
 }
-.statistic .amt {
+.statistic .amt, .entamt {
   font-size: 6rem !important;
   font-weight: 400;
 }
@@ -448,7 +448,8 @@ blockquote.message {
 #hamb {
   margin: 15px 2px 0;
 }
-.currency{
+.currency,
+.entcurrency {
   display: inline-block;
   margin-top: 10px;
   vertical-align: top;
@@ -465,11 +466,13 @@ blockquote.message {
   content: '/';
   margin-right: 2px;
 }
-.currency, .duration{
+.currency,
+.duration, 
+.entcurrency{
   color: #1bbc9d;
 }
-.ui.secondary.menu a.item.active,
-.ui.secondary.menu a.item:hover {
+.ui.secondary.menu:not(.pointing) a.item.active,
+.ui.secondary.menu:not(.pointing) a.item:hover {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, .05) !important;
 
 }
@@ -546,4 +549,10 @@ div.ui.basic.quote.segment {
 }
 .ui.button.cta {
   font-weight: 400 !important;
+}
+.ui.secondary.pointing.menu.pricingtab {
+  border-bottom: 0 none;
+}
+.pricingtab ~ .tab {
+  min-height: 175px;
 }
