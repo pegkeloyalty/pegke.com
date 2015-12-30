@@ -21,7 +21,7 @@
   background: #F8F8F9;
   padding: 1em 1.5em;
   line-height: 1.4285em;
-  color: #323232;
+  color: #393939;
   -webkit-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
           transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
   border-radius: 0.26666667rem;
@@ -259,7 +259,7 @@
 ---------------*/
 
 .ui.black.message {
-  background-color: #323232;
+  background-color: #393939;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -349,7 +349,7 @@
 /* Colors */
 .ui.inverted.message,
 .ui.black.message {
-  background-color: #323232;
+  background-color: #393939;
   color: rgba(255, 255, 255, 0.9);
 }
 .ui.red.message {

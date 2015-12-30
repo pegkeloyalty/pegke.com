@@ -34,7 +34,7 @@
   padding: 0.5em 0em;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   font-size: 1em;
-  color: #323232;
+  color: #393939;
 }
 
 /* Content */
@@ -164,12 +164,12 @@
 .ui.styled.accordion .accordion .title:hover,
 .ui.styled.accordion .accordion .active.title {
   background: transparent;
-  color: #323232;
+  color: #393939;
 }
 .ui.styled.accordion .accordion .title:hover,
 .ui.styled.accordion .accordion .active.title {
   background: transparent;
-  color: #323232;
+  color: #393939;
 }
 
 /* Active */

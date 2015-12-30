@@ -611,10 +611,10 @@
 
 /* Black */
 .ui.black.segment:not(.inverted) {
-  border-top: 2px solid #323232;
+  border-top: 2px solid #393939;
 }
 .ui.inverted.black.segment {
-  background-color: #323232 !important;
+  background-color: #393939 !important;
   color: #FFFFFF !important;
 }
 
@@ -656,13 +656,13 @@
 }
 .ui.inverted.segment,
 .ui.primary.inverted.segment {
-  background: #323232;
+  background: #393939;
   color: rgba(255, 255, 255, 0.9);
 }
 
 /* Nested */
 .ui.inverted.segment .segment {
-  color: #323232;
+  color: #393939;
 }
 .ui.inverted.segment .inverted.segment {
   color: rgba(255, 255, 255, 0.9);
@@ -684,8 +684,8 @@
   color: rgba(0, 0, 0, 0.6);
 }
 .ui.secondary.inverted.segment {
-  background: #656565 -webkit-linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-  background: #656565 linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+  background: #6c6c6c -webkit-linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+  background: #6c6c6c linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -695,8 +695,8 @@
   color: rgba(0, 0, 0, 0.6);
 }
 .ui.tertiary.inverted.segment {
-  background: #8b8b8b -webkit-linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%);
-  background: #8b8b8b linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%);
+  background: #929292 -webkit-linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%);
+  background: #929292 linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%);
   color: rgba(255, 255, 255, 0.8);
 }
 

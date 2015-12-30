@@ -131,7 +131,7 @@
 
 /* White Dimmer (Inverted) */
 .ui.inverted.dimmer .ui.loader {
-  color: #323232;
+  color: #393939;
 }
 .ui.inverted.dimmer .ui.loader:before {
   border-color: rgba(0, 0, 0, 0.1);

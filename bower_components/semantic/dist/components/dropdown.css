@@ -113,7 +113,7 @@
   text-align: left;
   border-top: none;
   line-height: 1em;
-  color: #323232;
+  color: #393939;
   padding: 0.73333333rem 1.13333333rem !important;
   font-size: 1rem;
   text-transform: none;
@@ -352,10 +352,10 @@
           transform: rotateZ(0deg);
   min-width: 14em;
   min-height: 2.6142em;
-  background: #FFFFFF;
+  background: #FFFCF7;
   display: inline-block;
   padding: 0.73333333em 2.53333333em 0.73333333em 0.93333333em;
-  color: #323232;
+  color: #393939;
   box-shadow: none;
   border: 1px solid rgba(34, 36, 38, 0.15);
   border-radius: 0.26666667rem;

@@ -1002,16 +1002,16 @@ a.ui.basic.grey.label:hover {
 
 .ui.black.labels .label,
 .ui.black.label {
-  background-color: #323232 !important;
-  border-color: #323232 !important;
+  background-color: #393939 !important;
+  border-color: #393939 !important;
   color: #FFFFFF !important;
 }
 
 /* Link */
 .ui.black.labels .label:hover,
 a.ui.black.label:hover {
-  background-color: #3f3f3f !important;
-  border-color: #3f3f3f !important;
+  background-color: #464646 !important;
+  border-color: #464646 !important;
   color: #FFFFFF !important;
 }
 
@@ -1029,14 +1029,14 @@ a.ui.black.label:hover {
 /* Basic */
 .ui.basic.black.label {
   background-color: #FFFFFF !important;
-  color: #323232 !important;
-  border-color: #323232 !important;
+  color: #393939 !important;
+  border-color: #393939 !important;
 }
 .ui.basic.black.labels a.label:hover,
 a.ui.basic.black.label:hover {
   background-color: #FFFFFF !important;
-  color: #3f3f3f !important;
-  border-color: #3f3f3f !important;
+  color: #464646 !important;
+  border-color: #464646 !important;
 }
 
 /*-------------------
@@ -1046,7 +1046,7 @@ a.ui.basic.black.label:hover {
 .ui.basic.label {
   background: none #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
-  color: #323232;
+  color: #393939;
   box-shadow: none;
 }
 

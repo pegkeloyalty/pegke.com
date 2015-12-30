@@ -81,7 +81,7 @@
   margin: 0em 0em;
   padding: 1.13333333em 2em;
   background: #FFFFFF;
-  color: #323232;
+  color: #393939;
   box-shadow: none;
   border-radius: 0em;
   border: none;
@@ -152,7 +152,7 @@
 .ui.steps .step .description {
   font-weight: normal;
   font-size: 0.93333333em;
-  color: #323232;
+  color: #393939;
 }
 .ui.steps .step > .description {
   width: 100%;
@@ -405,7 +405,7 @@
 .ui.steps a.active.step:hover {
   cursor: pointer;
   background: #DCDDDE;
-  color: #323232;
+  color: #393939;
 }
 
 /* Completed */

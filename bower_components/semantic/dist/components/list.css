@@ -162,7 +162,7 @@ ol.ui.list ol li,
   margin: 0em;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   font-weight: bold;
-  color: #323232;
+  color: #393939;
 }
 
 /* Description */
@@ -333,7 +333,7 @@ ol.ui.list ol li,
 
 .ui.list .list > a.item:hover .icon,
 .ui.list > a.item:hover .icon {
-  color: #323232;
+  color: #393939;
 }
 
 
@@ -583,7 +583,7 @@ ul.ui.horizontal.bulleted.list li:first-child,
 }
 ul.ui.horizontal.bulleted.list li::before,
 .ui.horizontal.bulleted.list > .item::before {
-  color: #323232;
+  color: #393939;
 }
 ul.ui.horizontal.bulleted.list li:first-child::before,
 .ui.horizontal.bulleted.list > .item:first-child::before {
@@ -623,7 +623,7 @@ ol.ui.list li:before,
   counter-increment: ordered;
   content: counters(ordered, ".") " ";
   text-align: right;
-  color: #323232;
+  color: #393939;
   vertical-align: middle;
   opacity: 0.8;
 }

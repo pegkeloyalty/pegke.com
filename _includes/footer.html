@@ -38,14 +38,10 @@
       </div>
       <div class="five wide column">
         <h4 class="ui inverted header">Social</h4>
-        <a href="https://twitter.com/{{ site.twitter_username }}"><i class="twitter icon large grey"></i></a>
-        <a href="https://plus.google.com/{{ site.gplus_username }}"><i class="google plus icon large grey"></i></a>
-        <a href="https://fb.com/{{ site.fb_username }}"><i class="facebook icon large grey"></i></a>
-        <a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"><i class="rss icon large grey"></i></a>
-
+        {% include social-buttons.html %}
         <div class="ui inverted link list">
           <a href="mailto:hello@pegke.com" class="item"><i class="send icon"></i> hello@pegke.com</a>
-          <a href="tel:{{ site.phone }}" class="item"><i class="phone icon"></i> {{ site.phoneno }}</a>
+          <a href="tel:+{{ site.phone }}" class="item"><i class="phone icon"></i> {{ site.phoneno }}</a>
         </div>
       </div>
     </div>

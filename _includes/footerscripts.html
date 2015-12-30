@@ -57,7 +57,7 @@ head.load(
 
 <script type="text/javascript">
 head.ready(function () {
-  $('.cta').click(function() {
+  $('.cta, .ctal').click(function() {
     $('.ui.modal.signup').modal('show');
   });
   $(document).ready(function() {
@@ -112,8 +112,8 @@ head.ready(function () {
         $('.go-top').fadeOut(400);
       }
     });
-    $('.go-top').click(function(event) {
-      event.preventDefault();
+    $('.go-top').click(function(e) {
+      e.preventDefault();
       $('html, body').animate({scrollTop: 0}, 300);
     })
   });
@@ -180,13 +180,6 @@ head.ready(function () {
         rules: [{
           type: 'empty',
           prompt: 'Please enter your city'
-        }]
-      },
-      terms: {
-        identifier: 'terms',
-        rules: [{
-          type: 'checked',
-          prompt: 'You must agree to the terms and conditions'
         }]
       }
     }

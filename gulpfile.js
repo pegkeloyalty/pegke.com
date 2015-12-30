@@ -12,7 +12,7 @@ var pngquant = require('imagemin-pngquant');
 var stripCssComments = require('gulp-strip-css-comments');
 
 // default gulp task
-gulp.task('default', ['styles'], function() {
+gulp.task('default', ['semantic'], function() {
 
 });
 

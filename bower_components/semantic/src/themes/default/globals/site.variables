@@ -71,7 +71,7 @@
 ---------------*/
 
 /* This adjusts the default form input across all elements */
-@inputBackground        : @white;
+@inputBackground        : #FFFCF7;
 @inputVerticalPadding   : @relative11px;
 @inputHorizontalPadding : @relative14px;
 @inputPadding           : @inputVerticalPadding @inputHorizontalPadding;
@@ -116,7 +116,7 @@
 @pageOverflowX       : hidden;
 
 @lineHeight          : 1.4285em;
-@textColor           : #323232;
+@textColor           : #393939;
 
 /*-------------------
       Paragraph
@@ -198,7 +198,7 @@
 @pink             : #E03997;
 @brown            : #A5673F;
 @grey             : #767676;
-@black            : #323232;
+@black            : #393939;
 
 /*---  Light Colors  ---*/
 @lightRed         : #FF695E;

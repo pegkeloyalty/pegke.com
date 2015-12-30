@@ -31,7 +31,7 @@ h1, h2, h3, h4 {
   -moz-osx-font-smoothing: grayscale;
 }
 h2, h3, h4 {
-  font-weight: 600 !important;
+  font-weight: 400 !important;
 }
 .masthead .fp-tableCell {
   position: relative;
@@ -467,7 +467,7 @@ blockquote.message {
   margin-right: 2px;
 }
 .currency,
-.duration, 
+.duration,
 .entcurrency{
   color: #1bbc9d;
 }
@@ -555,4 +555,16 @@ div.ui.basic.quote.segment {
 }
 .pricingtab ~ .tab {
   min-height: 175px;
+}
+.overlay {
+  position: initial !important;
+  height: 0;
+  width: 0;
+  z-index: -1;
+  background: transparent;
+  padding: 0;
+}
+.overlay img {
+  display: none;
+  visibility: hidden;
 }
