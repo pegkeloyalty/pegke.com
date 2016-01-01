@@ -503,6 +503,7 @@ blockquote.message {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
+  display: none;
   text-decoration: none;
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
