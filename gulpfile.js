@@ -103,6 +103,7 @@ gulp.task('semantic', function() {
   var semanticjs = [
     './bower_components/jquery/dist/jquery.min.js',
     './bower_components/semantic/dist/components/reset.js',
+    './bower_components/semantic/dist/components/api.js',
     './bower_components/semantic/dist/components/site.js',
     './bower_components/semantic/dist/components/accordion.js',
     './bower_components/semantic/dist/components/button.js',

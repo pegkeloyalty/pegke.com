@@ -34,13 +34,15 @@ head.load(
   "{{ "/public/js/semanticjs.api.min.js" | prepend: site.baseurl }}"
 );
 head.ready(function () {
-  $(".hashnav").scrollspy();
-  $('.hashnav a').click(function() {
-    $('.hashnav a').removeClass('active');
-    $(this).addClass('active');
-    $('html, body').animate({
-      scrollTop: $($(this).attr('href')).offset().top - 80
-    }, 200);
+  $(document).ready(function() {
+    $(".hashnav").scrollspy();
+    $('.hashnav a').click(function() {
+      $('.hashnav a').removeClass('active');
+      $(this).addClass('active');
+      $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top - 80
+      }, 200);
+    });
   });
 });
 </script>
@@ -58,6 +60,13 @@ head.ready(function () {
   $('.cta, .ctal').click(function() {
     $('.ui.modal.signup').modal('show');
   });
+
+  $.fn.api.settings.api = {
+    'signup'  : 'https://pegke.com/api/user/register',
+    'support' : 'https://pegke.com/api/user/register',
+    'registermobile'  : 'https://pegke.com/api/user/register'
+  };
+
   $(document).ready(function() {
     $('.costs button').click(function() {
       $('.costs button').removeClass('positive');
@@ -71,6 +80,7 @@ head.ready(function () {
         animateUpdate(0.006, 0.42, 2, 'amt');
       }
     });
+
     if ($('#pegkestat').length) {
       var dt = new Date();
       $.getJSON( "/status.json", function( data ) {
@@ -79,10 +89,10 @@ head.ready(function () {
         $.each( data, function( key, val) {
 
           items.push( '<div class="item"> \
-          <div class="right floated content"> \
-          <div class="ui tiny green label">' + val + '</div> \
-          </div> <i class="check large green icon"></i> \
-          <div class="content">' + key + '</div></div>' );
+              <div class="right floated content"> \
+                <div class="ui tiny green label">' + val + '</div> \
+              </div> <i class="check large green icon"></i> \
+              <div class="content">' + key + '</div></div>' );
         });
 
         $( "<div/>", {
@@ -200,8 +210,15 @@ head.ready(function () {
           prompt: 'Please enter your city'
         }]
       }
-    }
+    },
+    inline : true,
+    on     : 'blur'
+  })
+  .api({
+    method: 'post',
+    action: 'signup'
   });
+
   $('#support')
   .form({
     fields: {
@@ -220,14 +237,12 @@ head.ready(function () {
         }]
       },
     }
-  },
-  { inline: true,
-    on: 'blur',
-    onSuccess : function() {
-      //THIS SHOULD DO SOMETHING :-(
-      alert("TESTZ");
-    }
+  })
+  .api({
+    method: 'post',
+    action: 'support'
   });
+
   $('#sg-sup-form')
   .form({
     fields: {
@@ -239,7 +254,12 @@ head.ready(function () {
         }]
       }
     }
+  })
+  .api({
+    method: 'post',
+    action: 'registermobile'
   });
+
   $('.step .image, .stack .image, .lazy')
   .visibility({
     type       : 'image',
@@ -289,6 +309,16 @@ head.ready(function () {
           prompt: 'Please chose your country'
         }]
       },
+      // dob: {
+      //   identifier: 'dob',
+      //   rules: [{
+      //     type: 'empty',
+      //   },
+      // {
+      // type: 'regExp[/^d{2}([./-])d{2}1d{4}$/]'
+      // }
+      // ]
+      // },
     }
   });
 
