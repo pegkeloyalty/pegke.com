@@ -65,8 +65,4 @@ Retailers are additionally utilizing faithfulness projects to spur multi-channel
 {: .ui .image .fluid .lazy}
 
 
-![Customer Loyalty Interests](https://pegke.com/sites/default/files/uploads/screen-shot-2015-07-16-at-10.00.52-am.png)
-{: .ui .image .fluid .lazy}
-
-
 _All the data are aggregated from Google Trends On July 16 2015_
