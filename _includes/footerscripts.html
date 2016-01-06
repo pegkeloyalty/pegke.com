@@ -71,10 +71,6 @@ head.ready(function () {
         animateUpdate(0.006, 0.42, 2, 'amt');
       }
     });
-
-
-
-
     if ($('#pegkestat').length) {
       var dt = new Date();
       $.getJSON( "/status.json", function( data ) {
@@ -293,16 +289,6 @@ head.ready(function () {
           prompt: 'Please chose your country'
         }]
       },
-      // dob: {
-      //   identifier: 'dob',
-      //   rules: [{
-      //     type: 'empty',
-      //   },
-      // {
-      // type: 'regExp[/^d{2}([./-])d{2}1d{4}$/]'
-      // }
-      // ]
-      // },
     }
   });
 

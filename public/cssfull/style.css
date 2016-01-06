@@ -556,7 +556,7 @@ div.ui.basic.quote.segment {
 .pricingtab ~ .tab {
   min-height: 175px;
 }
-.overlay {
+.overlayp {
   position: initial !important;
   height: 0;
   width: 0;
@@ -564,11 +564,6 @@ div.ui.basic.quote.segment {
   background: transparent;
   padding: 0;
 }
-.overlay img {
-  display: none;
-  visibility: hidden;
-}
-
 .blog .ui.huge.header {
   font-size: 2.3em;
 }
