@@ -9,8 +9,8 @@
 @fontName          : 'Lato';
 @fontSmoothing     : antialiased;
 
-@headerFont        : @fontName, Arial, Helvetica, sans-serif;
-@pageFont          : @fontName, Arial, Helvetica, sans-serif;
+@headerFont        : @fontName, sans-serif;
+@pageFont          : @fontName, sans-serif;
 
 @googleFontName    : @fontName;
 @importGoogleFonts : true;
@@ -112,11 +112,11 @@
         Page
 --------------------*/
 
-@pageBackground      : #f9f9f9;
+@pageBackground      : #fafafa;
 @pageOverflowX       : hidden;
 
-@lineHeight          : 1.4285em;
-@textColor           : #393939;
+@lineHeight          : 1.5rem;
+@textColor           : #292929;
 
 /*-------------------
       Paragraph
@@ -129,7 +129,7 @@
        Links
 --------------------*/
 
-@linkColor           : @blue;
+@linkColor           : @lightBlue;
 @linkUnderline       : none;
 @linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
 @linkHoverUnderline  : @linkUnderline;
@@ -207,7 +207,7 @@
 @lightOlive       : #D9E778;
 @lightGreen       : #2ECC40;
 @lightTeal        : #6DFFFF;
-@lightBlue        : #54C8FF;
+@lightBlue        : #3aa3e3;
 @lightViolet      : #A291FB;
 @lightPurple      : #DC73FF;
 @lightPink        : #FF8EDF;

@@ -134,7 +134,7 @@ body.pushable {
   z-index: 2;
 }
 body.pushable > .pusher {
-  background: #f9f9f9;
+  background: #fafafa;
 }
 
 /* Pusher should inherit background from context */

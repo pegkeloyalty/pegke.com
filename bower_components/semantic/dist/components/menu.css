@@ -25,7 +25,7 @@
   display: -ms-flexbox;
   display: flex;
   margin: 1rem 0em;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
   background: #FFFFFF;
   font-weight: normal;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -92,7 +92,7 @@
   background: none;
   padding: 0.93333333em 1.13333333em;
   text-transform: none;
-  color: #393939;
+  color: #292929;
   font-weight: normal;
   -webkit-transition: background 0.1s ease, box-shadow 0.1s ease, color 0.1s ease;
           transition: background 0.1s ease, box-shadow 0.1s ease, color 0.1s ease;
@@ -256,7 +256,7 @@
   font-size: 1em !important;
   padding: 0.73333333em 1.13333333em !important;
   background: transparent !important;
-  color: #393939 !important;
+  color: #292929 !important;
   text-transform: none !important;
   font-weight: normal !important;
   box-shadow: none !important;
@@ -636,7 +636,7 @@ Floated Menu / Item
   border-right: 1px solid transparent;
   border-top: 2px solid transparent;
   padding: 0.93333333em 1.4em;
-  color: #393939;
+  color: #292929;
 }
 .ui.tabular.menu .item:before {
   display: none;
@@ -956,7 +956,7 @@ Floated Menu / Item
 .ui.secondary.pointing.menu .link.item:hover,
 .ui.secondary.pointing.menu a.item:hover {
   background-color: transparent;
-  color: #393939;
+  color: #292929;
 }
 
 /* Pressed */

@@ -141,8 +141,8 @@
 }
 .ui.items > .item > .content > .header {
   display: inline-block;
-  margin: -0.21425em 0em 0em;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  margin: -0.25rem 0em 0em;
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.85);
 }
@@ -188,8 +188,8 @@
   margin-top: 0.6em;
   max-width: auto;
   font-size: 1em;
-  line-height: 1.4285em;
-  color: #393939;
+  line-height: 1.5rem;
+  color: #292929;
 }
 
 /*--------------
@@ -244,7 +244,7 @@
   color: rgba(0, 0, 0, 0.85);
 }
 .ui.items > .item > .content > a.header:hover {
-  color: #0b4778;
+  color: #0695ec;
 }
 
 /* Meta */
@@ -252,7 +252,7 @@
   color: rgba(0, 0, 0, 0.4);
 }
 .ui.items > .item .meta > a:not(.ui):hover {
-  color: #393939;
+  color: #292929;
 }
 
 /*--------------
@@ -458,7 +458,7 @@
 }
 .ui.items a.item:hover .content .header,
 .ui.link.items > .item:hover .content .header {
-  color: #0b4778;
+  color: #0695ec;
 }
 
 /*--------------

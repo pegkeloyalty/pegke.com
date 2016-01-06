@@ -8,24 +8,25 @@ permalink: /404.html
 <html class="no-js" lang="">
 {% include head.html %}
 <link rel="stylesheet" href="/public/css/404.min.css"  charset="utf-8">
-<body class="ui container text glitch">
-
-
-  <div class="ui middle aligned aligned grid">
-    <div class="column">
-      <h1 class="ui header centered big">We’re sorry — something has gone wrong on our end.</h1>
-      <div class="ui divider horizontal">
-        Quick Links
+<body class="glitch">
+  <div class="wrapper">
+    <div class="ui middle aligned aligned grid">
+      <div class="column">
+        <h1 class="ui header centered big">We’re sorry — something has gone wrong on our end.</h1>
+        <div class="ui divider horizontal">
+          Quick Links
+        </div>
+        <div class="ui horizontal bulleted link list">
+          <a class="item" href="{{ site.baseurl | prepend: site.url }}">Home</a>
+          <a class="item" href="{% post_url 2015-11-15-privacy-policy %}">Privacy Policy</a>
+          <a class="item" href="{% post_url 2015-10-04-support %}">Contact Us</a>
+          <a class="item" href="{% post_url 2015-11-25-status %}">System Status</a>
+        </div>
+        <div class="ui divider hidden"></div>
+        <div class="ui divider hidden"></div>
+        <p>&copy; 2016 - {{ site.productname }}</p>
+        <small>{{ site.title }}</small>
       </div>
-      <div class="ui horizontal bulleted link list">
-        <a class="item" href="{{ site.baseurl | prepend: site.url }}">Home</a>
-        <a class="item" href="{% post_url 2015-11-15-privacy-policy %}">Privacy Policy</a>
-        <a class="item" href="{% post_url 2015-10-04-support %}">Contact Us</a>
-      </div>
-      <div class="ui divider hidden"></div>
-      <div class="ui divider hidden"></div>
-      <p>&copy; 2016 - {{ site.productname }}</p>
-      <small>{{ site.title }}</small>
     </div>
   </div>
 </body>

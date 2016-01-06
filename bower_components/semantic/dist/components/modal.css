@@ -77,7 +77,7 @@
 
 .ui.modal > .header {
   display: block;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
   background: #FFFFFF;
   margin: 0em;
   padding: 1.25rem 1.5rem;
@@ -231,9 +231,9 @@
     padding-right: 2.25rem;
   }
   .ui.modal > .close {
-    top: 1.0535rem;
+    top: 1.125rem;
     right: 1rem;
-    color: #393939;
+    color: #292929;
   }
 }
 
@@ -322,7 +322,7 @@
   right: 1.5rem;
 }
 .ui.inverted.dimmer > .basic.modal {
-  color: #393939;
+  color: #292929;
 }
 .ui.inverted.dimmer > .ui.basic.modal > .header {
   color: rgba(0, 0, 0, 0.85);
@@ -412,9 +412,9 @@
   padding-right: 2.25rem;
 }
 .ui.fullscreen.modal > .close {
-  top: 1.0535rem;
+  top: 1.125rem;
   right: 1rem;
-  color: #393939;
+  color: #292929;
 }
 
 /*--------------

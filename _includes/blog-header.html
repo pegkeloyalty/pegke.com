@@ -6,7 +6,7 @@
     {% if page.layout == 'post' %}
 
     <span class="sub header post-meta">
-      <time datetime="{{ page.date }}" itemprop="datePublished">{{ page.date | date: "%a, %b %d, %y" }}</time>
+      <time datetime="{{ page.date }}" title="{{ page.date" }}" itemprop="datePublished">{{ page.date | date: "%a, %b %d, %y" }}</time>
       {% if page.author %} •
       <span itemprop="author" itemscope itemtype="http://schema.org/Person">
         <span itemprop="name">{{ page.author }}</span>

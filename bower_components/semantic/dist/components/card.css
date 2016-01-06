@@ -173,7 +173,7 @@
 .ui.card > .content > .header {
   display: block;
   margin: '';
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
   color: rgba(0, 0, 0, 0.85);
 }
 
@@ -182,7 +182,7 @@
 .ui.card > .content > .header:not(.ui) {
   font-weight: bold;
   font-size: 1.26666667em;
-  margin-top: -0.21425em;
+  margin-top: -0.25rem;
   line-height: 1.2857em;
 }
 .ui.cards > .card > .content > .meta + .description,
@@ -311,7 +311,7 @@
 }
 .ui.cards > .card > .content > a.header:hover,
 .ui.card > .content > a.header:hover {
-  color: #0b4778;
+  color: #0695ec;
 }
 
 /* Meta */
@@ -321,7 +321,7 @@
 }
 .ui.cards > .card .meta > a:not(.ui):hover,
 .ui.card .meta > a:not(.ui):hover {
-  color: #393939;
+  color: #292929;
 }
 
 /*--------------
@@ -424,7 +424,7 @@
 }
 .ui.cards > .card > .extra a:not(.ui):hover,
 .ui.card > .extra a:not(.ui):hover {
-  color: #0b4778;
+  color: #0695ec;
 }
 
 

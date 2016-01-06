@@ -20,11 +20,11 @@
   border: none;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
   padding: 0em 0em;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 900;
   line-height: 1.2857em;
   text-transform: none;
-  color: #393939;
+  color: #292929;
 }
 .ui.header:first-child {
   margin-top: -0.14285em;
@@ -454,10 +454,10 @@ a.ui.blue.header:hover {
 
 /* Inverted */
 .ui.inverted.blue.header {
-  color: #54C8FF !important;
+  color: #3aa3e3 !important;
 }
 a.ui.inverted.blue.header:hover {
-  color: #3ac0ff !important;
+  color: #1a9be9 !important;
 }
 
 /*--- Violet ---*/

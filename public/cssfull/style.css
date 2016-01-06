@@ -31,7 +31,7 @@ h1, h2, h3, h4 {
   -moz-osx-font-smoothing: grayscale;
 }
 h2, h3, h4 {
-  font-weight: 400 !important;
+  font-weight: 700 !important;
 }
 .masthead .fp-tableCell {
   position: relative;
@@ -160,8 +160,7 @@ h2, h3, h4 {
   background-color: #FFF;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-  box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
 }
 .ui.text.menu {
   margin: 0 !important;
@@ -568,4 +567,8 @@ div.ui.basic.quote.segment {
 .overlay img {
   display: none;
   visibility: hidden;
+}
+
+.blog .ui.huge.header {
+  font-size: 2.3em;
 }

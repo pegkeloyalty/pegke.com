@@ -61,8 +61,8 @@ gulp.task('favicon', function() {
 // Build SUI
 gulp.task('semantic', function() {
   var semanticcss = [
-    './bower_components/semantic/dist/components/reset.css',
     './bower_components/semantic/dist/components/site.css',
+    './bower_components/semantic/dist/components/reset.css',
     './bower_components/semantic/dist/components/accordion.css',
     './bower_components/semantic/dist/components/button.css',
     './bower_components/semantic/dist/components/card.css',

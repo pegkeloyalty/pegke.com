@@ -9,7 +9,13 @@ body > .grid {
   position: relative;
   animation: glitch 2s steps(100) infinite;
 }
-
+html, body {height:100%;}
+html {display:table; width:100%;}
+body {display:table-cell; text-align:center; vertical-align:middle;}
+a {
+  display: inline-block;
+  margin-right: 5px;
+}
 @keyframes glitch {
   0% {
     text-shadow: 1px 0 0 red, -1px 0 0 blue;
