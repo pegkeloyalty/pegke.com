@@ -22,7 +22,9 @@ layout: default
           <div class="ui segment post-tags">
             <h3>Article Tags</h3>
             {% for category in page.categories %}
-              <h5 title="{{ category | capitalize }}" class="ui green label ui header small tags">{{ category | capitalize }}</h5>
+            <a href="/category/{{ category | downcase | replace:' ', '-' }}">
+              <h5 title="All posts tagged {{ category | capitalize }}" class="ui green label header small tags">{{ category | capitalize }}</h5>
+            </a>
             {% endfor %}
           </div>
 

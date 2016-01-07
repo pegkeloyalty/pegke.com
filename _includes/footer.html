@@ -30,6 +30,8 @@
         <h4 class="ui inverted header">Blogs</h4>
         <div class="ui inverted link list">
           <a href="/blog/" class="item" title="Pegke Blogs">Pegke Blogs</a>
+          <a href="/blog/categories" class="item" title="Categories and Tags">Categories and Tags</a>
+
           {% assign siteBlogs = site.posts | where:'type', 'blog' %}
           {% for post in siteBlogs limit:6 %}
           <a href="{{ post.url }}" class="item" title="{{ post.title }}">{{ post.title | truncate:25 }}</a>
@@ -48,6 +50,6 @@
   </div>
   <div class="ui left aligned container grey small">
     <div class="ui divider hidden"></div>
-    &copy; 2016 - <abbr title="{{ site.title }}">{{ site.productname }}</abbr>
+    &copy; 2016 - <dfn><abbr title="{{ site.title }}">{{ site.productname }}</abbr></dfn>
   </div>
 </div>

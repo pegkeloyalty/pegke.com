@@ -1,0 +1,8 @@
+<h3>Categories</h3>
+<div class="ui list">
+  {% for category in site.categories %}
+  <div class="item">
+    <a href="/category/{{category[0] | downcase | replace:' ', '-' }}/" class="ui label green" title="Posts Tagged {{category[0]}}" >{{category[0]}} <div class="detail">({{category[1].size}})</div> </a>
+  </div>
+  {% endfor %}
+</div>

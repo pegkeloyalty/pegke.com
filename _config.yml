@@ -50,3 +50,12 @@ exclude:
 # Custom Settings
 mailchimp_url: //pegke.us9.list-manage.com/subscribe/post?u=49c28e4c02bbc2d7dfd64815e&amp;id=20b2bd793b
 mailchimp_list_id:  20b2bd793b
+
+gems:
+  - jekyll-paginate
+
+paginate: 10
+tag_page_dir: tag
+tag_feed_dir: tag
+tag_page_layout: tag_page
+tag_feed_layout: tag_feed
