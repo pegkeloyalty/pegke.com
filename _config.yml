@@ -12,7 +12,7 @@ description: Customer Loyalty &amp; Retention Management Software, integrates wi
 keywords: customer loylaty, loyalty software, retail loyalty program, loyalty program, reward points, customer loylaty program, retention management
 productname: Pegke Rewards &#8482;
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://pegke.com" # the base hostname & protocol for your site
+url: "https://pegke.com" # the base hostname & protocol for your site
 lighturl: http://lightrains.com
 permalink:  :title
 lang: en_US
@@ -46,6 +46,7 @@ exclude:
   - package.json
   - node_modules
   - gulpfile.js
+  - .nojekyll
 
 # Custom Settings
 mailchimp_url: //pegke.us9.list-manage.com/subscribe/post?u=49c28e4c02bbc2d7dfd64815e&amp;id=20b2bd793b
