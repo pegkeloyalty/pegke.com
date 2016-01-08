@@ -3,7 +3,8 @@ layout: post
 title:  "Top 5 Customer Loyalty Trends of 2016"
 type: blog
 permalink: /blog/top-5-customer-loyalty-trends-2016
-categories: [Loyalty Program, Restaurants, Loyalty Software]
+categories: [Loyalty Program, Loyalty Trends]
+tags: [trends]
 ---
 
 

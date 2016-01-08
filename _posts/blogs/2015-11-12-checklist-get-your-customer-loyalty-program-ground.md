@@ -4,7 +4,7 @@ title:  "A Checklist to Get Your Customer Loyalty Program off the Ground"
 type: blog
 permalink: /blog/checklist-get-your-customer-loyalty-program-ground
 categories: [Loyalty Program, Restaurants, Loyalty Software]
-tags: [test, 123, 3, sdfg,gd sdfg sd dsfg, sdf,g s,dfg ,sdfg ,sdfg ,sf ,sdfg ,sdfg ,sfdg ,sdfg ,sdfg, sd g,sd]
+tags: [Customer Loyalty Program]
 ---
 
 Customer Loyalty ought to be a go-to methodology for any small business, yet the fact of the matter is, paying little heed to if the system is computerized or an old-school punch card, little entrepreneurs don't feel like they have room schedule-wise to tackle more obligation.

@@ -2,7 +2,6 @@
 layout: page
 title:  "Customer Loyalty Program"
 type: page
-categories: [Customer Loyalty Program, test]
 permalink: customer-loyalty-program
 ---
 

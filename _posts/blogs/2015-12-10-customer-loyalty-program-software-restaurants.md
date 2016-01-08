@@ -4,6 +4,7 @@ title:  "Customer Loyalty Program Software for Restaurants"
 type: blog
 permalink: /blog/customer-loyalty-program-software-for-restaurants
 categories: [Loyalty Program, Restaurants, Loyalty Software]
+tags: [Loyalty, Restaurants] 
 ---
 
 Pegke is a customer loyalty programs for restaurants - as well, which utilizes the Smartphone and Tablet to manage the program; Pegke is the one solution that allows restaurants to create loyalty campaigns enabling them to attract more customers.

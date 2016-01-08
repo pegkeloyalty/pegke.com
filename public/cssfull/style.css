@@ -569,5 +569,34 @@ div.ui.basic.quote.segment {
 }
 .tagss .label {
   margin:10px 5px 0;
-display: inline-block;
+  display: inline-block;
+}
+div.series + ol, div.source + ul {
+  border-top: 3px solid orange;
+  padding: 20px 0 20px 45px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(159, 159, 159, 0.15);
+}
+div.source + ul {
+  font-size: 13px !important;
+}
+
+article ~ p:first-child:first-letter {
+  float: left;
+  color: #903;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-family: Georgia;
+}
+
+article blockquote, blockquote p {
+  font-size: 25px;
+  margin-left: -1.375px;
+  line-height: 1.5;
+  letter-spacing: -0.008em;
+  padding-left: 30px;
+  font-style: italic;
 }

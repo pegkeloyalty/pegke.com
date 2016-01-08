@@ -3,7 +3,8 @@ layout: post
 title:  "Customer Retention Strategies"
 type: blog
 permalink: /blog/customer-retention-strategies
-categories: [Loyalty Program, Restaurants, Loyalty Software]
+categories: [Loyalty Program, Retention]
+tags: [Retention]
 ---
 
 The results of customer retention additionally compound after some time, and in at times unforeseen ways. Indeed, even a modest change in customer retention can course through a business framework and increase after some time. The subsequent impact on long haul benefit and development shouldn't be thought little of.

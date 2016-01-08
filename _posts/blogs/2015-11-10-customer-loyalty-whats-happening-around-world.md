@@ -3,7 +3,8 @@ layout: post
 title:  "6 Customer Loyalty trends around the World"
 type: blog
 permalink: /blog/customer-loyalty-whats-happening-around-world
-categories: [Loyalty Program, Restaurants, Loyalty Software]
+categories: [Loyalty Trends, Trends]
+tags: [Trends]
 ---
 
 Reward programs are intended to exactly deliver this – be able to track and reward customer behavior. Statistics also indicate that consumer participation in rewards programs is on the rise across all demographic segments. With more customers choosing to do coupon and bargain shopping in the store, the reward programs that provide personalized rewards will prove to be differentiators if implemented with a laser sharp focus on targeted customer segments.

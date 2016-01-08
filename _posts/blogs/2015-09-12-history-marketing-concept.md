@@ -3,7 +3,7 @@ layout: post
 title:  "The History of the Marketing Concept"
 type: blog
 permalink: /blog//history-marketing-concept
-categories: [Loyalty Program, Restaurants, Loyalty Software]
+categories: [Marketing]
 ---
 
 Aspects of modern marketing could be found in the practices of early traders and the bazaars of the Middle East…. traders in pre-Hellenic Greece displayed admirable customer focus, and the medieval book trade espoused a range of marketing strategies including selective distribution, celebrity endorsement, sponsorship and test marketing. Marketing functions were manifest in early joint-stock companies such as the East India Company and the Hudson's Bay Company. While historians, by and large, will view the formation of the East India Company as a British prelude to the eventual conquest of the Indian subcontinent, a modern marketing strategist could view the East India Company, a tad charitably perhaps, as a British tactic to enter new markets with the ultimate aim of becoming the undisputed market leader in Southeast Asia. Such a view has parallels in the last century, and the best example is the invasion and eventual domination of the U.S. consumer electronic market by the Japanese via a seemingly innocuous presence in Europe.

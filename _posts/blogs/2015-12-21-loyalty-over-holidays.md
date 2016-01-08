@@ -3,7 +3,7 @@ layout: post
 title:  "Loyalty over the Holidays"
 type: blog
 permalink: /blog/customer-loyalty-over-holidays
-categories: [Loyalty Program, Restaurants, Loyalty Software]
+categories: [Holidays]
 ---
 
 Amid the extreme center of attention on scoring revenue in a sea of competitors, it can be easy to omit what must be the precedence — successful a patron who sticks round long after the ultimate slice of ham is eaten and the lights come down. If the value of loyalty escapes you, understand this: consistent with Harvard business review, growing patron retention rates by just 5% raises gains with the aid of 25% to 95%.

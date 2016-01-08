@@ -33,9 +33,9 @@ layout: default
           <div class="related ui segment">
             <h3>Related Posts</h3>
             <ul class="ui list">
-              {% assign siteBlogs = site.posts | where:'type', 'blog' | limit:2 %}
-              {% for post in siteBlogs %}
-              <li><a href="{{ post.url }}" class="item" title="{{ post.date | date_to_string }}">{{ post.title }}</a></li>
+              {% assign siteBlogs = site.posts | where:'type', 'blog' %}
+              {% for post in siteBlogs limit:4 %}
+              <li><a href="{{ post.url }}" class="item" title="{{ post.title }}">{{ post.title }}</a></li>
               {% endfor %}
             </ul>
           </div>
