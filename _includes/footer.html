@@ -1,4 +1,4 @@
-<a href="#top" class="go-top"><i class="eject large icon"></i></a>
+<a href="#top" class="go-top"><i class="eject bordered inverted black large icon"></i></a>
 <div class="ui inverted vertical footer segment">
   <div class="ui container">
     <div class="ui stackable inverted divided equal height stackable grid">
@@ -39,12 +39,20 @@
         </div>
       </div>
       <div class="five wide column">
+        <h4 class="ui inverted header">System</h4>
+        <div class="ui inverted link list">
+          <a class="item" href="{% post_url 2015-11-22-api %}">API</a>
+          <a href="{% post_url 2015-11-25-status %}" class="ui inverted link item">System Status</a>
+          <a class="item" href="{% post_url 2015-12-10-stack %}">Technology Stack</a>
+        </div>
+        <div class="ui divider hidden"></div>
         <h4 class="ui inverted header">Social</h4>
         {% include social-buttons.html %}
         <div class="ui inverted link list">
-          <a href="mailto:hello@pegke.com" class="item"><i class="send icon"></i> hello@pegke.com</a>
+          <a href="mailto:hello@pegke.com" class="item"><i class="send icon"></i>hello@pegke.com</a>
           <a href="tel:+{{ site.phone }}" class="item"><i class="phone icon"></i> {{ site.phoneno }}</a>
         </div>
+
       </div>
     </div>
   </div>

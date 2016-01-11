@@ -6,39 +6,32 @@ layout: default
 <div class="ui center header aligned text headerimg">
   <header class="ui center aligned blog">
     <h1 class="post-title ui header huge" itemprop="name headline" title="{{ page.title }}">{% if page.grouptype == 'tag' %}
-		Blogs Tagged: {{page.tag}}
-		{% elsif page.grouptype == 'category' %}
-		Category: '{{page.category}}'
-		{% endif %}</h1>
-  </header>
-  <div class="ui divider hidden"></div>
-</div>
+      Blogs Tagged: {{page.tag}}
+      {% elsif page.grouptype == 'category' %}
+      Category: '{{page.category}}'
+      {% endif %}</h1>
+    </header>
+    <div class="ui divider hidden"></div>
+  </div>
 
 
-<div class="ui container">
+  <div class="ui container">
 
-<div class="ui grid">
-	<div class="ten wide column">
+    <div class="ui grid stackable">
+      <div class="ten wide column">
 
-{% for post in paginator.posts %}
-	{% include post_row.html %}
-{% endfor %}
-</div>
-<div class="six wide column">
-	{% include blog-cats.html %}
+        {% for post in paginator.posts %}
+        {% include post_row.html %}
+        {% endfor %}
+        {% include pagination.html %}
 
-	{% include subscribe.html %}
-	
-</div>
+    </div>
+    <div class="six wide column">
+      {% include blog-cats.html %}
+      {% include subscribe.html %}
+
+    </div>
 
 
-</div>
-
-{% if page.grouptype == 'tag' %}
-	{% capture paging_root %}/tag/{{page.tag}}/{% endcapture %}
-{% elsif page.grouptype == 'category' %}
-	{% capture paging_root %}/category/{{page.category}}/{% endcapture %}
-{% else %}
-	{% capture paging_root %}/{% endcapture %}
-{% endif %}
+  </div>
 </div>

@@ -1,0 +1,29 @@
+<div class="ui divider hidden"></div>
+<div id="paging">
+
+  {% if page.grouptype == 'tag' %}
+    {% capture paging_root %}/tag/{{page.tag}}/{% endcapture %}
+  {% elsif page.grouptype == 'category' %}
+    {% capture paging_root %}/category/{{page.category}}/{% endcapture %}
+  {% else %}
+    {% capture paging_root %}/{% endcapture %}
+  {% endif %}
+
+  {% if paginator.next_page %}
+  <a href="{{paging_root | downcase | replace:' ', '-' }}page{{paginator.next_page}}" class="ui left small labeled icon floated button"><i class="left arrow icon"></i> Older</a>
+  {% else %}
+  <a href="#" class="ui left disabled labeled icon floated small button"><i class="left arrow icon"></i> Older</a>
+  {% endif %}
+
+  {% if paginator.previous_page %}
+  {% if paginator.previous_page == 1 %}
+  <a href="{{paging_root | downcase | replace:' ', '-' }}" class="ui right floated right labeled icon small button"><i class="right arrow icon"></i>Newer</a>
+  {% else %}
+  <a href="{{paging_root | downcase | replace:' ', '-' }}page{{paginator.previous_page}}" class="ui right floated small right labeled icon button"><i class="right arrow icon"></i> Newer</a>
+  {% endif %}
+  {% else %}
+  <a href="#" class="ui right labeled icon right floated small disabled button"><i class="right arrow icon"></i> Newer</a>
+{% endif %}
+</div>
+{% assign type = nil %}
+{% assign paging_root = nil %}

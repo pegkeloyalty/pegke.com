@@ -19,4 +19,4 @@ Crawl-delay: 10
 Disallow: /
 
 
-Sitemap: https://beta.pegke.com/sitemap.xml
+Sitemap: https://pegke.com/sitemap.xml

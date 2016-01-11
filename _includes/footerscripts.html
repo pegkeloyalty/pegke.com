@@ -22,7 +22,7 @@ head.ready(function () {
       navigationTooltips: ['home', 'benefits', 'testimonials', 'businesses', 'footer'],
       navigation: true,
       navigationPosition: 'right',
-      sectionsColor: ['#000', '#F8E985', '#DEEEEB', 'ECF2F2', '#222222'],
+      sectionsColor: ['#000', '#fff7c1', '#DEEEEB', 'ECF2F2', '#222222'],
     });
   }
 });
@@ -57,6 +57,7 @@ head.load(
 
 <script type="text/javascript">
 head.ready(function () {
+  $('.overlayp').remove();
   $('.cta, .ctal').click(function() {
     $('.ui.modal.signup').modal('show');
   });
@@ -88,17 +89,18 @@ head.ready(function () {
         var items = [];
         $.each( data, function( key, val) {
 
-          items.push( '<div class="item"> \
-              <div class="right floated content"> \
-                <div class="ui tiny green label">' + val + '</div> \
-              </div> <i class="check large green icon"></i> \
-              <div class="content">' + key + '</div></div>' );
+        items.push( '<div class="item"> \
+          <div class="right floated content"> \
+          <div class="ui tiny green label">' + val + '</div> \
+          </div> <i class="check large green icon"></i> \
+          <div class="content">' + key + '</div></div>' );
         });
 
         $( "<div/>", {
           "class": "ui middle aligned divided list",
           html: items.join( "" )
         }).appendTo( "#pegkestat" );
+        $('#pegkestat').removeClass('loading');
       });
     }
 

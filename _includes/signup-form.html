@@ -1,5 +1,5 @@
 <div class="ui basic modal signup">
-  <i class="close icon red"></i>
+  <i class="close large icon red"></i>
   <form class="ui form segment green">
     <h3 class="ui grey big header">Tell Us About Yourself</h3>
     <div class="two fields">
@@ -38,7 +38,6 @@
       </div>
       <div class="field">
         <label>Location</label>
-
         <div class="ui search selection dropdown">
           <input type="hidden" name="country">
           <i class="dropdown icon"></i>
@@ -47,10 +46,8 @@
         </div>
       </div>
     </div>
-    <div class="field">
-    </div>
     <div class="inline field">
-        <label>Signing up signifies you’ve read and agree to our <a href="{% post_url 2015-11-15-privacy-policy %}">Terms of Service and Privacy Policy</a></label>
+      <label>Signing up signifies you’ve read and agree to our <a href="{% post_url 2015-11-15-terms-of-service%}">Terms of Service</a> and <a href="{% post_url 2015-11-15-privacy-policy %}">Privacy Policy</a></label>
     </div>
     <div class="ui blue submit button">Create Your Account</div>
   </form>

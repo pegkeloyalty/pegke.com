@@ -13,6 +13,9 @@
   .ui.huge.header {
     font-size: 2.1rem
   }
+  .ui.header:first-child {
+    margin-top: 0;
+  }
   div.sub.header {
     font-size: 1.2rem !important;
   }
