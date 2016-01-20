@@ -1,7 +1,10 @@
 {
-  "API": "Operational",
-  "Merchant Dashboard": "Operational",
-  "Developer Sandbox": "Operational",
-  "Homepage": "Operational",
-  "Documentation": "Up to Date"
+  "last_mod" : "Mon Jan 11 2016 17:29:12 GMT+0530 (IST)",
+  "sstatus": {
+    "API": "Operational",
+    "Merchant Dashboard": "Operational",
+    "Developer Sandbox": "Operational",
+    "Homepage": "Operational",
+    "Documentation": "Up to Date"
+  }
 }

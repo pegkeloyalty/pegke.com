@@ -19,7 +19,7 @@ head.ready(function () {
     $('#fullpage').fullpage({
       animateAnchor: true,
       scrollOverflow: true,
-      navigationTooltips: ['home', 'benefits', 'testimonials', 'businesses', 'footer'],
+      navigationTooltips: ['Home', 'Benefits', 'Testimonials', 'Businesses', 'Contact'],
       navigation: true,
       navigationPosition: 'right',
       sectionsColor: ['#000', '#fff7c1', '#DEEEEB', 'ECF2F2', '#222222'],
@@ -87,7 +87,7 @@ head.ready(function () {
       $.getJSON( "/status.json", function( data ) {
         $('#lstmod').text(dt);
         var items = [];
-        $.each( data, function( key, val) {
+        $.each( data.sstatus, function( key, val) {
 
         items.push( '<div class="item"> \
           <div class="right floated content"> \
@@ -100,6 +100,7 @@ head.ready(function () {
           "class": "ui middle aligned divided list",
           html: items.join( "" )
         }).appendTo( "#pegkestat" );
+        $('#lstmod').html(data.last_mod);
         $('#pegkestat').removeClass('loading');
       });
     }
@@ -242,7 +243,11 @@ head.ready(function () {
   })
   .api({
     method: 'post',
-    action: 'support'
+    action: 'support',
+    dataType: 'jsonp',
+    onResponse: function (response) {
+      console.log(response);
+    }
   });
 
   $('#sg-sup-form')

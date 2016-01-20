@@ -102,6 +102,7 @@ h2, h3, h4 {
   font-style: normal;
   border: 0 none !important;
   line-height: 1;
+  font-family: "Icon";
   vertical-align: middle;
   font-size: 8em
 }
@@ -300,12 +301,10 @@ div.eight.wide.column.centered {
   display: inline-block;
   font-size: 1em;
   letter-spacing: 1px;
-  color: #fff;
   -webkit-transform: translateY(10px);
   -moz-transform: -moz-translateY(10px);
   -ms-transform: -ms-translateY(10px);
   transform: translateY(10px);
-  opacity: 0;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
   -moz-transition: -moz-transform 0.3s, opacity 0.2s;
   -webkit-transition: transform 0.3s, opacity 0.2s;
@@ -319,6 +318,7 @@ div.eight.wide.column.centered {
   -moz-transform: translateY(0px);
   -ms-transform: translateY(0px);
   transform: translateY(0px);
+  color: #FFF;
 }
 
 
