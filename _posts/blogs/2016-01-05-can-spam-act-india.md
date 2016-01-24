@@ -17,6 +17,8 @@ Unsolicited Electronic Mail also called "spam" is a growing concern among corpor
 ## CAN-SPAM Act India
 The impact of spam is clearly widespread. Presently, India lacks a specific anti-spam legislation. In consideration of the swelling growth of spam across the globe and the increasing number of Indian users, it is of utmost urgency that a specific legislation is formulated to tackle the issue.
 
+{% highlight Presently, India lacks a specific anti-spam legislation. %}
+
 ### In the future
 With the issue being debated across multiple levels, some black and white legislation can be expected in near future. Some quarters have already started calling for an amendment of the IT Act. A TRAI (Telecom Regulatory Authority of India) like regulator, which made regulations like “Do Not Disturb” hotlines for spam SMSs and marketing calls, can also be expected, and any violation can be expected to result in penalty. But in all these, what happens to ConstantContact and other companies providing digital marketing solutions?
 

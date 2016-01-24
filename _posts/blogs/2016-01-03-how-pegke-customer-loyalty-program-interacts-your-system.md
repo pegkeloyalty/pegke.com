@@ -12,13 +12,12 @@ excerpt: "At Pegke, we have multiple ways of integrating your POS with Pegke clo
 ## What is Pegke Customer Loyalty Program
 Pegke is an easy to use customer loyalty program or a reward point system, beneficial to both the business and the customer. Businesses drive attention of customers through customer loyalty programs by offering fantastic ways to reward and say thank you to their customers.
 
-## What is a POS (point of sale) ?
-The point of sale (POS) is the time and place where a retail transaction is completed. It is the point at which a customer makes a payment to the merchant in exchange for goods or after provision of a service. At the point of sale, the merchant would prepare an invoice for the customer (which may be a cash register printout) or otherwise calculate the amount owed by the customer and provide options for the customer to make payment. After receiving payment, the merchant will also normally issue a receipt for the transaction, though increasingly a receipt is being dispensed with.
+{% highlight The point of sale (POS) is the time and place where a retail transaction is completed. It is the point at which a customer makes a payment to the merchant in exchange for goods or after provision of a service. %}
 
 ## How Pegke Customer Loyalty Program integrates with your POS
 At Pegke, we have multiple ways of integrating your POS with Pegke cloud platform. Which includes and not limited to API, Coupon Scan and Tablet. Lets take a look at each of them in detail.
 
-![pegke api](https://pegke.com/sites/default/files/uploads/73209c85a2d2db704b7d0607b8914ecba9408897.jpg)
+![pegke api](/public/img/pegke-api-workflow.jpg)
 {: .ui .image .fluid .lazy}
 
 1. Manual Interaction

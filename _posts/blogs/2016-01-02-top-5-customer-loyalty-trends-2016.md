@@ -16,7 +16,7 @@ In all actuality client experience does make a difference. Brands that can give 
 * Personalization and accomplice showcasing
 * Experiential prizes = greatest effect.
 
-![Customer Loyalty Trends Of 2016](https://pegke.com/sites/default/files/uploads/top-5-customer-loyalty-trends-of-2015.jpg)
+![Customer Loyalty Trends Of 2016](/public/img/top-5-customer-loyalty-trends-of-2016.jpg)
 {: .ui .image .fluid .lazy}
 
 

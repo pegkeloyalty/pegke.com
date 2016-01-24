@@ -19,7 +19,6 @@ module Jekyll
       </div>
       </div>'
     end
-
   end
 end
 
