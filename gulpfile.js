@@ -37,6 +37,17 @@ gulp.task('images',  function() {
     use: [pngquant()]
   }))
   .pipe(gulp.dest('./public/img/stack'));
+
+  gulp.src('./public/imgfull/team/*')
+  .pipe(imagemin({
+    progressive: true,
+    optimizationLevel: 4,
+    multipass: true,
+    svgoPlugins: [{removeViewBox: false}],
+    use: [pngquant()]
+  }))
+  .pipe(gulp.dest('./public/img/team'));
+
 });
 
 

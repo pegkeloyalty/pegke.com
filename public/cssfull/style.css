@@ -596,3 +596,9 @@ article blockquote, blockquote p {
   line-height: 1.1em;
   font-style: italic;
 }
+.team .ui.fluid.link.card {
+  cursor: default !important;
+}
+.ui.divider.bigger {
+  min-height: 50px
+}

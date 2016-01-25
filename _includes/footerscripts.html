@@ -149,9 +149,7 @@ head.ready(function () {
     })
   });
 
-  $('.menu .item')
-  .tab()
-  ;
+  $('.menu .item').tab();
 
   $('.ui.dropdown').dropdown();
   $('.ui.checkbox').checkbox();
@@ -161,6 +159,11 @@ head.ready(function () {
     context: '#context',
     offset: 75
   });
+
+  $('.special.card .image').dimmer({
+    on: 'hover'
+  });
+
   // $('.ui.label').popup();
   $('.rupee.icon').popup();
   $('.feature-list .item').popup();
