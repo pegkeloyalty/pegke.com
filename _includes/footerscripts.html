@@ -73,12 +73,13 @@ head.ready(function () {
       $('.costs button').removeClass('positive');
       var selcur = $(this).attr('data-curr');
       $(this).addClass('positive');
+      console.log(selcur);
       if( selcur == 'usd' ) {
         $('.currency').text('$');
-        animateUpdate(0.42, 0.006, 3, 'amt');
+        animateUpdate(1.00, 0.014, 3, 'amt');
       } else if( selcur == 'inr' ) {
         $('.currency').text('₹');
-        animateUpdate(0.006, 0.42, 2, 'amt');
+        animateUpdate(0.014, 1.00, 2, 'amt');
       }
     });
 
@@ -111,7 +112,7 @@ head.ready(function () {
       $(this).addClass('positive');
       if( selcur == 'usd' ) {
         $('.entcurrency').text('$');
-        animateUpdate(0.62, 0.008, 3, 'entamt');
+        animateUpdate(1.00, 0.008, 3, 'entamt');
       } else if( selcur == 'inr' ) {
         $('.entcurrency').text('₹');
         animateUpdate(0.008, 0.62, 2, 'entamt');
