@@ -57,7 +57,6 @@ head.load(
 
 <script type="text/javascript">
 head.ready(function () {
-  $('.overlayp').remove();
   $('.cta, .ctal').click(function() {
     $('.ui.modal.signup').modal('show');
   });
@@ -332,7 +331,7 @@ head.ready(function () {
       // },
     }
   });
-
+  $('.overlayp').remove();
 });
 
 function submitForm() {
