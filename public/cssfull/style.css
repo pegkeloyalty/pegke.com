@@ -602,3 +602,11 @@ article blockquote, blockquote p {
 .ui.divider.bigger {
   min-height: 50px
 }
+a i.linkedin.icon {
+  display: block !important;
+  visibility: visible;
+}
+.card .center {
+  padding: 0 5px;
+  line-height: 22px;
+}
