@@ -63,7 +63,7 @@ head.ready(function () {
 
   $.fn.api.settings.api = {
     'signup'  : 'https://dashboard.pegke.com/?q=api/mobileuser/register',
-    'support' : 'https://dashboard.pegke.com/api/user/register',
+    'support' : 'https://dashboard.pegke.com/?q=api/send_mail',
     'registermobile'  : 'https://dashboard.pegke.com/?q=api/mobileuser/register'
   };
 
@@ -247,7 +247,12 @@ head.ready(function () {
   .api({
     method: 'post',
     action: 'support',
-    dataType: 'jsonp',
+    data : {
+            subject : "test subject"
+            content : "test content",
+            mail_address: "sibiraj@lightrains.com"
+          },
+    dataType: 'json',
     onResponse: function (response) {
       console.log(response);
     }
