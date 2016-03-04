@@ -75,16 +75,17 @@ head.ready(function () {
       console.log(selcur);
       if( selcur == 'usd' ) {
         $('.currency').text('$');
-        animateUpdate(1.00, 0.014, 3, 'amt');
+        animateUpdate(1.60, 0.025, 3, 'amt');
       } else if( selcur == 'inr' ) {
         $('.currency').text('₹');
-        animateUpdate(0.014, 1.00, 2, 'amt');
+        animateUpdate(0.025, 1.60, 2, 'amt');
       }
     });
 
     if ($('#pegkestat').length) {
       var dt = new Date();
-      $.getJSON( "/status.json", function( data ) {
+      $.getJSON("https://dashboard.pegke.com/?q=api/pegke_status", function( data ) {
+        console.log(data);
         $('#lstmod').text(dt);
         var items = [];
         $.each( data.sstatus, function( key, val) {
@@ -105,19 +106,6 @@ head.ready(function () {
       });
     }
 
-    $('.entcosts button').click(function() {
-      $('.entcosts button').removeClass('positive');
-      var selcur = $(this).attr('data-curr');
-      $(this).addClass('positive');
-      if( selcur == 'usd' ) {
-        $('.entcurrency').text('$');
-        animateUpdate(1.00, 0.008, 3, 'entamt');
-      } else if( selcur == 'inr' ) {
-        $('.entcurrency').text('₹');
-        animateUpdate(0.008, 0.62, 2, 'entamt');
-      }
-    });
-
     function animateUpdate(fromVal, toVal, roundVal, elm) {
       jQuery({ Counter: 0 }).animate({ Counter: toVal }, {
         duration: 1000,
@@ -136,17 +124,6 @@ head.ready(function () {
         $(this).addClass("active");
       }
     });
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 400) {
-        $('.go-top').fadeIn(400);
-      } else {
-        $('.go-top').fadeOut(400);
-      }
-    });
-    $('.go-top').click(function(e) {
-      e.preventDefault();
-      $('html, body').animate({scrollTop: 0}, 300);
-    })
   });
 
   $('.menu .item').tab();
@@ -225,7 +202,7 @@ head.ready(function () {
     action: 'signup'
   });
 
-  $('#support')
+  $('form#support')
   .form({
     fields: {
       email: {
@@ -282,12 +259,7 @@ head.ready(function () {
     $('.ui.submenu.modal')
     .modal('show');
   });
-  // $('#checkpoints').on('submit', function(e) {
-  //   e.preventDefault();
-  //   var el = $(this);
-  //   $('#sbmit').addClass('loading');
-  //   // el.addClass.attr('disabled', "true");
-  // });
+
   $('#sg-signup').click(function() {
     $(this).addClass('loading');
     $('#sg-email').attr('disabled', "true");
@@ -320,16 +292,6 @@ head.ready(function () {
           prompt: 'Please chose your country'
         }]
       },
-      // dob: {
-      //   identifier: 'dob',
-      //   rules: [{
-      //     type: 'empty',
-      //   },
-      // {
-      // type: 'regExp[/^d{2}([./-])d{2}1d{4}$/]'
-      // }
-      // ]
-      // },
     }
   });
   $('.overlayp').remove();
@@ -339,4 +301,5 @@ function submitForm() {
   alert('dfgdfg');
 }
 </script>
+<script src="https://linked.chat/web/6gdw5e" async></script>
 <script>(function(G,o,O,g,l){G.GoogleAnalyticsObject=O;G[O]||(G[O]=function(){(G[O].q=G[O].q||[]).push(arguments)});G[O].l=+new Date;g=o.createElement('script'),l=o.scripts[0];g.src='https://www.google-analytics.com/analytics.js';l.parentNode.insertBefore(g,l)}(this,document,'ga'));ga('create', 'UA-38015473-1', 'pegke.com');ga('require', 'displayfeatures');ga('set', '&uid', 0);ga('send', 'pageview')</script>
