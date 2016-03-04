@@ -28,9 +28,9 @@ phone: 914714000056
 cover: /public/og/pegke-og.jpg
 
 dashboard:
-  base_url: https://pegke.com/
+  base_url: https://dashboard.pegke.com
   api_base: dashboard.pegke.com/v1
-  app_down: https://pegke.com/apps
+  app_down: https://apps.pegke.com
 
 apps:
   android: https://pegke.com/
