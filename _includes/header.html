@@ -2,7 +2,7 @@
   <div class="ui container nav">
     <div class="ui secondary menu">
       <a href="/"><img src="{{ "/public/img/pegke-logo.svg" | prepend: site.baseurl }}" alt="{{ site.productname }} Logo" width="140" /></a>
-      <div class="menu right large monitor only">
+      <div class="menu right monitor only">
         <a href="/pricing" class="item ui button red">Pricing</a>
         <a href="/features" class="item ui button red">Features</a>
         <a href="/how-it-works" class="item ui button red">How it Works</a>
@@ -11,7 +11,7 @@
           <div class="ui medium buttons">
             <a class="ui button red ctal" href="#signup">sign up</a>
             <div class="or"></div>
-            <a class="ui button blue" href="tel:+{{ site.phone }}">request demo</a>
+            <a class="ui button blue" href="{% post_url 2015-10-04-support %}">request demo</a>
           </div>
         </div>
       </div>

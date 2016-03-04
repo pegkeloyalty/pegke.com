@@ -1,4 +1,3 @@
-<a href="#top" class="go-top"><i class="eject bordered inverted black large icon"></i></a>
 <div class="ui inverted vertical footer segment">
   <div class="ui container">
     <div class="ui stackable inverted divided equal height stackable grid">
@@ -21,9 +20,9 @@
           <a href="{{ post.url }}" class="item" title="{{ post.title }}">{{ post.title | truncate:25 }}</a>
           {% endfor %}
           <h4 class="ui inverted header">Options</h4>
-          <a href="#rech" class="item">Mobile Recharge</a>
-          <a href="#own" class="item">Own Products</a>
-          <a href="#gift" class="item">Gift Vouchers</a>
+          <a href="{% post_url 2016-03-03-redeem-options %}#mobile-recharge" class="item">Mobile Recharge</a>
+          <a href="{% post_url 2016-03-03-redeem-options %}#own-products" class="item">Own Products</a>
+          <a href="{% post_url 2016-03-03-redeem-options %}#gift-vouchers" class="item">Gift Vouchers</a>
         </div>
       </div>
       <div class="three wide column">

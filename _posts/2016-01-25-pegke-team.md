@@ -5,10 +5,7 @@ subtitle: We are a team of techies, customer support savvys and business people
 type: page
 permalink: /about/team
 ---
-
-
 <div class="ui four column stackable grid team">
-
   <div class="column">
     <div class="ui fluid card red special">
       <div class="blurring dimmable image">
