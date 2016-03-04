@@ -494,17 +494,6 @@ blockquote.message {
   font-size: 1rem !important;
   line-height: 22px;
 }
-.go-top {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  display: none;
-  color: white;
-  padding: 7px;
-  height: 40px;
-  width: 40px;
-  z-index: 999;
-}
 .pagetwo h2.header {
   margin-bottom: 25px;
   margin-bottom: 25px !important;
