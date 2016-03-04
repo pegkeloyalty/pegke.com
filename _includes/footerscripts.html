@@ -247,11 +247,7 @@ head.ready(function () {
   .api({
     method: 'post',
     action: 'support',
-    data : {
-            subject : "test subject"
-            content : "test content",
-            mail_address: "sibiraj@lightrains.com"
-          },
+    serializeForm: true,
     dataType: 'json',
     onResponse: function (response) {
       console.log(response);
