@@ -13,7 +13,7 @@ permalink: /about/team
           <div class="content">
             <div class="center">
               <div class="description">
-                Steve Jobes is a fictional character designed to resemble someone familiar to readers.
+                Co-founder and Director of Enterprise Marketing.
               </div>
             </div>
           </div>
@@ -47,12 +47,12 @@ permalink: /about/team
             </div>
           </div>
         </div>
-        <img src="/public/img/team/nikhil-mohan.jpg">
+        <img src="/public/img/team/sibiraj.jpg">
       </div>
       <div class="content">
-        <span class="header">Sibiraj P.R. </span>
+        <span class="header">Sibiraj P.R.</span>
         <div class="meta">
-          CTO & VP of Product
+          CTO
         </div>
       </div>
       <div class="extra content">
@@ -96,75 +96,17 @@ permalink: /about/team
           <div class="content">
             <div class="center">
               <div class="description">
-                Steve Jobes is a fictional character designed to resemble someone familiar to readers.
+                Director, CEO (Mentoring & Coaching) D2E Consulting Pvt Ltd
               </div>
             </div>
           </div>
         </div>
-        <img src="/public/img/team/nikhil-mohan.jpg">
+        <img src="/public/img/team/krishnendu-sen.jpg">
       </div>
       <div class="content">
-        <span class="header">Sibiraj P.R. </span>
+        <span class="header">Krishnendu Sen</span>
         <div class="meta">
-          CTO & VP of Product
-        </div>
-      </div>
-      <div class="extra content">
-        <div class="right floated author">
-          <a target="_blank" href="http://in.linkedin.com/nikhilmkumar"><i class="linkedin icon"></i></a>
-          <a target="_blank" href="https://twitter.com/nikhilmohan7"><i class="twitter icon"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="ui fluid card red special">
-      <div class="blurring dimmable image">
-        <div class="ui dimmer">
-          <div class="content">
-            <div class="center">
-              <div class="description">
-                Steve Jobes is a fictional character designed to resemble someone familiar to readers.
-              </div>
-            </div>
-          </div>
-        </div>
-        <img src="/public/img/team/nikhil-mohan.jpg">
-      </div>
-      <div class="content">
-        <span class="header">Prmaod J George</span>
-        <div class="meta">
-          EVP of Finance
-        </div>
-      </div>
-      <div class="extra content">
-        <div class="right floated author">
-          <a target="_blank" href="http://in.linkedin.com/nikhilmkumar"><i class="linkedin icon"></i></a>
-          <a target="_blank" href="https://twitter.com/nikhilmohan7"><i class="twitter icon"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="ui fluid card red special">
-      <div class="blurring dimmable image">
-        <div class="ui dimmer">
-          <div class="content">
-            <div class="center">
-              <div class="description">
-                Steve Jobes is a fictional character designed to resemble someone familiar to readers.
-              </div>
-            </div>
-          </div>
-        </div>
-        <img src="/public/img/team/nikhil-mohan.jpg">
-      </div>
-      <div class="content">
-        <span class="header">Prmaod J George</span>
-        <div class="meta">
-          EVP of Finance
+          Member- Advisory Board
         </div>
       </div>
       <div class="extra content">
