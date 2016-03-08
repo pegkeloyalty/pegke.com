@@ -63,7 +63,7 @@ head.ready(function () {
 
   $.fn.api.settings.api = {
     'signup'  : 'https://dashboard.pegke.com/?q=api/mobileuser/register',
-    'support' : 'https://dashboard.pegke.com/?q=api/send_mail',
+    'support' : 'https://dashboard.pegke.com/?q=api/contact_us',
     'registermobile'  : 'https://dashboard.pegke.com/?q=api/mobileuser/register'
   };
 
@@ -227,7 +227,9 @@ head.ready(function () {
     serializeForm: true,
     dataType: 'json',
     onResponse: function (response) {
-      console.log(response);
+      $('form#support')[0].reset();
+      $('form#support').fadeOut();
+      $('#afterContact').removeClass('ohidden');
     }
   });
 
