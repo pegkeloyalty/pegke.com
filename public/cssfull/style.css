@@ -599,3 +599,28 @@ a i.linkedin.icon {
   padding: 0 5px;
   line-height: 22px;
 }
+.fp-viewing-4 .downarrow {
+  display: none;
+  visibility: hidden;
+}
+.downarrow{
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  color: yellow;
+  left: 50%;
+  -webkit-animation: mymove 2s;  /* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: 8;  /* Chrome, Safari, Opera */
+  animation: mymove 2s;
+  animation-iteration-count: 8;
+  z-index: 3
+}
+@-webkit-keyframes mymove {
+  from {bottom: 40px;}
+  to {bottom: 10px;}
+}
+
+@keyframes mymove {
+  from {bottom: 40px;}
+  to {bottom: 10px;}
+}
