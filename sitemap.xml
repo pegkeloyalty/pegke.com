@@ -2,11 +2,11 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
     <loc>{{ site.baseurl | prepend: site.url }}</loc>
-    <lastmod>Thu, 10 Dec 2015 00:00:00 +0530</lastmod>
+    <lastmod>{{ "01-01-2016 00:00:00" | date_to_xmlschema }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
@@ -18,7 +18,7 @@ layout: null
   {% endif %}
   <url>
     <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
-    <lastmod>{{ post.date | date_to_rfc822 }}</lastmod>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     <changefreq>daily</changefreq>
     <priority> {{priority}} </priority>
   </url>
