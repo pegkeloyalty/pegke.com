@@ -58,6 +58,8 @@ mailchimp_list_id:  20b2bd793b
 
 gems:
   - jekyll-paginate
+  - nokogiri
+  - fastimage
 
 paginate: 8
 paginate_path: "/blog/page:num/"
@@ -65,3 +67,5 @@ tag_page_dir: tag
 tag_feed_dir: tag
 tag_page_layout: tag_page
 tag_feed_layout: tag_feed
+
+ampdir: amp

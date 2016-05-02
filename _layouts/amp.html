@@ -1,0 +1,104 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="canonical" href="{{ page.canonical_url | prepend: site.baseurl | prepend: site.url }}" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,700italic' rel='stylesheet' type='text/css'>
+
+    <style amp-custom="">
+      body {
+        padding: 10px;
+        font-family: 'Lato', sans-serif;
+        animation: amp-timeout 0x 5s 1 normal forwards;
+        padding-top: 30px;
+      }
+      .h1 {
+        font-size: 20px;
+      }
+      .ui.highlight {
+        font-size: 18pt;
+        border-left: 3px solid #a7bd0d;
+        padding: 15px;
+        margin: 20px 5px;
+        font-style: italic;
+        background: #fbfbfb;
+        color: #21ba45;
+      }
+      p {
+        color: #333;
+        line-height: 25px;
+      }
+      @keyframes amp-timeout {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+      }
+      a {
+        color: #1678c2;
+        text-decoration: none;
+      }
+      .ui.list li {
+        margin: 10px 0;
+      }
+      .related.ui.segment {
+        border-top: 5px solid #a7bd0d;
+        background: rgba(167, 189, 13, 0.22);
+        padding: 5px
+      }
+      .related.ui.segment h3 {
+        margin-top: 0;
+      }
+      .ampmenu a {
+        display: inline-block;
+        margin: 0 10px 0 0;
+        color: #f26202;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px
+      }
+      .ampmenu {
+        background: rgb(247, 234, 255);
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-clip: border-box;
+        padding: 10px;
+        border-bottom: 1px solid rgb(235, 223, 243);
+      }
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+{% capture header %}{% include head.html %}{% endcapture %}
+
+<div class="ui ampmenu">
+  <a href="/">Home</a>
+  <a href="/pricing" >Pricing</a>
+  <a href="/features">Features</a>
+  <a href="/how-it-works">How</a>
+  <a href="/contact">Contact</a>
+</div>
+
+<h1 class="post-title ui header huge" itemprop="name headline" title="{{ page.title }}">{{ page.title }}</h1>
+<span>
+{{ page.date }} - {{ page.author }}
+</span>
+{{ page.body | markdownify | amp_images }}
+{{ footer | amp_images: false, 24, 24 }}
+
+<div class="related ui segment">
+  <h3>Related Posts</h3>
+  <ul class="ui list">
+    {% assign siteBlogs = site.posts | where:'type', 'blog' %}
+    {% for post in siteBlogs limit:4 %}
+    <li><a href="{{ post.url }}" class="item" title="{{ post.title }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+</body>
+</html>

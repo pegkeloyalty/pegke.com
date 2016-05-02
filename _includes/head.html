@@ -8,6 +8,11 @@
     {% elsif page.grouptype == 'category' %}
     Category: {{page.category}}
     {% endif %}{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% if page.permalink != 'index.html' %}{{ site.productname | prepend: ' &#8226; ' }}{% endif %}</title>
+
+    {% if page.path contains '_posts' %}
+    <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
+    {% endif %}
+
     <meta name="description" content="{% if page.grouptype == 'tag' %}
     Blogs Tagged {{page.tag}} -
     {% elsif page.grouptype == 'category' %}
