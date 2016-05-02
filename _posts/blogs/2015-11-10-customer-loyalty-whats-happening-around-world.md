@@ -9,10 +9,6 @@ tags: [Trends]
 
 Reward programs are intended to exactly deliver this – be able to track and reward customer behavior. Statistics also indicate that consumer participation in rewards programs is on the rise across all demographic segments. With more customers choosing to do coupon and bargain shopping in the store, the reward programs that provide personalized rewards will prove to be differentiators if implemented with a laser sharp focus on targeted customer segments.
 
-
-![](https://pegke.com/sites/default/files/uploads/customer-loyalty-3B-whats-happening-around-the-world.jpg)
-{: .ui .image .fluid .lazy}
-
 Best-Practices to take customer loyalty program to the next level.
 
 * Segment Based Personalization
@@ -61,9 +57,6 @@ Retailers are additionally utilizing faithfulness projects to spur multi-channel
 
 Retailers are additionally utilizing faithfulness projects to spur multi-channel connection, for instance if a purchaser normally buys in store, a coupon can be offered as a motivating force to buy on the web.
 
-
-![Customer Loyalty Trends](https://pegke.com/sites/default/files/uploads/screen-shot-2015-07-16-at-10.00.41-am.png)
-{: .ui .image .fluid .lazy}
 
 
 _All the data are aggregated from Google Trends On July 16 2015_

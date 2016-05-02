@@ -80,7 +80,7 @@
 #     def write(dest)
 #       self.output_html(dest, self.output)
 #     end
-# 
+#
 #   end
 #
 #

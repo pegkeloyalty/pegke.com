@@ -11,9 +11,6 @@ The results of customer retention additionally compound after some time, and in 
 
 Pegke can acquaint you with various basic customer retention techniques that will cost you or nothing to actualize. Behind every system recorded here there is a top to bottom regulated procedure that will build your customer retention altogether once actualized, and will have an enormous effect on your business.
 
-![Customer Retention Strategies](https://pegke.com/sites/default/files/uploads/customer_retention.png)
-{: .ui .image .fluid .lazy}
-
 
 
 ### 1. Reducing Attrition
