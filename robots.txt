@@ -14,9 +14,5 @@
 # http://www.robotstxt.org/robotstxt.html
 
 User-agent: *
-Crawl-delay: 10
-
-Disallow: /
-
 
 Sitemap: https://pegke.com/sitemap.xml
