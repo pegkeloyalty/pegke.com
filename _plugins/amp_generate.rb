@@ -22,10 +22,12 @@ module Jekyll
     def generate(site)
       dir = site.config['ampdir'] || 'amp'
       site.posts.docs.each do |post|
-        index = AmpPost.new(site, site.source, File.join(dir, post.id), post)
-        index.render(site.layouts, site.site_payload)
-        index.write(site.dest)
-        site.pages << index
+        if post.data['type'] == 'blog'
+          index = AmpPost.new(site, site.source, File.join(dir, post.id), post)
+          index.render(site.layouts, site.site_payload)
+          index.write(site.dest)
+          site.pages << index
+        end
       end
     end
   end
