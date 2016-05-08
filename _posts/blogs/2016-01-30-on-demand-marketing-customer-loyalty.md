@@ -29,7 +29,7 @@ To win over on-demand customers, brands must know them, what they assume, and wh
 A particular view of the vast and long-term trends on the market, category, and brand is vital. Digital sources that track what people are trying to find (search), what people say (social monitoring), and what folks are doing (tracking online, mobile, and in-store activities) signify rivers of input providing constant warning signs of trouble or indicators of latent opportunity. Many companies are drowning in reports from vendors providing most of these information tools, yet few have a lot clarity on which things they have to look for and who must know what.
 
 #### Loyalty by Industry Sector
-![On-demand Marketing Loyalty by Industry Sector ](/public/img/loyalty-industry-sector.png)
+![On-demand Marketing Loyalty by Industry Sector ](https://pegke.com/public/img/loyalty-industry-sector.png)
 {: .ui .image .fluid .lazy}
 
 

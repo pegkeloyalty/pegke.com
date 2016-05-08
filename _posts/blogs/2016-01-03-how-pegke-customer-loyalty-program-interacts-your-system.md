@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "How Pegke interacts with your POS/inventory"
+title:  "How Pegke interacts with your POS"
 type: blog
-permalink: /blog/how-pegke-customer-loyalty-program-interacts-your-posinventory
+permalink: /blog/pegke-customer-loyalty-intgrate-pos-inventory
 categories: [Loyalty Program, Pegke Loyalty Software]
 tags: [Loyalty Program]
 excerpt: "At Pegke, we have multiple ways of integrating your POS with Pegke cloud platform. Which includes and not limited to API, Coupon Scan and Tablet. Lets take a look at each of them in detail."
@@ -17,7 +17,7 @@ Pegke is an easy to use customer loyalty program or a reward point system, benef
 ## How Pegke Customer Loyalty Program integrates with your POS
 At Pegke, we have multiple ways of integrating your POS with Pegke cloud platform. Which includes and not limited to API, Coupon Scan and Tablet. Lets take a look at each of them in detail.
 
-![pegke api](/public/img/pegke-api-workflow.jpg)
+![pegke api](https://pegke.com/public/img/pegke-api-workflow.jpg)
 {: .ui .image .fluid .lazy}
 
 1. Manual Interaction

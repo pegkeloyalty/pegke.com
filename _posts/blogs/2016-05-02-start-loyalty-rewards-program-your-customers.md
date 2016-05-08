@@ -4,7 +4,7 @@ title:  "How to start a loyalty rewards program for your customers"
 type: blog
 permalink: /blog/start-loyalty-rewards-program-your-customers
 categories: [Marketing, Rewards, Loyalty Software]
-tags: [Loyalty]
+tags: [Loyalty, rewards]
 excerpt: Loyalty points are a must have to keep your customers loyal to your brand, it is more important when you're small or medium business.
 ---
 
@@ -21,22 +21,22 @@ You can sign up to [Pegke Loyalty](#signup){: .ctal} giving your phone number, e
 ### 2. Create redeemable Items.
 Redeemable items are something that your customer can redeem when he have enough points. You can define the number of points required to redeem this particular item. You can add an image, also you can specify a time period where this item is available for redemption.
 
-![redeemable items]({{site.base_url}}/public/blogs/add-redeemable-item.png)
+![redeemable items](https://pegke.com/public/blogs/add-redeemable-item.png)
 {: .ui .image .fluid .lazy}
 
 ### 3. Give points
 Yes, you can give points from now on, all you need is your customers phone number.
 
-![Give Loyalty points]({{site.base_url}}/public/blogs/send-points.png)
+![Give Loyalty points](https://pegke.com/public/blogs/send-points.png)
 {: .ui .image .fluid .lazy}
 
-### 4. Track, Analyse, Improve
+### 4. Track, Analyze, Improve
 
 You can see the complete activity in Pegke Dashboard and you can plan for your next big offer according to the data insights captured and tailored for you.
-![Pegke Dashboard]({{site.base_url}}/public/blogs/pegke-dashboard.png)
+![Pegke Dashboard](https://pegke.com/public/blogs/pegke-dashboard.png)
 {: .ui .image .fluid .lazy}
 
-![Earned Points]({{site.base_url}}/public/blogs/earned-points.png)
+![Earned Points](https://pegke.com/public/blogs/earned-points.png)
 {: .ui .image .fluid .lazy}
 
 ### 5. Whats next?
