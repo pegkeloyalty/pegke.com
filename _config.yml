@@ -51,6 +51,7 @@ exclude:
   - node_modules
   - gulpfile.js
   - .nojekyll
+  - bower.json
 
 # Custom Settings
 mailchimp_url: //pegke.us9.list-manage.com/subscribe/post?u=49c28e4c02bbc2d7dfd64815e&amp;id=20b2bd793b
