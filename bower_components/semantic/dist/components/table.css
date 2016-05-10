@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.1.6 - Table
+ * # Semantic UI 2.1.8 - Table
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -22,9 +22,9 @@
   margin: 1em 0em;
   border: 1px solid rgba(34, 36, 38, 0.15);
   box-shadow: none;
-  border-radius: 0.26666667rem;
+  border-radius: 0.28571429rem;
   text-align: left;
-  color: #292929;
+  color: rgba(0, 0, 0, 0.87);
   border-collapse: separate;
   border-spacing: 0px;
 }
@@ -45,7 +45,7 @@
 .ui.table th,
 .ui.table td {
   -webkit-transition: background 0.1s ease, color 0.1s ease;
-          transition: background 0.1s ease, color 0.1s ease;
+  transition: background 0.1s ease, color 0.1s ease;
 }
 
 /* Headers */
@@ -56,8 +56,8 @@
   cursor: auto;
   background: #F9FAFB;
   text-align: inherit;
-  color: #292929;
-  padding: 0.93333333em 0.73333333em;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 0.92857143em 0.71428571em;
   vertical-align: inherit;
   font-style: none;
   font-weight: bold;
@@ -69,13 +69,13 @@
   border-left: none;
 }
 .ui.table thead tr:first-child > th:first-child {
-  border-radius: 0.26666667rem 0em 0em 0em;
+  border-radius: 0.28571429rem 0em 0em 0em;
 }
 .ui.table thead tr:first-child > th:last-child {
-  border-radius: 0em 0.26666667rem 0em 0em;
+  border-radius: 0em 0.28571429rem 0em 0em;
 }
 .ui.table thead tr:first-child > th:only-child {
-  border-radius: 0.26666667rem 0.26666667rem 0em 0em;
+  border-radius: 0.28571429rem 0.28571429rem 0em 0em;
 }
 
 /* Footer */
@@ -87,8 +87,8 @@
   border-top: 1px solid rgba(34, 36, 38, 0.15);
   background: #F9FAFB;
   text-align: inherit;
-  color: #292929;
-  padding: 0.73333333em 0.73333333em;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 0.71428571em 0.71428571em;
   vertical-align: middle;
   font-style: normal;
   font-weight: normal;
@@ -98,13 +98,13 @@
   border-left: none;
 }
 .ui.table tfoot tr:first-child > th:first-child {
-  border-radius: 0em 0em 0em 0.26666667rem;
+  border-radius: 0em 0em 0em 0.28571429rem;
 }
 .ui.table tfoot tr:first-child > th:last-child {
-  border-radius: 0em 0em 0.26666667rem 0em;
+  border-radius: 0em 0em 0.28571429rem 0em;
 }
 .ui.table tfoot tr:first-child > th:only-child {
-  border-radius: 0em 0em 0.26666667rem 0.26666667rem;
+  border-radius: 0em 0em 0.28571429rem 0.28571429rem;
 }
 
 /* Table Row */
@@ -117,7 +117,7 @@
 
 /* Table Cells */
 .ui.table td {
-  padding: 0.73333333em 0.73333333em;
+  padding: 0.71428571em 0.71428571em;
   text-align: inherit;
 }
 
@@ -342,12 +342,12 @@
 
 .ui.table tr.active,
 .ui.table td.active {
-  box-shadow: 0px 0px 0px #292929 inset;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.87) inset;
 }
 .ui.table tr.active,
 .ui.table td.active {
   background: #E0E0E0 !important;
-  color: #292929 !important;
+  color: rgba(0, 0, 0, 0.87) !important;
 }
 
 /*--------------
@@ -488,7 +488,7 @@
 .ui.table tbody tr td.selectable > a:not(.ui) {
   display: block;
   color: inherit;
-  padding: 0.73333333em 0.73333333em;
+  padding: 0.71428571em 0.71428571em;
 }
 
 /* Other States */
@@ -508,7 +508,7 @@
 .ui.table tr td.selectable.active:hover,
 .ui.selectable.table tr:hover td.active {
   background: #E0E0E0 !important;
-  color: #292929 !important;
+  color: rgba(0, 0, 0, 0.87) !important;
 }
 .ui.selectable.table tr.positive:hover,
 .ui.table tr td.selectable.positive:hover,
@@ -549,7 +549,7 @@
   margin-bottom: 0em;
   top: 0px;
   margin-top: 1em;
-  border-radius: 0.26666667rem 0.26666667rem 0em 0em;
+  border-radius: 0.28571429rem 0.28571429rem 0em 0em;
 }
 .ui.table[class*="top attached"]:first-child {
   margin-top: 0em;
@@ -562,7 +562,7 @@
   top: 0px;
   margin-bottom: 1em;
   box-shadow: none, none;
-  border-radius: 0em 0em 0.26666667rem 0.26666667rem;
+  border-radius: 0em 0em 0.28571429rem 0.28571429rem;
 }
 .ui[class*="bottom attached"].table:last-child {
   margin-bottom: 0em;
@@ -605,19 +605,19 @@
 
 /* Red */
 .ui.red.table {
-  border-top: 0.2em solid #ef4f3f;
+  border-top: 0.2em solid #DB2828;
 }
 .ui.inverted.red.table {
-  background-color: #ef4f3f !important;
+  background-color: #DB2828 !important;
   color: #FFFFFF !important;
 }
 
 /* Orange */
 .ui.orange.table {
-  border-top: 0.2em solid #efb57c;
+  border-top: 0.2em solid #F2711C;
 }
 .ui.inverted.orange.table {
-  background-color: #efb57c !important;
+  background-color: #F2711C !important;
   color: #FFFFFF !important;
 }
 
@@ -641,10 +641,10 @@
 
 /* Green */
 .ui.green.table {
-  border-top: 0.2em solid #4cb992;
+  border-top: 0.2em solid #21BA45;
 }
 .ui.inverted.green.table {
-  background-color: #4cb992 !important;
+  background-color: #21BA45 !important;
   color: #FFFFFF !important;
 }
 
@@ -659,10 +659,10 @@
 
 /* Blue */
 .ui.blue.table {
-  border-top: 0.2em solid #1d527e;
+  border-top: 0.2em solid #2185D0;
 }
 .ui.inverted.blue.table {
-  background-color: #1d527e !important;
+  background-color: #2185D0 !important;
   color: #FFFFFF !important;
 }
 
@@ -713,10 +713,10 @@
 
 /* Black */
 .ui.black.table {
-  border-top: 0.2em solid #393939;
+  border-top: 0.2em solid #1B1C1D;
 }
 .ui.inverted.black.table {
-  background-color: #393939 !important;
+  background-color: #1B1C1D !important;
   color: #FFFFFF !important;
 }
 
@@ -849,7 +849,7 @@
   cursor: pointer;
   white-space: nowrap;
   border-left: 1px solid rgba(34, 36, 38, 0.15);
-  color: #292929;
+  color: rgba(0, 0, 0, 0.87);
 }
 .ui.sortable.table thead th:first-child {
   border-left: none;

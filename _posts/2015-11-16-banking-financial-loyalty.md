@@ -77,7 +77,4 @@ Aligning with other studies, the Telemos research found that 67% of respondents 
 The trend illustrates how all banks, regardless of sector or geographical region recognize the priority of investing in IT to sustain competitiveness in the digital age. Real-time core banking system renewal built around customer records and not products, was cited as the number one IT investment priority for banks in 2014.
 
 The second biggest priority for IT spending, cited by 23% of respondents, was digital channels, with the single biggest area of investment being mobile apps for tablets and smartphones, cited by 32% of respondents. Overall, 17% of respondents were directing most of their mobile bank spending to building out basic services, such as balance requests and transfers, illustrating the game of catch up that many banks are faced with.
-
-![](http://thefinancialbrand.com/wp-content/uploads/2014/09/planned_mobile_banking_investments_9-28-2014.png)
-
 </div>

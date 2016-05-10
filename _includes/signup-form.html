@@ -1,45 +1,51 @@
 <div class="ui basic modal signup">
   <i class="close large icon red"></i>
-  <form class="ui form segment green">
+  <form class="ui form segment green" id="merchantregn">
     <h3 class="ui grey big header">Tell Us About Yourself</h3>
     <div class="two fields">
       <div class="field">
         <label>Business Name</label>
-        <input placeholder="Name of your Business" name="name" type="text">
+        <input placeholder="Name of your Business" name="field_name[und][0][value]" type="text">
       </div>
       <div class="field">
         <div class="field">
-          <label>Phone</label>
+          <label>Phone <small>Incude country code.</small></label>
           <div class="ui input">
-            <input type="tel" name="phone" placeholder="Phone Number">
+            <input type="tel" name="field_contact_number[und][0][value]" placeholder="Phone Number">
           </div>
         </div>
       </div>
     </div>
+
     <div class="two fields">
       <div class="field">
         <label>Email</label>
-        <input placeholder="Email" name="email" type="email">
+        <input placeholder="Email" name="mail" type="email">
       </div>
       <div class="field">
-        <label>Location</label>
-        <input placeholder="Your City" type="text" name="city">
-      </div>
-    </div>
-    <div class="two fields">
-      <div class="field">
-        <label>Website</label>
-        <div class="ui labeled icon input">
-          <div class="ui label">
-            http(s)://
+        <div class="fields">
+          <div class="field">
+            <label>Password</label>
+            <input type="password" name="passone" placeholder="Password">
           </div>
-          <input type="text" placeholder="example.com">
+          <div class="field">
+            <label>Confirm Password</label>
+            <input type="password" name="pass" placeholder="Confirm Password">
+          </div>
         </div>
       </div>
+    </div>
+
+
+    <div class="two fields">
       <div class="field">
         <label>Location</label>
+        <input placeholder="Your City" type="text" name="locations[0][city]">
+      </div>
+      <div class="field">
+        <label>Country</label>
         <div class="ui search selection dropdown">
-          <input type="hidden" name="country">
+          <input type="hidden" name="locations[0][country]">
           <i class="dropdown icon"></i>
           <div class="default text">Select Country</div>
           {% include country-dropdown.html %}

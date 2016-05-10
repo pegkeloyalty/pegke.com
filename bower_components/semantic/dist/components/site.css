@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.1.6 - Site
+ * # Semantic UI 2.1.8 - Site
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -14,24 +14,24 @@
              Page
 *******************************/
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic&subset=latin');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
 html,
 body {
   height: 100%;
 }
 html {
-  font-size: 15px;
+  font-size: 14px;
 }
 body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
   min-width: 320px;
-  background: #fafafa;
-  font-family: 'Lato', sans-serif;
-  font-size: 15px;
-  line-height: 1.5rem;
-  color: #292929;
+  background: #FFFFFF;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.4285em;
+  color: rgba(0, 0, 0, 0.87);
   font-smoothing: antialiased;
 }
 
@@ -45,27 +45,27 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 1.2857em;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
-  font-weight: 900;
+  font-weight: bold;
   padding: 0em;
 }
 h1 {
   min-height: 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 h2 {
-  font-size: 2.3rem;
+  font-size: 1.714rem;
 }
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.28rem;
 }
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.071rem;
 }
 h5 {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 h1:first-child,
 h2:first-child,
@@ -89,7 +89,7 @@ h5:last-child {
 
 p {
   margin: 0em 0em 1em;
-  line-height: 1.5rem;
+  line-height: 1.4285em;
 }
 p:first-child {
   margin-top: 0em;
@@ -103,11 +103,11 @@ p:last-child {
 --------------------*/
 
 a {
-  color: #3aa3e3;
+  color: #4183C4;
   text-decoration: none;
 }
 a:hover {
-  color: #0695ec;
+  color: #1e70bf;
   text-decoration: none;
 }
 
@@ -120,32 +120,32 @@ a:hover {
 /* Site */
 ::-webkit-selection {
   background-color: #CCE2FF;
-  color: #292929;
+  color: rgba(0, 0, 0, 0.87);
 }
 ::-moz-selection {
   background-color: #CCE2FF;
-  color: #292929;
+  color: rgba(0, 0, 0, 0.87);
 }
 ::selection {
   background-color: #CCE2FF;
-  color: #292929;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 /* Form */
 textarea::-webkit-selection,
 input::-webkit-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: #292929;
+  color: rgba(0, 0, 0, 0.87);
 }
 textarea::-moz-selection,
 input::-moz-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: #292929;
+  color: rgba(0, 0, 0, 0.87);
 }
 textarea::selection,
 input::selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: #292929;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 
@@ -153,6 +153,66 @@ input::selection {
         Global Overrides
 *******************************/
 
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  [class*="mobile hidden"],
+  [class*="tablet only"]:not(.mobile),
+  [class*="computer only"]:not(.mobile),
+  [class*="large screen only"]:not(.mobile),
+  [class*="widescreen only"]:not(.mobile),
+  [class*="or lower hidden"] {
+    display: none !important;
+  }
+}
+
+/* Tablet / iPad Portrait */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  [class*="mobile only"]:not(.tablet),
+  [class*="tablet hidden"],
+  [class*="computer only"]:not(.tablet),
+  [class*="large screen only"]:not(.tablet),
+  [class*="widescreen only"]:not(.tablet),
+  [class*="or lower hidden"]:not(.mobile) {
+    display: none !important;
+  }
+}
+
+/* Computer / Desktop / iPad Landscape */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  [class*="mobile only"]:not(.computer),
+  [class*="tablet only"]:not(.computer),
+  [class*="computer hidden"],
+  [class*="large screen only"]:not(.computer),
+  [class*="widescreen only"]:not(.computer),
+  [class*="or lower hidden"]:not(.tablet):not(.mobile) {
+    display: none !important;
+  }
+}
+
+/* Large Monitor */
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+  [class*="mobile only"]:not([class*="large screen"]),
+  [class*="tablet only"]:not([class*="large screen"]),
+  [class*="computer only"]:not([class*="large screen"]),
+  [class*="large screen hidden"],
+  [class*="widescreen only"]:not([class*="large screen"]),
+  [class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile) {
+    display: none !important;
+  }
+}
+
+/* Widescreen Monitor */
+@media only screen and (min-width: 1920px) {
+  [class*="mobile only"]:not([class*="widescreen"]),
+  [class*="tablet only"]:not([class*="widescreen"]),
+  [class*="computer only"]:not([class*="widescreen"]),
+  [class*="large screen only"]:not([class*="widescreen"]),
+  [class*="widescreen hidden"],
+  [class*="widescreen or lower hidden"] {
+    display: none !important;
+  }
+}
 
 
 /*******************************

@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.1.6 - Checkbox
+ * # Semantic UI 2.1.8 - Checkbox
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -69,9 +69,11 @@
   height: 17px;
   content: '';
   background: #FFFFFF;
-  border-radius: 0.2rem;
-  -webkit-transition: border 0.1s ease, opacity 0.1s ease, -webkit-transform 0.1s ease, box-shadow 0.1s ease;
-          transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+  border-radius: 0.21428571rem;
+  -webkit-transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+  transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
   border: 1px solid #D4D4D5;
 }
 
@@ -89,9 +91,11 @@
   height: 17px;
   text-align: center;
   opacity: 0;
-  color: #292929;
-  -webkit-transition: border 0.1s ease, opacity 0.1s ease, -webkit-transform 0.1s ease, box-shadow 0.1s ease;
-          transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+  transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
 }
 
 /*--------------
@@ -102,9 +106,9 @@
 /* Inside */
 .ui.checkbox label,
 .ui.checkbox + label {
-  color: #292929;
+  color: rgba(0, 0, 0, 0.87);
   -webkit-transition: color 0.1s ease;
-          transition: color 0.1s ease;
+  transition: color 0.1s ease;
 }
 
 /* Outside */
@@ -279,7 +283,6 @@
 .ui.radio.checkbox label:before {
   content: '';
   -webkit-transform: none;
-      -ms-transform: none;
           transform: none;
   width: 15px;
   height: 15px;
@@ -307,9 +310,8 @@
   height: 15px;
   border-radius: 500rem;
   -webkit-transform: scale(0.46666667);
-      -ms-transform: scale(0.46666667);
           transform: scale(0.46666667);
-  background-color: #292929;
+  background-color: rgba(0, 0, 0, 0.87);
 }
 
 /* Focus */
@@ -382,13 +384,12 @@
   top: 0.4rem;
   background-color: rgba(0, 0, 0, 0.05);
   width: 3.5rem;
-  height: 0.2rem;
+  height: 0.21428571rem;
   -webkit-transform: none;
-      -ms-transform: none;
           transform: none;
   border-radius: 500rem;
   -webkit-transition: background 0.3s ease;
-          transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 /* Handle */
@@ -407,11 +408,10 @@
   top: -0.25rem;
   left: 0em;
   -webkit-transform: none;
-      -ms-transform: none;
           transform: none;
   border-radius: 500rem;
   -webkit-transition: left 0.3s ease;
-          transition: left 0.3s ease;
+  transition: left 0.3s ease;
 }
 
 /* Focus */
@@ -474,7 +474,7 @@
 .ui.toggle.checkbox label {
   min-height: 1.5rem;
   padding-left: 4.5rem;
-  color: #292929;
+  color: rgba(0, 0, 0, 0.87);
 }
 .ui.toggle.checkbox label {
   padding-top: 0.15em;
@@ -488,7 +488,6 @@
   content: '';
   z-index: 1;
   -webkit-transform: none;
-      -ms-transform: none;
           transform: none;
   border: none;
   top: 0rem;
@@ -515,7 +514,7 @@
   left: 0em;
   border-radius: 500rem;
   -webkit-transition: background 0.3s ease, left 0.3s ease;
-          transition: background 0.3s ease, left 0.3s ease;
+  transition: background 0.3s ease, left 0.3s ease;
 }
 .ui.toggle.checkbox input ~ .box:after,
 .ui.toggle.checkbox input ~ label:after {
@@ -543,7 +542,7 @@
 }
 .ui.toggle.checkbox input:checked ~ .box:before,
 .ui.toggle.checkbox input:checked ~ label:before {
-  background-color: #1d527e !important;
+  background-color: #2185D0 !important;
 }
 .ui.toggle.checkbox input:checked ~ .box:after,
 .ui.toggle.checkbox input:checked ~ label:after {
@@ -557,7 +556,7 @@
 }
 .ui.toggle.checkbox input:focus:checked ~ .box:before,
 .ui.toggle.checkbox input:focus:checked ~ label:before {
-  background-color: #0e3d64 !important;
+  background-color: #0d71bb !important;
 }
 
 

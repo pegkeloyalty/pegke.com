@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.1.6 - Feed
+ * # Semantic UI 2.1.8 - Feed
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -42,7 +42,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  padding: 0.2rem 0em;
+  padding: 0.21428571rem 0em;
   margin: 0em;
   background: none;
   border-top: none;
@@ -85,7 +85,7 @@
   border-radius: 500rem;
 }
 .ui.feed > .event > .label + .content {
-  margin: 0.5em 0em 0.33333333em 1.13333333em;
+  margin: 0.5em 0em 0.35714286em 1.14285714em;
 }
 
 /*--------------
@@ -136,7 +136,7 @@
   margin: 0em;
   font-size: 1em;
   font-weight: bold;
-  color: #292929;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 /* Summary Image */
@@ -176,7 +176,7 @@
   display: inline-block;
   float: none;
   font-weight: normal;
-  font-size: 0.86666667em;
+  font-size: 0.85714286em;
   font-style: normal;
   margin: 0em 0em 0em 0.5em;
   padding: 0em;
@@ -191,7 +191,7 @@
   margin: 0.5em 0em 0em;
   background: none;
   padding: 0em;
-  color: #292929;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 /* Images */
@@ -207,7 +207,7 @@
   border-left: none;
   font-size: 1em;
   max-width: 500px;
-  line-height: 1.5rem;
+  line-height: 1.4285em;
 }
 
 /*--------------
@@ -216,7 +216,7 @@
 
 .ui.feed > .event > .content .meta {
   display: inline-block;
-  font-size: 0.86666667em;
+  font-size: 0.85714286em;
   margin: 0.5em 0em 0em;
   background: none;
   border: none;
@@ -241,7 +241,7 @@
 .ui.feed > .event > .content .meta .like {
   color: '';
   -webkit-transition: 0.2s color ease;
-          transition: 0.2s color ease;
+  transition: 0.2s color ease;
 }
 .ui.feed > .event > .content .meta .like:hover .icon {
   color: #FF2733;
@@ -265,7 +265,7 @@
   opacity: 1;
   color: rgba(0, 0, 0, 0.5);
   -webkit-transition: color 0.1s ease;
-          transition: color 0.1s ease;
+  transition: color 0.1s ease;
 }
 .ui.feed > .event > .content .meta a:hover,
 .ui.feed > .event > .content .meta a:hover .icon,
@@ -279,13 +279,13 @@
 *******************************/
 
 .ui.small.feed {
-  font-size: 0.93333333rem;
+  font-size: 0.92857143rem;
 }
 .ui.feed {
   font-size: 1rem;
 }
 .ui.large.feed {
-  font-size: 1.13333333rem;
+  font-size: 1.14285714rem;
 }
 
 

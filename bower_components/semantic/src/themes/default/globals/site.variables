@@ -9,12 +9,12 @@
 @fontName          : 'Lato';
 @fontSmoothing     : antialiased;
 
-@headerFont        : @fontName, sans-serif;
-@pageFont          : @fontName, sans-serif;
+@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 
 @googleFontName    : @fontName;
 @importGoogleFonts : true;
-@googleFontSizes   : '400,700,900,400italic';
+@googleFontSizes   : '400,700,400italic,700italic';
 @googleSubset      : 'latin';
 
 @googleProtocol    : 'https://';
@@ -25,10 +25,10 @@
 --------------------*/
 
 /* This is the single variable that controls them all */
-@emSize   : 15px;
+@emSize   : 14px;
 
 /* The size of page text  */
-@fontSize : 15px;
+@fontSize : 14px;
 
 
 /*-------------------
@@ -57,21 +57,21 @@
   Page Heading
 ---------------*/
 
-@headerFontWeight : 900;
+@headerFontWeight : bold;
 @headerLineHeight : 1.2857em;
 
-@h1 : 3rem;
-@h2 : 2.3rem;
-@h3 : 1.6rem;
-@h4 : 1.3rem;
-@h5 : 1.1rem;
+@h1 : 2rem;
+@h2 : 1.714rem;
+@h3 : 1.28rem;
+@h4 : 1.071rem;
+@h5 : 1rem;
 
 /*--------------
    Form Input
 ---------------*/
 
 /* This adjusts the default form input across all elements */
-@inputBackground        : #FFFCF7;
+@inputBackground        : @white;
 @inputVerticalPadding   : @relative11px;
 @inputHorizontalPadding : @relative14px;
 @inputPadding           : @inputVerticalPadding @inputHorizontalPadding;
@@ -112,11 +112,11 @@
         Page
 --------------------*/
 
-@pageBackground      : #fafafa;
+@pageBackground      : #FFFFFF;
 @pageOverflowX       : hidden;
 
-@lineHeight          : 1.5rem;
-@textColor           : #292929;
+@lineHeight          : 1.4285em;
+@textColor           : rgba(0, 0, 0, 0.87);
 
 /*-------------------
       Paragraph
@@ -129,7 +129,7 @@
        Links
 --------------------*/
 
-@linkColor           : @lightBlue;
+@linkColor           : #4183C4;
 @linkUnderline       : none;
 @linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
 @linkHoverUnderline  : @linkUnderline;
@@ -186,19 +186,19 @@
 --------------------*/
 
 /*---  Colors  ---*/
-@red              : #ef4f3f;
-@orange           : #efb57c;
+@red              : #DB2828;
+@orange           : #F2711C;
 @yellow           : #FBBD08;
 @olive            : #B5CC18;
-@green            : #4cb992;
+@green            : #21BA45;
 @teal             : #00B5AD;
-@blue             : #1d527e;
+@blue             : #2185D0;
 @violet           : #6435C9;
 @purple           : #A333C8;
 @pink             : #E03997;
 @brown            : #A5673F;
 @grey             : #767676;
-@black            : #393939;
+@black            : #1B1C1D;
 
 /*---  Light Colors  ---*/
 @lightRed         : #FF695E;
@@ -207,7 +207,7 @@
 @lightOlive       : #D9E778;
 @lightGreen       : #2ECC40;
 @lightTeal        : #6DFFFF;
-@lightBlue        : #3aa3e3;
+@lightBlue        : #54C8FF;
 @lightViolet      : #A291FB;
 @lightPurple      : #DC73FF;
 @lightPink        : #FF8EDF;

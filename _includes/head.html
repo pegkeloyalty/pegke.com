@@ -17,7 +17,7 @@
     Blogs Tagged {{page.tag}} -
     {% elsif page.grouptype == 'category' %}
     Category {{page.category}} -
-    {% endif %} {% if page.excerpt %}{{page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{site.description }}{% endif %}">
+    {% endif %} {% if page.excerpt %}{{page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{site.description | prepend: ' | ' | prepend: page.title }}{% endif %}">
     <meta name="keywords" content="{% if page.grouptype == 'tag' %}
     Blogs Tagged {{page.tag}}
     {% elsif page.grouptype == 'category' %}

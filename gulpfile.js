@@ -3,7 +3,8 @@ var gulp = require('gulp');
 
 // include plug-ins
 var autoprefix = require('gulp-autoprefixer');
-var minifyCSS = require('gulp-minify-css');
+var cleanCSS = require('gulp-minify-css');
+var cleanCSS = require('gulp-clean-css');
 var concat = require('gulp-concat');
 var favicons = require("gulp-favicons");
 var uglify = require('gulp-uglify');
@@ -56,7 +57,7 @@ gulp.task('favicon', function() {
   gulp.src("./public/favicons/pegke-logo.png").pipe(favicons({
     appName: "Pegke Loyalty",
     appDescription: "Customer Loyalty & Retention Management Software",
-    background: "#020307",
+    background: "#D73D32",
     path: "/public/favicons/",
     url: "https://pegke.com/",
     display: "standalone",
@@ -168,7 +169,7 @@ gulp.task('semantic', function() {
   .pipe(stripCssComments({preserve: false}))
   .pipe(concat('pegke-front.min.css'))
   .pipe(autoprefix('last 2 versions'))
-  .pipe(minifyCSS({processImport: false}))
+  .pipe(cleanCSS({processImport: false}))
   .pipe(gulp.dest('./public/css/'));
 
   var apipage = semanticcss.concat(customsite).concat(prismcss);
@@ -177,7 +178,7 @@ gulp.task('semantic', function() {
   .pipe(stripCssComments({preserve: false}))
   .pipe(concat('pegke-api.min.css'))
   .pipe(autoprefix('last 2 versions'))
-  .pipe(minifyCSS({processImport: false}))
+  .pipe(cleanCSS({processImport: false}))
   .pipe(gulp.dest('./public/css/'));
 
   var otherpage = semanticcss.concat(customsite);
@@ -186,7 +187,7 @@ gulp.task('semantic', function() {
   .pipe(stripCssComments({preserve: false}))
   .pipe(concat('pegke-page.min.css'))
   .pipe(autoprefix('last 2 versions'))
-  .pipe(minifyCSS({processImport: false}))
+  .pipe(cleanCSS({processImport: false}))
   .pipe(gulp.dest('./public/css/'));
 
   var frontjs = [
@@ -222,7 +223,7 @@ gulp.task('semantic', function() {
   .pipe(stripCssComments({preserve: false}))
   .pipe(concat('404.min.css'))
   .pipe(autoprefix('last 2 versions'))
-  .pipe(minifyCSS({processImport: false}))
+  .pipe(cleanCSS({processImport: false}))
   .pipe(gulp.dest('./public/css/'));
 
 });

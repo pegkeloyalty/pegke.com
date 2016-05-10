@@ -60,11 +60,11 @@ head.ready(function () {
   $('.cta, .ctal').click(function() {
     $('.ui.modal.signup').modal('show');
   });
-
+  var apiBaseurl = 'https://dashboard.pegke.com/?q=';
   $.fn.api.settings.api = {
-    'signup'  : 'https://dashboard.pegke.com/?q=api/mobileuser/register',
-    'support' : 'https://dashboard.pegke.com/?q=api/contact_us',
-    'registermobile'  : 'https://dashboard.pegke.com/?q=api/mobileuser/register'
+    'signup'  : apiBaseurl + 'api/mobileuser/vendor_registration',
+    'support' : apiBaseurl + 'api/contact_us',
+    'registermobile'  : apiBaseurl + 'api/mobileuser/register'
   };
 
   $(document).ready(function() {
@@ -90,7 +90,7 @@ head.ready(function () {
         var items = [];
         $.each( data.sstatus, function( key, val) {
 
-        items.push( '<div class="item"> \
+          items.push( '<div class="item"> \
           <div class="right floated content"> \
           <div class="ui tiny green label">' + val + '</div> \
           </div> <i class="check large green icon"></i> \
@@ -149,45 +149,67 @@ head.ready(function () {
   // setInterval(function(){
   //   $('.shape').shape('flip over');
   // }, 3000);
-  $('.ui.form')
+  $('#merchantregn')
   .form({
     fields: {
       name: {
-        identifier: 'name',
+        identifier: 'field_name[und][0][value]',
         rules: [{
           type: 'empty',
           prompt: 'Please enter your name'
         }]
       },
       phone: {
-        identifier: 'phone',
+        identifier: 'field_contact_number[und][0][value]',
         rules: [{
           type: 'minLength[10]',
-          prompt: 'Your 10 digit Mobile Number'
+          prompt: 'Your {ruleValue} digit phone Number'
         }, {
           type: 'number',
           prompt: 'Numbers Only'
         }, {
-          type: 'maxLength[10]',
-          prompt: 'Your 10 digit Mobile Number'
+          type: 'maxLength[15]',
+          prompt: 'Your Number cannot exceed {ruleValue} digitd'
         }]
       },
       country: {
-        identifier: 'country',
+        identifier: 'locations[0][country]',
         rules: [{
           type: 'empty',
           prompt: 'Please chose your country'
         }]
       },
+      passone: {
+        identifier: 'passone',
+        rules: [{
+          type   : 'empty',
+          prompt : 'Please enter a password'
+        },
+        {
+          type   : 'minLength[6]',
+          prompt : 'Your password must be at least {ruleValue} characters'
+        }]
+      },
+      pass: {
+        identifier: 'pass',
+        rules: [{
+          type   : 'empty',
+          prompt : 'Please enter a password'
+        },
+        {
+          type: 'match[passone]',
+          prompt: 'Please cross check your passwords'
+        }]
+      },
       email: {
-        identifier: 'email',
+        identifier: 'mail',
         rules: [{
           type: 'email',
           prompt : 'Please enter a valid e-mail'
         }]
       },
       city: {
-        identifier: 'city',
+        identifier: 'locations[0][city]',
         rules: [{
           type: 'empty',
           prompt: 'Please enter your city'
@@ -199,10 +221,18 @@ head.ready(function () {
   })
   .api({
     method: 'post',
-    action: 'signup'
+    action: 'signup',
+    serializeForm: true,
+    dataType: 'json',
+    onResponse: function (response) {
+      console.log(response);
+    },
+    onError: function(errorMessage) {
+      console.log(errorMessage);
+    },
   });
 
-  $('form#support')
+  $('#support')
   .form({
     fields: {
       email: {

@@ -30,7 +30,6 @@
         <div class="ui inverted link list">
           <a href="/blog/" class="item" title="Pegke Blogs">Pegke Blogs</a>
           <a href="/blog/categories" class="item" title="Categories and Tags">Categories and Tags</a>
-
           {% assign siteBlogs = site.posts | where:'type', 'blog' %}
           {% for post in siteBlogs limit:6 %}
           <a href="{{ post.url }}" class="item" title="{{ post.title }}">{{ post.title | truncate:25 }}</a>

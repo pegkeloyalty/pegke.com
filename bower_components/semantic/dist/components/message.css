@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.1.6 - Message
+ * # Semantic UI 2.1.8 - Message
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -20,11 +20,11 @@
   margin: 1em 0em;
   background: #F8F8F9;
   padding: 1em 1.5em;
-  line-height: 1.5rem;
-  color: #292929;
+  line-height: 1.4285em;
+  color: rgba(0, 0, 0, 0.87);
   -webkit-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
-          transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
-  border-radius: 0.26666667rem;
+  transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
+  border-radius: 0.28571429rem;
   box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 .ui.message:first-child {
@@ -42,14 +42,14 @@
 /* Header */
 .ui.message .header {
   display: block;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin: -0.14285em 0em 0rem 0em;
 }
 
 /* Default font size */
 .ui.message .header:not(.ui) {
-  font-size: 1.13333333em;
+  font-size: 1.14285714em;
 }
 
 /* Paragraph */
@@ -108,11 +108,11 @@
   cursor: pointer;
   position: absolute;
   margin: 0em;
-  top: 0.75em;
+  top: 0.78575em;
   right: 0.5em;
   opacity: 0.7;
   -webkit-transition: opacity 0.1s ease;
-          transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
 }
 .ui.message > .close.icon:hover {
   opacity: 1;
@@ -183,7 +183,7 @@
 
 .ui.attached.message {
   margin-bottom: -1px;
-  border-radius: 0.26666667rem 0.26666667rem 0em 0em;
+  border-radius: 0.28571429rem 0.28571429rem 0em 0em;
   box-shadow: 0em 0em 0em 1px rgba(34, 36, 38, 0.15) inset;
   margin-left: -1px;
   margin-right: -1px;
@@ -194,7 +194,7 @@
 }
 .ui.bottom.attached.message {
   margin-top: -1px;
-  border-radius: 0em 0em 0.26666667rem 0.26666667rem;
+  border-radius: 0em 0em 0.28571429rem 0.28571429rem;
   box-shadow: 0em 0em 0em 1px rgba(34, 36, 38, 0.15) inset, 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
 }
 .ui.bottom.attached.message:not(:last-child) {
@@ -259,7 +259,7 @@
 ---------------*/
 
 .ui.black.message {
-  background-color: #393939;
+  background-color: #1B1C1D;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -349,22 +349,22 @@
 /* Colors */
 .ui.inverted.message,
 .ui.black.message {
-  background-color: #393939;
+  background-color: #1B1C1D;
   color: rgba(255, 255, 255, 0.9);
 }
 .ui.red.message {
   background-color: #FFE8E6;
-  color: #ef4f3f;
+  color: #DB2828;
 }
 .ui.red.message .header {
-  color: #ed3927;
+  color: #c82121;
 }
 .ui.orange.message {
   background-color: #FFEDDE;
-  color: #efb57c;
+  color: #F2711C;
 }
 .ui.orange.message .header {
-  color: #eca865;
+  color: #e7640d;
 }
 .ui.yellow.message {
   background-color: #FFF8DB;
@@ -396,10 +396,10 @@
 }
 .ui.blue.message {
   background-color: #DFF0FF;
-  color: #1d527e;
+  color: #2185D0;
 }
 .ui.blue.message .header {
-  color: #184569;
+  color: #1e77ba;
 }
 .ui.violet.message {
   background-color: #EAE7FF;
@@ -435,19 +435,19 @@
 ---------------*/
 
 .ui.small.message {
-  font-size: 0.93333333em;
+  font-size: 0.92857143em;
 }
 .ui.message {
   font-size: 1em;
 }
 .ui.large.message {
-  font-size: 1.13333333em;
+  font-size: 1.14285714em;
 }
 .ui.huge.message {
-  font-size: 1.4em;
+  font-size: 1.42857143em;
 }
 .ui.massive.message {
-  font-size: 1.73333333em;
+  font-size: 1.71428571em;
 }
 
 
