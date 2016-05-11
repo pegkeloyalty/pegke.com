@@ -2,22 +2,16 @@
   <header class="ui center aligned">
     <h1 class="post-title ui header huge" itemprop="name headline" title="{{ page.title }}">{{ page.title }}</h1>
     {% if page.subtitle %}<div class="sub header">{{page.subtitle}}</div> {% endif %}
-
     {% if page.layout == 'post' %}
-
     <span class="sub header post-meta">
-      <time datetime="{{ page.date }}" title="{{ page.date }}" itemprop="datePublished">{{ page.date | date: "%a, %b %d, %y" }}</time>
+      <time datetime="{{ page.date }}" title="{{ page.date }}" itemprop="datePublished">{{ page.date | date: "%a, %b %d, %Y" }}</time>
       {% if page.author %} •
       <span itemprop="author" itemscope itemtype="http://schema.org/Person">
         <span itemprop="name">{{ page.author }}</span>
       </span>
       {% endif %}
     </span>
-
     {% endif %}
-
   </header>
-  <div class="ui divider hidden">
-
-  </div>
+  <div class="ui divider hidden"></div>
 </div>

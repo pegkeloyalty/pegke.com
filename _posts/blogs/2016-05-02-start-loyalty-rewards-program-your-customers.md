@@ -5,13 +5,20 @@ type: blog
 permalink: /blog/start-loyalty-rewards-program-your-customers
 categories: [Marketing, Rewards, Loyalty Software]
 tags: [Loyalty, rewards]
-excerpt: Loyalty points are a must have to keep your customers loyal to your brand, it is more important when you're small or medium business.
+excerpt: Loyalty points, rewards program or loyalty discount is the best way to encourage customers to refer more clients to your business and thereby earn their loyalty.
 ---
 
-Loyalty points are a must have to keep your customers loyal to your brand, it is more important when you're small or medium business.
+Loyalty points are a must have to keep your customers loyal to your brand, it is more important when you're small or medium business. Loyalty points, rewards program or loyalty discount is the best way to encourage customers to refer more clients to your business and thereby earn their loyalty.
+
+{% highlight Pegke Loyalty is the easiest way to create a reward point system. %}
+
 
 ## How can I send the points?
-There are countless possibilities, all it matters is how you value the possibilities and how much points you can afford to give.
+There are countless possibilities, all it matters is how you value the possibilities and how much points you can afford to give. We have various types of integration, specifically;
+
+ 1. Printed Points
+ 2. Web dashboard
+ 3. API integration.
 
 ### 1. Sign up to Pegke Loyalty
 You can sign up to [Pegke Loyalty](#signup){: .ctal} giving your phone number, email and physical address of your business.

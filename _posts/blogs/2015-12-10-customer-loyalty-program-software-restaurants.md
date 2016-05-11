@@ -11,6 +11,8 @@ Pegke is a customer loyalty programs for restaurants - as well, which utilizes t
 
 Customer loyalty has been vital to restaurants of numerous types subsequent to the idea of an "restaurant" was made. Loyal customers are the ones who will return regularly and spend as often as possible, which helps restaurants of all sizes meet their main concerns. However building loyalty is not another idea for eatery proprietors, the strategies used to approach building customer loyalty have changed throughout the years.
 
+{% highlight Loyal customers are the ones who will return regularly and spend as often as possible, which helps restaurants of all sizes meet their main concerns. %}
+
 ## Traditionally Customer loyalty has been managed by one of the following methods.
 
 #### **Punch cards**

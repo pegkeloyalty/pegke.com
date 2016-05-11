@@ -94,29 +94,17 @@ h2, h3, h4 {
   font-size: 3rem !important;
   text-shadow: 1px 2px 4px #5d5d5d;
 }
+.mobile.no-landscape .pageone,
+.mobile.landscape.domloaded .pageone{
+  height: 500px;
+}
+.mobile.no-landscape .pageone .pitch,
+.mobile.landscape.domloaded .pageone .pitch {
+  z-index: 1;
+}
 .ohidden {
   visibility: hidden;
   display: none;
-}
-.fp-controlArrow {
-  font-style: normal;
-  border: 0 none !important;
-  line-height: 1;
-  font-family: "Icon";
-  vertical-align: middle;
-  font-size: 8em
-}
-.fp-controlArrow.fp-next {
-  right: 65px !important;
-}
-.fp-controlArrow.fp-prev:before{
-  content: "\f104"
-}
-.fp-controlArrow.fp-prev {
-  left: 55px !important;
-}
-.fp-controlArrow.fp-next:before{
-  content: "\f105"
 }
 .ui.text, p {
   line-height: 1.5;
@@ -517,7 +505,6 @@ pre.fail {
   font-size: 2.3rem !important;
 }
 div.ui.basic.quote.segment {
-  background-image: url(../img/quote.png) !important;
   background-repeat: no-repeat !important;
   background-position-x: 8% !important;
 }
@@ -529,6 +516,13 @@ div.ui.basic.quote.segment {
 }
 .pricingtab ~ .tab {
   min-height: 175px;
+}
+.overlayp {
+  position: initial !important;
+  height: 0;
+  width: 0;
+  z-index: -1;
+  visibility: hidden;
 }
 .blog .ui.huge.header {
   font-size: 2.3em;
@@ -569,13 +563,15 @@ article blockquote, blockquote p {
   margin: 3rem 0 !important;
 }
 .ui.highlight {
-  border-top: 5px solid #666;
+  border-top: 5px solid #a7bd0d;
   border-bottom: 1px solid #666;
   margin: 40px 0;
   padding: 5px 0 10px;
   font-size: 2.5rem;
   line-height: 1.1em;
   font-style: italic;
+  background: #fbfbfb;
+  color: #21ba45;
 }
 .team .ui.fluid.link.card {
   cursor: default !important;
@@ -616,3 +612,12 @@ a i.linkedin.icon {
   from {bottom: 40px;}
   to {bottom: 10px;}
 }
+.fp-controlArrow {
+  border:       solid currentColor;
+  border-width: 0 4px 4px 0;
+  display:      inline-block;
+  padding:      .20em;
+  font-size: 65px;
+}
+.fp-next {transform:rotate(-45deg);}
+.fp-prev  {transform:rotate(135deg);}
