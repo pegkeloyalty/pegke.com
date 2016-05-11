@@ -29,11 +29,13 @@ mobno: +91 96-45-599214
 mob: 919645599214
 
 cover: /public/og/pegke-og.jpg
+brandfolder: http://bit.ly/1QY5KRt
 
 dashboard:
   base_url: https://dashboard.pegke.com
   api_base: dashboard.pegke.com/v1
   app_down: https://apps.pegke.com
+  api_bases: https://dashboard.pegke.com/?q=
 
 apps:
   android: https://pegke.com/

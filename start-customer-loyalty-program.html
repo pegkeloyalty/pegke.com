@@ -1,0 +1,145 @@
+---
+layout: landing
+permalink: start-customer-loyalty-program
+title: Start customer loyalty program for your business
+excerpt: Sign up to Pegke Loyalty to start a customer reward and loyalty points program for your customes. Build Customer Relationships With the leading business loyalty program.
+keywords: start rewards program, customer loyalty program, start loyalty points, loyaly points
+---
+
+<section class="container">
+  <div class="left-half half">
+    <article>
+      <a href="{{site.url}}"><img src="public/img/logo-192.png" width="160" alt="{{ site.product }}"/></a>
+      <h2 class="ui header white huge">Build Customer Relationships With The Leading Business Loyalty Program</h2>
+      <p class="white">All the tools you need in one loyalty program.</p>
+    </article>
+  </div>
+  <div class="right-half half">
+    <article>
+      <div class="ui two column stackable centered grid">
+        <div class="column">
+          <div class="ui success message submitstatus" id="success">
+            <div class="header">
+              Your merchant registration was successful.
+            </div>
+            <p>You may now <a href="{{site.dashboard.base_url}}">log-in</a> with the credentials you have chosen</p>
+          </div>
+          <div class="ui negative message submitstatus" id="negative">
+            <div class="header">
+              We're sorry we can't apply that discount
+            </div>
+            <p>That offer has expired</p>
+          </div>
+          <form class="ui inverted form" id="merchantregn">
+            <h1 class="ui big header white">Start giving loyalty points to your customers.</h1>
+            <div class="field">
+              <label>Business Name</label>
+              <input placeholder="Name of your Business" name="field_name[und][0][value]" type="text">
+            </div>
+            <div class="field">
+              <div class="field">
+                <label>Phone <small>Include country code.</small></label>
+                <div class="ui input">
+                  <input type="tel" name="field_contact_number[und][0][value]" placeholder="Phone Number">
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <input placeholder="Email" name="mail" type="email">
+            </div>
+            <div class="field">
+              <div class="fields stackable">
+                <div class="field">
+                  <label>Password</label>
+                  <input type="password" name="passone" placeholder="Password">
+                </div>
+                <div class="field">
+                  <label>Confirm Password</label>
+                  <input type="password" name="pass" placeholder="Confirm Password">
+                </div>
+              </div>
+            </div>
+            <div class="inline field">
+              <label class="ui white">Signing up signifies you’ve read and agree to our <a href="{% post_url 2015-11-15-terms-of-service%}">Terms of Service</a> and <a href="{% post_url 2015-11-15-privacy-policy %}">Privacy Policy</a></label>
+            </div>
+            <div class="ui red fluid submit button">Create your Account</div>
+          </form>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<script type="text/javascript" src="{{ "/public/js/landing.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+var apiBaseurl = '{{site.dashboard.api_bases}}';
+$.fn.api.settings.api = {
+  'signup'  : apiBaseurl + 'api/mobileuser/vendor_registration',
+};
+$('.ui.dropdown').dropdown();
+$('#merchantregn')
+.form({
+  fields: {
+    name: {
+      identifier: 'field_name[und][0][value]',
+      rules: [{
+        type: 'empty',
+        prompt: 'Please enter your name'
+      }]
+    },
+    phone: {
+      identifier: 'field_contact_number[und][0][value]',
+      rules: [{
+        type: 'regExp[/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im]',
+        prompt: 'Please check your format.'
+      }]
+    },
+    passone: {
+      identifier: 'passone',
+      rules: [{
+        type   : 'empty',
+        prompt : 'Please enter a password'
+      },
+      {
+        type   : 'minLength[6]',
+        prompt : 'Your password must be at least {ruleValue} characters'
+      }]
+    },
+    pass: {
+      identifier: 'pass',
+      rules: [{
+        type   : 'empty',
+        prompt : 'Please enter a password'
+      },
+      {
+        type: 'match[passone]',
+        prompt: 'Please cross check your passwords'
+      }]
+    },
+    email: {
+      identifier: 'mail',
+      rules: [{
+        type: 'email',
+        prompt : 'Please enter a valid e-mail'
+      }]
+    }
+  },
+  on : 'blur'
+})
+.api({
+  method: 'post',
+  action: 'signup',
+  serializeForm: true,
+  dataType: 'json',
+  onResponse: function (response) {
+    $('#merchantregn').hide();
+    $('#success').css('display', 'block');
+  },
+  onError: function(errorMessage) {
+    $('#merchantregn').hide();
+    $('#success').hide();
+    $('#negative').css('display', 'block');
+  },
+});
+</script>

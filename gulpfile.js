@@ -57,7 +57,7 @@ gulp.task('favicon', function() {
   gulp.src("./public/favicons/pegke-logo.png").pipe(favicons({
     appName: "Pegke Loyalty",
     appDescription: "Customer Loyalty & Retention Management Software",
-    background: "#D73D32",
+    background: "#F13030",
     path: "/public/favicons/",
     url: "https://pegke.com/",
     display: "standalone",
@@ -225,5 +225,75 @@ gulp.task('semantic', function() {
   .pipe(autoprefix('last 2 versions'))
   .pipe(cleanCSS({processImport: false}))
   .pipe(gulp.dest('./public/css/'));
+});
 
+// Build SUI
+gulp.task('landing', function() {
+  var landingcss = [
+    './bower_components/semantic/dist/components/site.css',
+    './bower_components/semantic/dist/components/reset.css',
+    './bower_components/semantic/dist/components/accordion.css',
+    './bower_components/semantic/dist/components/button.css',
+    './bower_components/semantic/dist/components/checkbox.css',
+    './bower_components/semantic/dist/components/container.css',
+    './bower_components/semantic/dist/components/divider.css',
+    './bower_components/semantic/dist/components/dropdown.css',
+    './bower_components/semantic/dist/components/form.css',
+    './bower_components/semantic/dist/components/grid.css',
+    './bower_components/semantic/dist/components/message.css',
+    './bower_components/semantic/dist/components/header.css',
+    './bower_components/semantic/dist/components/image.css',
+    './bower_components/semantic/dist/components/input.css',
+    './bower_components/semantic/dist/components/item.css',
+    './bower_components/semantic/dist/components/label.css',
+    './bower_components/semantic/dist/components/list.css',
+    './bower_components/semantic/dist/components/loader.css',
+    './bower_components/semantic/dist/components/segment.css',
+    './bower_components/semantic/dist/components/shape.css',
+    './bower_components/semantic/dist/components/state.css',
+    './bower_components/semantic/dist/components/transition.css',
+  ];
+
+  var landingjs = [
+    './bower_components/jquery/dist/jquery.min.js',
+    './bower_components/semantic/dist/components/reset.js',
+    './bower_components/semantic/dist/components/api.js',
+    './bower_components/semantic/dist/components/site.js',
+    './bower_components/semantic/dist/components/button.js',
+    './bower_components/semantic/dist/components/container.js',
+    './bower_components/semantic/dist/components/dropdown.js',
+    './bower_components/semantic/dist/components/divider.js',
+    './bower_components/semantic/dist/components/message.js',
+    './bower_components/semantic/dist/components/form.js',
+    './bower_components/semantic/dist/components/grid.js',
+    './bower_components/semantic/dist/components/header.js',
+    './bower_components/semantic/dist/components/image.js',
+    './bower_components/semantic/dist/components/input.js',
+    './bower_components/semantic/dist/components/item.js',
+    './bower_components/semantic/dist/components/label.js',
+    './bower_components/semantic/dist/components/list.js',
+    './bower_components/semantic/dist/components/loader.js',
+    './bower_components/semantic/dist/components/state.js',
+    './bower_components/semantic/dist/components/transition.js'
+  ];
+
+  var landstyle = [
+    './public/cssfull/landstyle.css'
+  ];
+
+  var landingpage = landingcss.concat(landstyle);
+
+  // Build Frontpage Css
+  gulp.src(landingpage)
+  .pipe(stripCssComments({preserve: false}))
+  .pipe(concat('landingpage.min.css'))
+  .pipe(autoprefix('last 2 versions'))
+  .pipe(cleanCSS({processImport: false}))
+  .pipe(gulp.dest('./public/css/'));
+
+
+  gulp.src(landingjs)
+  .pipe(concat('landing.min.js'))
+  .pipe(uglify())
+  .pipe(gulp.dest('./public/js/'));
 });

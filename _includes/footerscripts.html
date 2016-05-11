@@ -60,7 +60,7 @@ head.ready(function () {
   $('.cta, .ctal').click(function() {
     $('.ui.modal.signup').modal('show');
   });
-  var apiBaseurl = 'https://dashboard.pegke.com/?q=';
+  var apiBaseurl = {{site.dashboard.api_bases}};
   $.fn.api.settings.api = {
     'signup'  : apiBaseurl + 'api/mobileuser/vendor_registration',
     'support' : apiBaseurl + 'api/contact_us',
@@ -162,14 +162,8 @@ head.ready(function () {
       phone: {
         identifier: 'field_contact_number[und][0][value]',
         rules: [{
-          type: 'minLength[10]',
-          prompt: 'Your {ruleValue} digit phone Number'
-        }, {
-          type: 'number',
-          prompt: 'Numbers Only'
-        }, {
-          type: 'maxLength[15]',
-          prompt: 'Your Number cannot exceed {ruleValue} digitd'
+          type: 'regExp[/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im]',
+          prompt: 'Please check the format'
         }]
       },
       country: {
@@ -330,8 +324,9 @@ head.ready(function () {
 </script>
 <script src="https://linked.chat/web/6gdw5e" async></script>
 <script>
-$(window).bind("load", function () {
-  $('.overlayp').remove();
+jQuery(window).bind("load", function () {
+  jQuery('.overlayp').remove();
+  jQuery('.menu.widescreen .nexth').after('<a href="{{site.dashboard.base_url}}" class="item ui button red ml">MERCHANT LOG IN</a>');
 });
 </script>
 <script>(function(G,o,O,g,l){G.GoogleAnalyticsObject=O;G[O]||(G[O]=function(){(G[O].q=G[O].q||[]).push(arguments)});G[O].l=+new Date;g=o.createElement('script'),l=o.scripts[0];g.src='https://www.google-analytics.com/analytics.js';l.parentNode.insertBefore(g,l)}(this,document,'ga'));ga('create', 'UA-38015473-1', 'pegke.com');ga('require', 'displayfeatures');ga('set', '&uid', 0);ga('send', 'pageview')</script>
