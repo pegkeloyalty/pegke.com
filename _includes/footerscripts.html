@@ -84,12 +84,11 @@ head.ready(function () {
 
     if ($('#pegkestat').length) {
       var dt = new Date();
-      $.getJSON("https://dashboard.pegke.com/?q=api/pegke_status", function( data ) {
+      $.getJSON(apiBaseurl + "api/pegke_status", function( data ) {
         console.log(data);
         $('#lstmod').text(dt);
         var items = [];
         $.each( data.sstatus, function( key, val) {
-
           items.push( '<div class="item"> \
           <div class="right floated content"> \
           <div class="ui tiny green label">' + val + '</div> \
