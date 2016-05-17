@@ -217,10 +217,13 @@ head.ready(function () {
     serializeForm: true,
     dataType: 'json',
     onResponse: function (response) {
-      console.log(response);
+      $('form#merchantregn')[0].reset();
+      $('form#merchantregn').fadeOut();
+      $('#afterSignup').removeClass('ohidden');
     },
     onError: function(errorMessage) {
-      console.log(errorMessage);
+      $('#afterSignup').removeClass('ohidden green').addClass('red');
+      $('#ststmsgs').html('Oops, we\'re sorry; something missing from our end. Please try again later.');
     },
   });
 
