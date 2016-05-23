@@ -137,21 +137,23 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script type="application/ld+json">
   {
+    "@context": "http://schema.org",
     "@type": "Article",
     "mainEntityOfPage":{
       "@type":"WebPage",
-      "@id":"https://google.com/article"
+      "@id":"{{ page.url | remove:'/amp' | prepend: site.baseurl | prepend: site.url }}"
     },
     "headline": "{{page.title}}",
     "about": "{{page.category | default: 'loyalty rewards program' }}",
     "sameAs": "{{ page.url | remove:'/amp' | prepend: site.baseurl | prepend: site.url }}",
     "image": {
       "@type": "ImageObject",
-      "url": "{{ '/public/img/meta.jpg' | prepend: site.baseurl }}",
-      "height": 1200,
-      "width": 800
+      "url": "{{ '/public/img/meta.jpg' | prepend: site.url }}",
+      "height": 1000,
+      "width": 700
     },
     "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.date | date_to_xmlschema }}",
     "author": {
        "@type": "Person",
        "name": "Nikhil Mohan"
@@ -163,10 +165,10 @@
         "@type": "ImageObject",
         "url": "https://pegke.com/public/img/logo-192.png",
         "width": 192,
-        "height": 192
+        "height": 60
       }
     },
-    "description": "{% if page.body %}{{page.body | strip_html | strip_newlines | truncate: 160 }}{% else %}{{site.description }}{% endif %}"
+    "description": "{% if page.body %}{{page.body | strip_html | strip_newlines | truncate: 160 | replace: '##', '' | strip}}{% else %}{{site.description }}{% endif %}"
   }
   </script>
 </head>
