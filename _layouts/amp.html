@@ -195,7 +195,7 @@
     <ul class="ui list">
       {% assign siteBlogs = site.posts | where:'type', 'blog' %}
       {% for post in siteBlogs limit:4 %}
-      <li><a href="{{ post.url | prepend: '/amp' | append:"/index.html" }}" title="{{ post.title }}">{{ post.title }}</a></li>
+      <li><a href="{{ post.url | prepend: '/amp' | append:"/index.html" | prepend:"https://cdn.ampproject.org/c/s/pegke.com"}}" title="{{ post.title }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
   </div>
