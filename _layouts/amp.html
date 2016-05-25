@@ -187,7 +187,7 @@
       {{ page.date | date: "%a, %b %d, %y" }}
     </span>
     {{ page.body | markdownify | amp_images }}
-    <a href="{{ page.url | remove:'/amp' | prepend: site.baseurl | prepend: site.url }}" title="{{ page.title }}" class="nonamp">Full Version of {{ page.title }}</a>
+    <a href="{{ page.canonical_url | prepend: site.url }}" title="{{ page.title }}" class="nonamp">Full Version of {{ page.title }}</a>
   </div>
   {{ footer | amp_images: false, 24, 24 }}
   <div class="related ui segment">
@@ -195,7 +195,7 @@
     <ul class="ui list">
       {% assign siteBlogs = site.posts | where:'type', 'blog' %}
       {% for post in siteBlogs limit:4 %}
-      <li><a href="{{ post.url | prepend: '/amp' }}" title="{{ post.title }}">{{ post.title }}</a></li>
+      <li><a href="{{ post.url | prepend: '/amp' | append:"/index.html" }}" title="{{ post.title }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
   </div>
