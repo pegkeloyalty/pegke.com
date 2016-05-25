@@ -9,9 +9,9 @@
         <a href="{% post_url 2015-11-15-about-us %}" class="item ui button red nexth">About</a>
         <div class="item">
           <div class="ui medium buttons">
-            <a class="ui button red ctal" href="#signup">sign up</a>
+            <a class="ui button red ctal" href="#signup" onClick="ga('send', 'event', 'signuptop', 'click', 'Start Trial Today', 1);" >sign up</a>
             <div class="or"></div>
-            <a class="ui button blue" href="{% post_url 2015-10-04-support %}">contact us</a>
+            <a class="ui button blue" href="{% post_url 2015-10-04-support %}" onClick="ga('send', 'event', 'contact', 'click', 'Start Trial Today', 1);" >contact us</a>
           </div>
         </div>
       </div>
