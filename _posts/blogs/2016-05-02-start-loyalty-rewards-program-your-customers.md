@@ -3,7 +3,7 @@ layout: post
 title:  "How to start a loyalty rewards program for your customers"
 type: blog
 permalink: /blog/start-loyalty-rewards-program-your-customers
-categories: [Marketing, Rewards, Loyalty Software]
+categories: [Marketing, Rewards, Loyalty Software, Loyalty Points]
 tags: [Loyalty, rewards]
 excerpt: Loyalty points, rewards program or loyalty discount is the best way to encourage customers to refer more clients to your business and thereby earn their loyalty.
 ---
