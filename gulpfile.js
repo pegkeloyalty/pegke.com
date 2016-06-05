@@ -160,7 +160,6 @@ gulp.task('semantic', function() {
   ];
   var fullpagecss = ['./bower_components/fullpage.js/jquery.fullPage.css'];
 
-  var prismcss = ['./public/cssfull/prism.css'];
 
   var pegkefront = semanticcss.concat(customsite).concat(fullpagecss);
 
@@ -172,7 +171,7 @@ gulp.task('semantic', function() {
   .pipe(cleanCSS({processImport: false}))
   .pipe(gulp.dest('./public/css/'));
 
-  var apipage = semanticcss.concat(customsite).concat(prismcss);
+  var apipage = semanticcss.concat(customsite);
   // Build Frontpage Css
   gulp.src(apipage)
   .pipe(stripCssComments({preserve: false}))
@@ -195,10 +194,7 @@ gulp.task('semantic', function() {
     './bower_components/fullpage.js/vendors/jquery.slimscroll.min.js'
   ];
 
-  var apijs = [
-    './public/js/scrollspy.js',
-    './public/js/prism.min.js'
-  ];
+
   var frontjss = semanticjs.concat(frontjs);
 
   gulp.src(frontjss)
@@ -206,9 +202,8 @@ gulp.task('semantic', function() {
   .pipe(uglify())
   .pipe(gulp.dest('./public/js/'));
 
-  var apijss = semanticjs.concat(apijs);
 
-  gulp.src(apijss)
+  gulp.src(semanticjs)
   .pipe(concat('semanticjs.api.min.js'))
   .pipe(uglify())
   .pipe(gulp.dest('./public/js/'));
