@@ -1,25 +1,34 @@
 ---
-title: Categories and Tags
-layout: page
+title: nil
 ---
-<a name="categories"></a>
-<h3>Categories</h3>
+<?xml version="1.0" encoding="UTF-8" ?>
 
-<div class="row">
-	{% for category in site.categories %}
-		<div class="col-12 col-lg-12">
-			<a href="/category/{{category[0]}}/">{{category[0]}} <span class="badge">{{category[1].size}}</span></a>
-		</div>
-	{% endfor %}
-</div>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+   {% if page.grouptype == 'tag' %}
+   	<title>RealJenius.com - Tag: {{page.tag}}</title>
+   {% elsif page.grouptype == 'category' %}
+    <title>RealJenius.com - Category: {{page.category}}</title>
+   {% else %}
+    <title>RealJenius.com</title>
+   {% endif %}
+   <link>http://realjenius.com</link>
+   <description>I'm a software developer in the game industry, and have been (for better or worse) coding on the Java platform for the last decade. I also do all my own stunts.</description>
+   <language>en-us</language>
+   <managingEditor>R.J. Lorimer</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
 
-<a name="tags"></a>
-<h3>Tags</h3>
-
-<div class="row">
-	{% for tag in site.tags %}
-		<div class="col-lg-3 col-sm-4 col-12">
-		<a href="/tag/{{tag[0]}}/">{{tag[0]}} <span class="badge">{{tag[1].size}}</span></a>
-		</div>
-	{% endfor %}
-</div>
+    {% for post in page.posts %}
+	  <item>
+        <title>{{ post.title }}</title>
+        <link>http://realjenius.com{{ post.url }}</link>
+		<author>R.J. Lorimer</author>
+		<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+		<guid>http://realjenius.com{{ post.url }}</guid>
+		<description><![CDATA[
+		   {{ post.content | expand_urls : site.url }}
+		]]></description>
+	  </item>
+    {% endfor %}
+  </channel>
+</rss>
