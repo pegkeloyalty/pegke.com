@@ -18,7 +18,7 @@ permalink: /about/team
             </div>
           </div>
         </div>
-        <img src="/public/img/team/nikhil-mohan.jpg" alt="Nikhil Mohan">
+        <img src="/public/img/team/niksmac.png" alt="Nikhil Mohan">
       </div>
       <div class="content">
         <span class="header">Nikhil Mohan</span>
