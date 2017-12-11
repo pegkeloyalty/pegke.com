@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Our Team"
-subtitle: We are a team of techies, customer support savvys and business people
+subtitle: We are a team of techies, customer support savvy and business people
 type: page
 permalink: /about/team
 ---

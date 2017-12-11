@@ -7,7 +7,7 @@ permalink: /about/redeem-points
 ---
 
 # Own Products
-You can offer your ouwn products as redeemable items, all these options are managable from your dashboard.
+You can offer your own products as redeemable items, all these options are manageable from your dashboard.
 
 # Gift Vouchers
 You can offer your customers many other gift vouchers of other companies
